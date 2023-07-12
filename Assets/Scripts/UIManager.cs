@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text startText;
     public TMP_Text endText;
 
-    public void OnGameStateChange(GameplayManager.State state) {
+    public void OnStateChange(GameplayManager.State state) {
         switch(state) {
             case GameplayManager.State.WAITING_GAMEPLAY:
                 OnWaitingGameplay();

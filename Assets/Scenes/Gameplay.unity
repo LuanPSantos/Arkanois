@@ -294,7 +294,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1521127617}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OnGameStateChange
+        m_MethodName: OnStateChange
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -318,7 +318,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1581936231}
         m_TargetAssemblyTypeName: PaddleMovement, Assembly-CSharp
-        m_MethodName: OnGameStateChange
+        m_MethodName: OnStateChange
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

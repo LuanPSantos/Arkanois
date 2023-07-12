@@ -23,7 +23,7 @@ public class PaddleMovement : MonoBehaviour
         }
     }
 
-    public void OnGameStateChange(GameplayManager.State state)
+    public void OnStateChange(GameplayManager.State state)
     {
         switch (state)
         {
