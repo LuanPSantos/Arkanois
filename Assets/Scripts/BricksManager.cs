@@ -8,37 +8,49 @@ public class BricksManager : MonoBehaviour
     public UnityEvent OnAllBricksBroken;
 
     private int amoutActivedBricks = 0;
+    private BrickBehaviour[] bricks;
 
-    void Start()
+    void Awake()
     {
-        amoutActivedBricks = GetComponentsInChildren<BrickBehaviour>().Length;
+        bricks = GetComponentsInChildren<BrickBehaviour>();
+        
+        for(int i = 0; i < bricks.Length; i++)
+        {
+            if (bricks[i].enabled)
+            {
+                amoutActivedBricks++;
+            }
+        }
     }
 
     public void OnStateChange(GameplayManager.State state) {
-        switch(state) {
+        switch(state) 
+        {
             case GameplayManager.State.WAITING_GAMEPLAY:
-                var bricks = GetComponentsInChildren<BrickBehaviour>();
-
-                foreach(BrickBehaviour brick in bricks) {
-                    brick.Reset();
-                }
-
-                amoutActivedBricks = bricks.Length;
-
+                OnWaitingGameplay();
                 break;
             default:
                 break;
         }
     }
 
-    public void DecreaseAmountActivedBricks()
+    public void OnBrickHitted()
     {
         amoutActivedBricks--;
-        Debug.Log("BricksManager-DecreaseAmountActivedBricks, amoutActivedBricks=" + amoutActivedBricks);
 
         if (amoutActivedBricks == 0)
         {
             OnAllBricksBroken?.Invoke();
         }
+    }
+
+    private void OnWaitingGameplay()
+    {
+        foreach (BrickBehaviour brick in bricks)
+        {
+            brick.Reset(); // Cada brick poderia responder por si so quando o game state mudar para WAITING_GAMEPLAY
+        }
+
+        amoutActivedBricks = bricks.Length;
     }
 }

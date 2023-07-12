@@ -8,7 +8,6 @@ public class GameplayManager : MonoBehaviour
 {
     public UnityEvent<State> onStateChange;
     public PlayerInput playerInput;
-    private State state;
     
     void Start()
     {
@@ -16,49 +15,44 @@ public class GameplayManager : MonoBehaviour
     }
 
     public void LoadGameplay() {
-        state = State.GAMEPLAY;
-
-        onStateChange?.Invoke(state);
+        ChangeStateTo(State.WAITING_GAMEPLAY);
     }
 
-    public void StartGame() {
+    public void OnInputStartGame() {
         Debug.Log("GameplayManager-StartGame");
 
         playerInput.SwitchCurrentActionMap("Paddle");
 
-        state = State.IN_GAME;
-
-        onStateChange?.Invoke(state);
+        ChangeStateTo(State.IN_GAME);
     }
 
-    public void WinGame() {
-        Debug.Log("GameplayManager-WinGame");
-        playerInput.SwitchCurrentActionMap("WaitingGameplay");
+    public void OnAllBricksBroken() {
+        Debug.Log("GameplayManager-OnAllBricksBroken");
+        playerInput.SwitchCurrentActionMap("GameOver");
 
-        state = State.WIN;
-
-        onStateChange?.Invoke(state);
+        ChangeStateTo(State.WIN);
     }
 
-    public void LoseGame() {
+    public void OnBallOutOfMap() {
         Debug.Log("GameplayManager-LoseGame");
         playerInput.SwitchCurrentActionMap("GameOver");
 
-        state = State.GAME_OVER;
-
-        onStateChange?.Invoke(state);
+        ChangeStateTo(State.GAME_OVER);
     }
 
-    public void ResetGame() {
+    public void OnInputTryAgain() {
         Debug.Log("GameplayManager-ResetGame");
         playerInput.SwitchCurrentActionMap("WaitingGameplay");
 
-        state = State.WAITING_GAMEPLAY;
+        ChangeStateTo(State.WAITING_GAMEPLAY);
+    }
 
+    public void ChangeStateTo(State state)
+    {
         onStateChange?.Invoke(state);
     }
 
     public enum State {
-        WAITING_GAMEPLAY, IN_GAME, GAME_OVER, WIN, GAMEPLAY
+        WAITING_GAMEPLAY, IN_GAME, GAME_OVER, WIN
     }
 }

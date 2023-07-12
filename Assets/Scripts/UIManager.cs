@@ -11,20 +11,44 @@ public class UIManager : MonoBehaviour
     public void OnGameStateChange(GameplayManager.State state) {
         switch(state) {
             case GameplayManager.State.WAITING_GAMEPLAY:
-                startText.gameObject.SetActive(true);
-                endText.gameObject.SetActive(false);
+                OnWaitingGameplay();
                 break;
             case GameplayManager.State.IN_GAME:
-                startText.gameObject.SetActive(false);
-                endText.gameObject.SetActive(false);
+                OnInGame();
+                break;
+            case GameplayManager.State.WIN:
+                OnWin();
                 break;
             case GameplayManager.State.GAME_OVER:
-                startText.gameObject.SetActive(false);
-                endText.gameObject.SetActive(true);
+                OnGameOver();
                 break;
             default:
                 break;
         }
         
+    }
+
+    private void OnWaitingGameplay()
+    {
+        startText.gameObject.SetActive(true);
+        endText.gameObject.SetActive(false);
+    }
+
+    private void OnInGame()
+    {
+        startText.gameObject.SetActive(false);
+        endText.gameObject.SetActive(false);
+    }
+
+    private void OnGameOver()
+    {
+        startText.gameObject.SetActive(false);
+        endText.gameObject.SetActive(true);
+    }
+
+    private void OnWin()
+    {
+        startText.gameObject.SetActive(false);
+        endText.gameObject.SetActive(true);
     }
 }

@@ -16,22 +16,16 @@ public class BallBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Start()
-    {
-        
-    }
-
     public void OnStateChange(GameplayManager.State state) {
         switch(state) {
             case GameplayManager.State.WAITING_GAMEPLAY:
-                rb.velocity = Vector2.zero;
-                transform.position = startPosition;
+                OnWaitingGameplay();
                 break;
             case GameplayManager.State.IN_GAME:
-                rb.velocity = new Vector2(1, 1) * speed;
+                OnInGame();
                 break;
             default:
-                rb.velocity = Vector2.zero;
+                OnStateChangeNoMapped();
                 break;
         }
     }
@@ -40,26 +34,47 @@ public class BallBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Paddle"))
         {
-            float x = hitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
-            Vector2 direction = new Vector2(x, 1).normalized;
-            float speed = rb.velocity.magnitude;
-            rb.velocity = direction * speed;
+            OnHitPaddle(collision);
         }
         if (collision.gameObject.CompareTag("WallBottom"))
         {
             OnOutOfMap?.Invoke();
         }
 
-        reflectFor("Wall", collision, collision.contacts[0].normal.normalized);
-        reflectFor("Brick", collision, collision.contacts[0].normal.normalized);
+        ReflectFor("Wall", collision, collision.contacts[0].normal.normalized);
+        ReflectFor("Brick", collision, collision.contacts[0].normal.normalized);
     }
 
-    float hitFactor(Vector2 ballPos, Vector2 paddlePos, float paddleWidth)
+    private void OnWaitingGameplay()
+    {
+        rb.velocity = Vector2.zero;
+        transform.position = startPosition;
+    }
+
+    private void OnInGame()
+    {
+        rb.velocity = new Vector2(1, 1) * speed;
+    }
+
+    private void OnStateChangeNoMapped()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+    private void OnHitPaddle(Collision2D collision)
+    {
+        float x = HitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
+        Vector2 direction = new Vector2(x, 1).normalized;
+        float speed = rb.velocity.magnitude;
+        rb.velocity = direction * speed;
+    }
+
+    private float HitFactor(Vector2 ballPos, Vector2 paddlePos, float paddleWidth)
     {
         return (ballPos.x - paddlePos.x) / paddleWidth;
     }
 
-    private void reflectFor(string tag, Collision2D collision, Vector2 normal)
+    private void ReflectFor(string tag, Collision2D collision, Vector2 normal)
     {
         if (collision.gameObject.CompareTag(tag))
         {

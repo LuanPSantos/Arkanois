@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PaddleAction : MonoBehaviour
 {
     
-    public void OnAction(InputAction.CallbackContext context) {
+    public void OnInputAction(InputAction.CallbackContext context) {
         
     }
 }

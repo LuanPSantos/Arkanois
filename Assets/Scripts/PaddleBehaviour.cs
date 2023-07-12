@@ -9,10 +9,15 @@ public class PaddleBehaviour : MonoBehaviour
     public void OnStateChange(GameplayManager.State state) {
         switch(state) {
             case GameplayManager.State.WAITING_GAMEPLAY:
-                transform.position = startPosition;
+                OnWaitingGameplay();
                 break;
             default:
                 break;
         }
+    }
+
+    private void OnWaitingGameplay()
+    {
+        transform.position = startPosition;
     }
 }
