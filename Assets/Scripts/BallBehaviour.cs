@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class BallBehaviour : MonoBehaviour
 {
     public float speed;
-    public UnityEvent OnOutOfMap;
+    public GameEvent BallOutOfMap;
     public Vector2 startPosition; //TODO Move to another class
 
     private Rigidbody2D rb;
@@ -16,18 +14,10 @@ public class BallBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void OnStateChange(GameplayManager.State state) {
-        switch(state) {
-            case GameplayManager.State.WAITING_GAMEPLAY:
-                OnWaitingGameplay();
-                break;
-            case GameplayManager.State.IN_GAME:
-                OnInGame();
-                break;
-            default:
-                OnStateChangeNoMapped();
-                break;
-        }
+    void Start()
+    {
+        rb.velocity = Vector2.zero;
+        transform.position = startPosition;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -38,25 +28,24 @@ public class BallBehaviour : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("WallBottom"))
         {
-            OnOutOfMap?.Invoke();
+            BallOutOfMap.Raise();
         }
 
         ReflectFor("Wall", collision, collision.contacts[0].normal.normalized);
         ReflectFor("Brick", collision, collision.contacts[0].normal.normalized);
     }
 
-    private void OnWaitingGameplay()
-    {
-        rb.velocity = Vector2.zero;
-        transform.position = startPosition;
-    }
-
-    private void OnInGame()
+    public void OnGameStarted()
     {
         rb.velocity = new Vector2(1, 1) * speed;
     }
 
-    private void OnStateChangeNoMapped()
+    public void OnGameEnded()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+    public void OnGameLost()
     {
         rb.velocity = Vector2.zero;
     }

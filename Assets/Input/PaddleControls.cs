@@ -24,7 +24,7 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
     ""name"": ""PaddleControls"",
     ""maps"": [
         {
-            ""name"": ""Paddle"",
+            ""name"": ""Gameplay"",
             ""id"": ""4ff321cb-b0e0-4589-96e0-9d4234d83d23"",
             ""actions"": [
                 {
@@ -204,11 +204,11 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""WaitingGameplay"",
+            ""name"": ""GameStart"",
             ""id"": ""e7835ac9-5eb9-49d3-8c1c-a4118156a428"",
             ""actions"": [
                 {
-                    ""name"": ""Start Game"",
+                    ""name"": ""Start"",
                     ""type"": ""Button"",
                     ""id"": ""270f24e8-ecf6-490a-89d6-d6950671f977"",
                     ""expectedControlType"": ""Button"",
@@ -225,7 +225,7 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Start Game"",
+                    ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -236,14 +236,14 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Start Game"",
+                    ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
             ]
         },
         {
-            ""name"": ""GameOver"",
+            ""name"": ""GameLost"",
             ""id"": ""bd0441f0-bbf6-4814-a156-ab3b7c37d4d1"",
             ""actions"": [
                 {
@@ -280,20 +280,62 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""GameEnded"",
+            ""id"": ""fc7f2d62-dfa7-4c0a-9b41-c31e4c2da352"",
+            ""actions"": [
+                {
+                    ""name"": ""Acept"",
+                    ""type"": ""Button"",
+                    ""id"": ""ea2ad8eb-2bc4-4a2e-aea7-3f7aa7be73e3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""eb8132a1-162f-4170-90dd-a7a0fffc8a69"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Acept"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b4c5f54c-e9a5-4a90-897a-c223cc79684f"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Acept"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // Paddle
-        m_Paddle = asset.FindActionMap("Paddle", throwIfNotFound: true);
-        m_Paddle_Movement = m_Paddle.FindAction("Movement", throwIfNotFound: true);
-        m_Paddle_Action = m_Paddle.FindAction("Action", throwIfNotFound: true);
-        // WaitingGameplay
-        m_WaitingGameplay = asset.FindActionMap("WaitingGameplay", throwIfNotFound: true);
-        m_WaitingGameplay_StartGame = m_WaitingGameplay.FindAction("Start Game", throwIfNotFound: true);
-        // GameOver
-        m_GameOver = asset.FindActionMap("GameOver", throwIfNotFound: true);
-        m_GameOver_Trayagain = m_GameOver.FindAction("Tray again", throwIfNotFound: true);
+        // Gameplay
+        m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
+        m_Gameplay_Movement = m_Gameplay.FindAction("Movement", throwIfNotFound: true);
+        m_Gameplay_Action = m_Gameplay.FindAction("Action", throwIfNotFound: true);
+        // GameStart
+        m_GameStart = asset.FindActionMap("GameStart", throwIfNotFound: true);
+        m_GameStart_Start = m_GameStart.FindAction("Start", throwIfNotFound: true);
+        // GameLost
+        m_GameLost = asset.FindActionMap("GameLost", throwIfNotFound: true);
+        m_GameLost_Trayagain = m_GameLost.FindAction("Tray again", throwIfNotFound: true);
+        // GameEnded
+        m_GameEnded = asset.FindActionMap("GameEnded", throwIfNotFound: true);
+        m_GameEnded_Acept = m_GameEnded.FindAction("Acept", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -352,26 +394,26 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Paddle
-    private readonly InputActionMap m_Paddle;
-    private List<IPaddleActions> m_PaddleActionsCallbackInterfaces = new List<IPaddleActions>();
-    private readonly InputAction m_Paddle_Movement;
-    private readonly InputAction m_Paddle_Action;
-    public struct PaddleActions
+    // Gameplay
+    private readonly InputActionMap m_Gameplay;
+    private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
+    private readonly InputAction m_Gameplay_Movement;
+    private readonly InputAction m_Gameplay_Action;
+    public struct GameplayActions
     {
         private @PaddleControls m_Wrapper;
-        public PaddleActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_Paddle_Movement;
-        public InputAction @Action => m_Wrapper.m_Paddle_Action;
-        public InputActionMap Get() { return m_Wrapper.m_Paddle; }
+        public GameplayActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Gameplay_Movement;
+        public InputAction @Action => m_Wrapper.m_Gameplay_Action;
+        public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PaddleActions set) { return set.Get(); }
-        public void AddCallbacks(IPaddleActions instance)
+        public static implicit operator InputActionMap(GameplayActions set) { return set.Get(); }
+        public void AddCallbacks(IGameplayActions instance)
         {
-            if (instance == null || m_Wrapper.m_PaddleActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PaddleActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_GameplayActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Add(instance);
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
@@ -380,7 +422,7 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
             @Action.canceled += instance.OnAction;
         }
 
-        private void UnregisterCallbacks(IPaddleActions instance)
+        private void UnregisterCallbacks(IGameplayActions instance)
         {
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
@@ -390,124 +432,174 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
             @Action.canceled -= instance.OnAction;
         }
 
-        public void RemoveCallbacks(IPaddleActions instance)
+        public void RemoveCallbacks(IGameplayActions instance)
         {
-            if (m_Wrapper.m_PaddleActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_GameplayActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IPaddleActions instance)
+        public void SetCallbacks(IGameplayActions instance)
         {
-            foreach (var item in m_Wrapper.m_PaddleActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_GameplayActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_PaddleActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public PaddleActions @Paddle => new PaddleActions(this);
+    public GameplayActions @Gameplay => new GameplayActions(this);
 
-    // WaitingGameplay
-    private readonly InputActionMap m_WaitingGameplay;
-    private List<IWaitingGameplayActions> m_WaitingGameplayActionsCallbackInterfaces = new List<IWaitingGameplayActions>();
-    private readonly InputAction m_WaitingGameplay_StartGame;
-    public struct WaitingGameplayActions
+    // GameStart
+    private readonly InputActionMap m_GameStart;
+    private List<IGameStartActions> m_GameStartActionsCallbackInterfaces = new List<IGameStartActions>();
+    private readonly InputAction m_GameStart_Start;
+    public struct GameStartActions
     {
         private @PaddleControls m_Wrapper;
-        public WaitingGameplayActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @StartGame => m_Wrapper.m_WaitingGameplay_StartGame;
-        public InputActionMap Get() { return m_Wrapper.m_WaitingGameplay; }
+        public GameStartActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Start => m_Wrapper.m_GameStart_Start;
+        public InputActionMap Get() { return m_Wrapper.m_GameStart; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(WaitingGameplayActions set) { return set.Get(); }
-        public void AddCallbacks(IWaitingGameplayActions instance)
+        public static implicit operator InputActionMap(GameStartActions set) { return set.Get(); }
+        public void AddCallbacks(IGameStartActions instance)
         {
-            if (instance == null || m_Wrapper.m_WaitingGameplayActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_WaitingGameplayActionsCallbackInterfaces.Add(instance);
-            @StartGame.started += instance.OnStartGame;
-            @StartGame.performed += instance.OnStartGame;
-            @StartGame.canceled += instance.OnStartGame;
+            if (instance == null || m_Wrapper.m_GameStartActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameStartActionsCallbackInterfaces.Add(instance);
+            @Start.started += instance.OnStart;
+            @Start.performed += instance.OnStart;
+            @Start.canceled += instance.OnStart;
         }
 
-        private void UnregisterCallbacks(IWaitingGameplayActions instance)
+        private void UnregisterCallbacks(IGameStartActions instance)
         {
-            @StartGame.started -= instance.OnStartGame;
-            @StartGame.performed -= instance.OnStartGame;
-            @StartGame.canceled -= instance.OnStartGame;
+            @Start.started -= instance.OnStart;
+            @Start.performed -= instance.OnStart;
+            @Start.canceled -= instance.OnStart;
         }
 
-        public void RemoveCallbacks(IWaitingGameplayActions instance)
+        public void RemoveCallbacks(IGameStartActions instance)
         {
-            if (m_Wrapper.m_WaitingGameplayActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_GameStartActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IWaitingGameplayActions instance)
+        public void SetCallbacks(IGameStartActions instance)
         {
-            foreach (var item in m_Wrapper.m_WaitingGameplayActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_GameStartActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_WaitingGameplayActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_GameStartActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public WaitingGameplayActions @WaitingGameplay => new WaitingGameplayActions(this);
+    public GameStartActions @GameStart => new GameStartActions(this);
 
-    // GameOver
-    private readonly InputActionMap m_GameOver;
-    private List<IGameOverActions> m_GameOverActionsCallbackInterfaces = new List<IGameOverActions>();
-    private readonly InputAction m_GameOver_Trayagain;
-    public struct GameOverActions
+    // GameLost
+    private readonly InputActionMap m_GameLost;
+    private List<IGameLostActions> m_GameLostActionsCallbackInterfaces = new List<IGameLostActions>();
+    private readonly InputAction m_GameLost_Trayagain;
+    public struct GameLostActions
     {
         private @PaddleControls m_Wrapper;
-        public GameOverActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Trayagain => m_Wrapper.m_GameOver_Trayagain;
-        public InputActionMap Get() { return m_Wrapper.m_GameOver; }
+        public GameLostActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Trayagain => m_Wrapper.m_GameLost_Trayagain;
+        public InputActionMap Get() { return m_Wrapper.m_GameLost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(GameOverActions set) { return set.Get(); }
-        public void AddCallbacks(IGameOverActions instance)
+        public static implicit operator InputActionMap(GameLostActions set) { return set.Get(); }
+        public void AddCallbacks(IGameLostActions instance)
         {
-            if (instance == null || m_Wrapper.m_GameOverActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_GameOverActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_GameLostActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameLostActionsCallbackInterfaces.Add(instance);
             @Trayagain.started += instance.OnTrayagain;
             @Trayagain.performed += instance.OnTrayagain;
             @Trayagain.canceled += instance.OnTrayagain;
         }
 
-        private void UnregisterCallbacks(IGameOverActions instance)
+        private void UnregisterCallbacks(IGameLostActions instance)
         {
             @Trayagain.started -= instance.OnTrayagain;
             @Trayagain.performed -= instance.OnTrayagain;
             @Trayagain.canceled -= instance.OnTrayagain;
         }
 
-        public void RemoveCallbacks(IGameOverActions instance)
+        public void RemoveCallbacks(IGameLostActions instance)
         {
-            if (m_Wrapper.m_GameOverActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_GameLostActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IGameOverActions instance)
+        public void SetCallbacks(IGameLostActions instance)
         {
-            foreach (var item in m_Wrapper.m_GameOverActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_GameLostActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_GameOverActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_GameLostActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public GameOverActions @GameOver => new GameOverActions(this);
-    public interface IPaddleActions
+    public GameLostActions @GameLost => new GameLostActions(this);
+
+    // GameEnded
+    private readonly InputActionMap m_GameEnded;
+    private List<IGameEndedActions> m_GameEndedActionsCallbackInterfaces = new List<IGameEndedActions>();
+    private readonly InputAction m_GameEnded_Acept;
+    public struct GameEndedActions
+    {
+        private @PaddleControls m_Wrapper;
+        public GameEndedActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Acept => m_Wrapper.m_GameEnded_Acept;
+        public InputActionMap Get() { return m_Wrapper.m_GameEnded; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GameEndedActions set) { return set.Get(); }
+        public void AddCallbacks(IGameEndedActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GameEndedActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameEndedActionsCallbackInterfaces.Add(instance);
+            @Acept.started += instance.OnAcept;
+            @Acept.performed += instance.OnAcept;
+            @Acept.canceled += instance.OnAcept;
+        }
+
+        private void UnregisterCallbacks(IGameEndedActions instance)
+        {
+            @Acept.started -= instance.OnAcept;
+            @Acept.performed -= instance.OnAcept;
+            @Acept.canceled -= instance.OnAcept;
+        }
+
+        public void RemoveCallbacks(IGameEndedActions instance)
+        {
+            if (m_Wrapper.m_GameEndedActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IGameEndedActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GameEndedActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GameEndedActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public GameEndedActions @GameEnded => new GameEndedActions(this);
+    public interface IGameplayActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
     }
-    public interface IWaitingGameplayActions
+    public interface IGameStartActions
     {
-        void OnStartGame(InputAction.CallbackContext context);
+        void OnStart(InputAction.CallbackContext context);
     }
-    public interface IGameOverActions
+    public interface IGameLostActions
     {
         void OnTrayagain(InputAction.CallbackContext context);
+    }
+    public interface IGameEndedActions
+    {
+        void OnAcept(InputAction.CallbackContext context);
     }
 }

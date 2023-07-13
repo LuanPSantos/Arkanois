@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,42 +11,58 @@ public class PaddleMovement : MonoBehaviour
     private Vector2 movement;
     private bool canMove = false;
 
-    void Awake() {
+    void Awake()
+    {
         rb = GetComponent<Rigidbody2D>();
     }
-    
-    public void OnInputMove(InputAction.CallbackContext context) {
-        if(canMove)
+
+    void Start()
+    {
+        Stop();
+    }
+
+    public void OnInputMove(InputAction.CallbackContext context)
+    {
+        if (canMove)
         {
             movement = context.ReadValue<Vector2>();
         }
     }
 
-    public void OnStateChange(GameplayManager.State state)
+    public void OnGameStarded()
     {
-        switch (state)
-        {
-            case GameplayManager.State.IN_GAME:
-                OnInGame();
-                break;
-            default:
-                OnStateChangeDefault();
-                break;
-        }
+        Move();
     }
 
-    public void OnInGame()
+    public void OnGameEnded()
+    {
+        Stop();
+    }
+
+    public void OnGameLost()
+    {
+        Stop();
+    }
+
+    private void Move()
     {
         canMove = true;
     }
 
-    public void OnStateChangeDefault()
+    private void Stop()
     {
         canMove = false;
-        movement = Vector2.zero;
     }
 
-    void FixedUpdate() {
-        rb.velocity = movement * speed;
+    void FixedUpdate()
+    {
+        if(canMove)
+        {
+            rb.velocity = movement * speed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 }

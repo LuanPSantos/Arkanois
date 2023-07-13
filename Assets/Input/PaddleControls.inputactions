@@ -2,7 +2,7 @@
     "name": "PaddleControls",
     "maps": [
         {
-            "name": "Paddle",
+            "name": "Gameplay",
             "id": "4ff321cb-b0e0-4589-96e0-9d4234d83d23",
             "actions": [
                 {
@@ -182,11 +182,11 @@
             ]
         },
         {
-            "name": "WaitingGameplay",
+            "name": "GameStart",
             "id": "e7835ac9-5eb9-49d3-8c1c-a4118156a428",
             "actions": [
                 {
-                    "name": "Start Game",
+                    "name": "Start",
                     "type": "Button",
                     "id": "270f24e8-ecf6-490a-89d6-d6950671f977",
                     "expectedControlType": "Button",
@@ -203,7 +203,7 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Start Game",
+                    "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -214,14 +214,14 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Start Game",
+                    "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "GameOver",
+            "name": "GameLost",
             "id": "bd0441f0-bbf6-4814-a156-ab3b7c37d4d1",
             "actions": [
                 {
@@ -254,6 +254,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "Tray again",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GameEnded",
+            "id": "fc7f2d62-dfa7-4c0a-9b41-c31e4c2da352",
+            "actions": [
+                {
+                    "name": "Acept",
+                    "type": "Button",
+                    "id": "ea2ad8eb-2bc4-4a2e-aea7-3f7aa7be73e3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "eb8132a1-162f-4170-90dd-a7a0fffc8a69",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Acept",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4c5f54c-e9a5-4a90-897a-c223cc79684f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Acept",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

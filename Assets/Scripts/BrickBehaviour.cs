@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class BrickBehaviour : MonoBehaviour
 {
-    public UnityEvent onHitted;
+    public GameEvent onBrickHitted;
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
@@ -26,9 +25,11 @@ public class BrickBehaviour : MonoBehaviour
     void Start()
     {
         spriteRenderer.color = colors[Random.Range(0, colors.Count)];
+
+        ResetBrick();
     }
 
-    public void Reset()
+    private void ResetBrick()
     {
         boxCollider.enabled = true;
         spriteRenderer.enabled = true;
@@ -36,10 +37,9 @@ public class BrickBehaviour : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionEnter2D");
         if (collision.gameObject.CompareTag("Ball"))
         {
-            onHitted?.Invoke();
+            onBrickHitted.Raise();
 
             boxCollider.enabled = false;
             spriteRenderer.enabled = false;
