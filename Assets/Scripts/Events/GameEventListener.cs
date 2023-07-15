@@ -16,8 +16,9 @@ public class GameEventListener : MonoBehaviour
         gameEvent.UnregisterListener(this); 
     }
 
-    public void OnEventRaised()
+    public void OnEventRaised(long traceId)
     {
+        Debug.Log("=> Listener: " + name + ", traceId=" + traceId);
         response.Invoke(); 
     }
 }

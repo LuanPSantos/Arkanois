@@ -10,32 +10,45 @@ public class LevelManagerScriptableObject : ScriptableObject
     [SerializeField]
     private List<string> levelSceneNames = new List<string>();
 
-    private int currentLevelIndex = 0;
+    private int currentLevelIndex;
 
     void Awake()
     {
-        currentLevelIndex = 0;
-
         levelSceneNames.Add("Level1");
         levelSceneNames.Add("Level2");
     }
 
+    public void LoadFistLevel()
+    {
+        Debug.Log("LoadFistLevel");
+        currentLevelIndex = 0;
+        LoadScene(levelSceneNames[currentLevelIndex]);
+    }
+
     public void OnGameRestarted()
     {
-        SceneManager.LoadScene(levelSceneNames[currentLevelIndex], LoadSceneMode.Single);
+        Debug.Log("OnGameRestarted");
+        LoadScene(levelSceneNames[currentLevelIndex]);
     }
 
     public void OnLevelFinished()
     {
+        Debug.Log("OnLevelFinished");
         currentLevelIndex++;
         if(currentLevelIndex < levelSceneNames.Count)
         {
-            SceneManager.LoadScene(levelSceneNames[currentLevelIndex], LoadSceneMode.Single);
+            LoadScene(levelSceneNames[currentLevelIndex]);
         }
         else
         {
             currentLevelIndex = 0;
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            LoadScene("MainMenu");
         }
+    }
+
+    private void LoadScene(string name)
+    {
+        Debug.Log("Loading scene "+ name);
+        SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 }

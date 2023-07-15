@@ -222,7 +222,7 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""2721d760-7471-43e8-87f4-9e05afcea1da"",
                     ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Start"",
@@ -233,88 +233,10 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""75e266a8-dfe8-42c2-a3b4-8ccc06ebf374"",
                     ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Start"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""GameLost"",
-            ""id"": ""bd0441f0-bbf6-4814-a156-ab3b7c37d4d1"",
-            ""actions"": [
-                {
-                    ""name"": ""Tray again"",
-                    ""type"": ""Button"",
-                    ""id"": ""0e48cd28-812f-48ad-acb9-a7f33e69cee5"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""7da465f3-dc3d-42ed-ad16-dede7abd303a"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tray again"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cbf85abd-3b51-4327-bfb3-a97ab62a7139"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tray again"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""GameEnded"",
-            ""id"": ""fc7f2d62-dfa7-4c0a-9b41-c31e4c2da352"",
-            ""actions"": [
-                {
-                    ""name"": ""Acept"",
-                    ""type"": ""Button"",
-                    ""id"": ""ea2ad8eb-2bc4-4a2e-aea7-3f7aa7be73e3"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""eb8132a1-162f-4170-90dd-a7a0fffc8a69"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Acept"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b4c5f54c-e9a5-4a90-897a-c223cc79684f"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Acept"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -330,12 +252,6 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
         // GameStart
         m_GameStart = asset.FindActionMap("GameStart", throwIfNotFound: true);
         m_GameStart_Start = m_GameStart.FindAction("Start", throwIfNotFound: true);
-        // GameLost
-        m_GameLost = asset.FindActionMap("GameLost", throwIfNotFound: true);
-        m_GameLost_Trayagain = m_GameLost.FindAction("Tray again", throwIfNotFound: true);
-        // GameEnded
-        m_GameEnded = asset.FindActionMap("GameEnded", throwIfNotFound: true);
-        m_GameEnded_Acept = m_GameEnded.FindAction("Acept", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -493,98 +409,6 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
         }
     }
     public GameStartActions @GameStart => new GameStartActions(this);
-
-    // GameLost
-    private readonly InputActionMap m_GameLost;
-    private List<IGameLostActions> m_GameLostActionsCallbackInterfaces = new List<IGameLostActions>();
-    private readonly InputAction m_GameLost_Trayagain;
-    public struct GameLostActions
-    {
-        private @PaddleControls m_Wrapper;
-        public GameLostActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Trayagain => m_Wrapper.m_GameLost_Trayagain;
-        public InputActionMap Get() { return m_Wrapper.m_GameLost; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(GameLostActions set) { return set.Get(); }
-        public void AddCallbacks(IGameLostActions instance)
-        {
-            if (instance == null || m_Wrapper.m_GameLostActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_GameLostActionsCallbackInterfaces.Add(instance);
-            @Trayagain.started += instance.OnTrayagain;
-            @Trayagain.performed += instance.OnTrayagain;
-            @Trayagain.canceled += instance.OnTrayagain;
-        }
-
-        private void UnregisterCallbacks(IGameLostActions instance)
-        {
-            @Trayagain.started -= instance.OnTrayagain;
-            @Trayagain.performed -= instance.OnTrayagain;
-            @Trayagain.canceled -= instance.OnTrayagain;
-        }
-
-        public void RemoveCallbacks(IGameLostActions instance)
-        {
-            if (m_Wrapper.m_GameLostActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IGameLostActions instance)
-        {
-            foreach (var item in m_Wrapper.m_GameLostActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_GameLostActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public GameLostActions @GameLost => new GameLostActions(this);
-
-    // GameEnded
-    private readonly InputActionMap m_GameEnded;
-    private List<IGameEndedActions> m_GameEndedActionsCallbackInterfaces = new List<IGameEndedActions>();
-    private readonly InputAction m_GameEnded_Acept;
-    public struct GameEndedActions
-    {
-        private @PaddleControls m_Wrapper;
-        public GameEndedActions(@PaddleControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Acept => m_Wrapper.m_GameEnded_Acept;
-        public InputActionMap Get() { return m_Wrapper.m_GameEnded; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(GameEndedActions set) { return set.Get(); }
-        public void AddCallbacks(IGameEndedActions instance)
-        {
-            if (instance == null || m_Wrapper.m_GameEndedActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_GameEndedActionsCallbackInterfaces.Add(instance);
-            @Acept.started += instance.OnAcept;
-            @Acept.performed += instance.OnAcept;
-            @Acept.canceled += instance.OnAcept;
-        }
-
-        private void UnregisterCallbacks(IGameEndedActions instance)
-        {
-            @Acept.started -= instance.OnAcept;
-            @Acept.performed -= instance.OnAcept;
-            @Acept.canceled -= instance.OnAcept;
-        }
-
-        public void RemoveCallbacks(IGameEndedActions instance)
-        {
-            if (m_Wrapper.m_GameEndedActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IGameEndedActions instance)
-        {
-            foreach (var item in m_Wrapper.m_GameEndedActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_GameEndedActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public GameEndedActions @GameEnded => new GameEndedActions(this);
     public interface IGameplayActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -593,13 +417,5 @@ public partial class @PaddleControls: IInputActionCollection2, IDisposable
     public interface IGameStartActions
     {
         void OnStart(InputAction.CallbackContext context);
-    }
-    public interface IGameLostActions
-    {
-        void OnTrayagain(InputAction.CallbackContext context);
-    }
-    public interface IGameEndedActions
-    {
-        void OnAcept(InputAction.CallbackContext context);
     }
 }

@@ -10,5 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cef4afff705945d4dbf8cf1afe930dbe, type: 3}
-  m_Name: LevalManager
+  m_Name: LevelManager
   m_EditorClassIdentifier: 
+  levelSceneNames:
+  - Level1
+  - Level2
+  levelLoaded: {fileID: 11400000, guid: 94be845e53e9a1e49b3c9f4c92da30ee, type: 2}

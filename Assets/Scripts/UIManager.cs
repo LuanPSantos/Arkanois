@@ -1,32 +1,36 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
     public TMP_Text startText;
-    public TMP_Text endText;
+    public GameObject endView;
+    public EventSystem eventSystem;
+    public GameObject nextLevelButtom;
 
     void Start()
     {
         startText.gameObject.SetActive(true);
-        endText.gameObject.SetActive(false);
+        endView.SetActive(false);
     }
 
     public void OnGameStarted()
     {
         startText.gameObject.SetActive(false);
-        endText.gameObject.SetActive(false);
+        endView.SetActive(false);
     }
 
     public void OnGameEnded()
     {
         startText.gameObject.SetActive(false);
-        endText.gameObject.SetActive(true);
+        endView.SetActive(true);
+        eventSystem.firstSelectedGameObject = nextLevelButtom;
     }
 
     public void OnGameLost()
     {
         startText.gameObject.SetActive(false);
-        endText.gameObject.SetActive(true);
+        endView.SetActive(true);
     }
 }

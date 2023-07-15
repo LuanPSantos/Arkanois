@@ -8,25 +8,20 @@ public class PaddleMovement : MonoBehaviour
     public float speed;
 
     private Rigidbody2D rb;
-    private Vector2 movement;
-    private bool canMove = false;
+    private InputAction movement;
+
+    private PaddleControls controls;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        controls = new PaddleControls();
+        movement = controls.Gameplay.Movement;
     }
 
     void Start()
     {
         Stop();
-    }
-
-    public void OnInputMove(InputAction.CallbackContext context)
-    {
-        if (canMove)
-        {
-            movement = context.ReadValue<Vector2>();
-        }
     }
 
     public void OnGameStarded()
@@ -46,23 +41,16 @@ public class PaddleMovement : MonoBehaviour
 
     private void Move()
     {
-        canMove = true;
+        movement.Enable();
     }
 
     private void Stop()
     {
-        canMove = false;
+        movement.Disable();
     }
 
     void FixedUpdate()
     {
-        if(canMove)
-        {
-            rb.velocity = movement * speed;
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
+        rb.velocity = movement.ReadValue<Vector2>() * speed;
     }
 }

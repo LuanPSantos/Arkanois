@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4174256562407797079}
   - component: {fileID: 1143909024963429873}
   - component: {fileID: 3827009491457454532}
+  - component: {fileID: 6153388316413262145}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -80,6 +81,34 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
         m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
         m_MethodName: OnBallOutOffBaudaries
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6153388316413262145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7717229065889355529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 94be845e53e9a1e49b3c9f4c92da30ee, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
+        m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
+        m_MethodName: OnLevelLoaded
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

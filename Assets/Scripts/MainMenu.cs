@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    private LevelManagerScriptableObject levelManger;
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+        levelManger.LoadFistLevel();
     }
 }

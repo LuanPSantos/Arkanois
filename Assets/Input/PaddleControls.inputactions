@@ -200,7 +200,7 @@
                     "name": "",
                     "id": "2721d760-7471-43e8-87f4-9e05afcea1da",
                     "path": "<Keyboard>/space",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Start",
@@ -211,88 +211,10 @@
                     "name": "",
                     "id": "75e266a8-dfe8-42c2-a3b4-8ccc06ebf374",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Start",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "GameLost",
-            "id": "bd0441f0-bbf6-4814-a156-ab3b7c37d4d1",
-            "actions": [
-                {
-                    "name": "Tray again",
-                    "type": "Button",
-                    "id": "0e48cd28-812f-48ad-acb9-a7f33e69cee5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "7da465f3-dc3d-42ed-ad16-dede7abd303a",
-                    "path": "<Keyboard>/space",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Tray again",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cbf85abd-3b51-4327-bfb3-a97ab62a7139",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Tray again",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "GameEnded",
-            "id": "fc7f2d62-dfa7-4c0a-9b41-c31e4c2da352",
-            "actions": [
-                {
-                    "name": "Acept",
-                    "type": "Button",
-                    "id": "ea2ad8eb-2bc4-4a2e-aea7-3f7aa7be73e3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "eb8132a1-162f-4170-90dd-a7a0fffc8a69",
-                    "path": "<Keyboard>/space",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Acept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b4c5f54c-e9a5-4a90-897a-c223cc79684f",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Acept",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

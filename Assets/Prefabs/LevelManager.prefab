@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6568607355547083169}
   - component: {fileID: 1234902679514257006}
   - component: {fileID: 4891483466372427782}
+  - component: {fileID: 6777939820187465293}
   m_Layer: 0
-  m_Name: LevelManger
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: bcef384cd0298594aac6a23c2fdc8be8, type: 2}
+  gameEvent: {fileID: 11400000, guid: 9710c08332bed4c4daf7e8949b2e0588, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
@@ -89,3 +90,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6777939820187465293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690262260397001363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc82be3eed369f47b6489aa8ac304f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoaded: {fileID: 11400000, guid: 94be845e53e9a1e49b3c9f4c92da30ee, type: 2}
