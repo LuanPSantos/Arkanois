@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cef4afff705945d4dbf8cf1afe930dbe, type: 3}
-  m_Name: LevelManager
+  m_Script: {fileID: 11500000, guid: 43dbac27d958e664b8f3fbf5573dd5fb, type: 3}
+  m_Name: RedBrick
   m_EditorClassIdentifier: 
-  levelSceneNames:
-  - Level1
+  color: {r: 0.4039216, g: 0.011764707, b: 0.019607844, a: 1}
+  scoreValue: 90
+  resistence: 1

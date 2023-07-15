@@ -8,6 +8,8 @@ public class BallBehaviour : MonoBehaviour
     public Vector2 startPosition; //TODO Move to another class
 
     private Rigidbody2D rb;
+    private Vector2 movement;
+    private bool hasCollided;
 
     void Awake()
     {
@@ -16,46 +18,54 @@ public class BallBehaviour : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = Vector2.zero;
+        movement = Vector2.zero;
         transform.position = startPosition;
+    }
+
+    void FixedUpdate()
+    {
+        rb.velocity = movement * speed * Time.deltaTime;
+        hasCollided = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Paddle"))
+        if(!hasCollided)
         {
-            OnHitPaddle(collision);
-        }
-        if (collision.gameObject.CompareTag("WallBottom"))
-        {
-            BallOutOfMap.Raise();
-        }
+            hasCollided = true;
+            if (collision.gameObject.CompareTag("Paddle"))
+            {
+                OnHitPaddle(collision);
+            }
+            if (collision.gameObject.CompareTag("WallBottom"))
+            {
+                BallOutOfMap.Raise();
+            }
 
-        ReflectFor("Wall", collision, collision.contacts[0].normal.normalized);
-        ReflectFor("Brick", collision, collision.contacts[0].normal.normalized);
+            ReflectFor("Wall", collision, collision.contacts[0].normal.normalized);
+            ReflectFor("Brick", collision, collision.contacts[0].normal.normalized);
+        }        
     }
 
     public void OnGameStarted()
     {
-        rb.velocity = new Vector2(1, 1) * speed;
+        movement = new Vector2(1, 1).normalized;
     }
 
     public void OnGameEnded()
     {
-        rb.velocity = Vector2.zero;
+        movement = Vector2.zero;
     }
 
     public void OnGameLost()
     {
-        rb.velocity = Vector2.zero;
+        movement = Vector2.zero;
     }
 
     private void OnHitPaddle(Collision2D collision)
     {
         float x = HitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
-        Vector2 direction = new Vector2(x, 1).normalized;
-        float speed = rb.velocity.magnitude;
-        rb.velocity = direction * speed;
+        movement = new Vector2(x, 1).normalized;
     }
 
     private float HitFactor(Vector2 ballPos, Vector2 paddlePos, float paddleWidth)
@@ -67,8 +77,7 @@ public class BallBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tag))
         {
-            Vector2 direction = Vector2.Reflect(rb.velocity.normalized, normal);
-            rb.velocity = direction * rb.velocity.magnitude;
+            movement = Vector2.Reflect(movement, normal).normalized;
         }
     }
 }

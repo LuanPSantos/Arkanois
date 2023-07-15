@@ -4,27 +4,27 @@ using UnityEngine.Events;
 
 public class BrickBehaviour : MonoBehaviour
 {
-    public GameEvent onBrickHitted;
+    [SerializeField]
+    private GameEvent onBrickBroke;
+    [SerializeField]
+    private BrickScriptableObject brick;
+    [SerializeField]
+    private GameObject graphics;
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
 
-    private List<Color> colors = new List<Color>();
+    private int hitCount = 0;
 
     void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         boxCollider = GetComponentInChildren<BoxCollider2D>();
-
-        colors.Add(new Color(150 / 255f, 40 / 255f, 40 / 200f));
-        colors.Add(new Color(225 / 255f, 145 / 255f, 15 / 200f));
-        colors.Add(new Color(90 / 255f, 200 / 255f, 200 / 200f));
-        colors.Add(new Color(190 / 255f, 90 / 255f, 160 / 200f));
     }
 
     void Start()
     {
-        spriteRenderer.color = colors[Random.Range(0, colors.Count)];
+        spriteRenderer.color = brick.color;
 
         ResetBrick();
     }
@@ -32,17 +32,22 @@ public class BrickBehaviour : MonoBehaviour
     private void ResetBrick()
     {
         boxCollider.enabled = true;
-        spriteRenderer.enabled = true;
+        graphics.SetActive(true);
+        hitCount = 0;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            onBrickHitted.Raise();
+            hitCount++;
+            if (hitCount >= brick.resistence)
+            {
+                onBrickBroke.Raise();
 
-            boxCollider.enabled = false;
-            spriteRenderer.enabled = false;
+                boxCollider.enabled = false;
+                graphics.SetActive(false);
+            }
         }
     }
 }

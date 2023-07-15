@@ -20,7 +20,7 @@ public class BricksManager : MonoBehaviour
             }
         }
     }
-    public void OnBrickHitted()
+    public void OnBrickBroke()
     {
         amoutActivedBricks--;
 

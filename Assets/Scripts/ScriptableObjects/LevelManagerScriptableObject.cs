@@ -28,7 +28,7 @@ public class LevelManagerScriptableObject : ScriptableObject
         currentLevelIndex++;
         if(currentLevelIndex < levelSceneNames.Count)
         {
-            WaitAndLoadScene();
+            var fireAndForget = WaitAndLoadScene();
         }
         else
         {

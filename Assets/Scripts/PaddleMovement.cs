@@ -51,6 +51,6 @@ public class PaddleMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = movement.ReadValue<Vector2>() * speed;
+        rb.velocity = movement.ReadValue<Vector2>() * speed * Time.fixedDeltaTime;
     }
 }
