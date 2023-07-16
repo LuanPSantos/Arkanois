@@ -8,20 +8,41 @@ public class PaddleMovement : MonoBehaviour
     public float speed;
 
     private Rigidbody2D rb;
-    private InputAction movement;
+    private InputAction movementInput;
 
     private PaddleControls controls;
+    private Vector2 lastPosition;
+    private Vector2 movement;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         controls = new PaddleControls();
-        movement = controls.Gameplay.Movement;
+        movementInput = controls.Gameplay.Movement;
     }
 
     void Start()
     {
         Stop();
+    }
+
+    private void Update()
+    {
+        movement = movementInput.ReadValue<Vector2>();
+    }
+
+    void FixedUpdate()
+    {
+        lastPosition = transform.position;
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Wall"))
+        {
+            movement = Vector2.zero;
+        }
     }
 
     public void OnGameStarded()
@@ -41,16 +62,11 @@ public class PaddleMovement : MonoBehaviour
 
     private void Move()
     {
-        movement.Enable();
+        movementInput.Enable();
     }
 
     private void Stop()
     {
-        movement.Disable();
-    }
-
-    void FixedUpdate()
-    {
-        rb.velocity = movement.ReadValue<Vector2>() * speed * Time.fixedDeltaTime;
+        movementInput.Disable();
     }
 }

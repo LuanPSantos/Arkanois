@@ -24,12 +24,13 @@ public class BallBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = movement * speed * Time.deltaTime;
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
         hasCollided = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("OnCollisionEnter2D");
         if(!hasCollided)
         {
             hasCollided = true;
