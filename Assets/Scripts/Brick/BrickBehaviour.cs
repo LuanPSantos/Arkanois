@@ -10,6 +10,10 @@ public class BrickBehaviour : MonoBehaviour
     private BrickScriptableObject brick;
     [SerializeField]
     private GameObject graphics;
+    [SerializeField]
+    private GameObject powerUp;
+    [SerializeField]
+    private int dropPowerUpProbability;
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
@@ -47,7 +51,19 @@ public class BrickBehaviour : MonoBehaviour
 
                 boxCollider.enabled = false;
                 graphics.SetActive(false);
+
+                DropPowerUp();
             }
+        }
+    }
+
+    private void DropPowerUp()
+    {
+        var random = Random.Range(0, 100);
+       
+        if(random <= dropPowerUpProbability)
+        {
+            Instantiate(powerUp, transform.position, Quaternion.identity, null);
         }
     }
 }

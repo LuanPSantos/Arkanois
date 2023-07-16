@@ -11,7 +11,6 @@ public class PaddleMovement : MonoBehaviour
     private InputAction movementInput;
 
     private PaddleControls controls;
-    private Vector2 lastPosition;
     private Vector2 movement;
 
     void Awake()
@@ -33,7 +32,6 @@ public class PaddleMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        lastPosition = transform.position;
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
