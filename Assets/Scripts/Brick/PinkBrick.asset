@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43dbac27d958e664b8f3fbf5573dd5fb, type: 3}
   m_Name: PinkBrick
   m_EditorClassIdentifier: 
-  color: {r: 0.43137258, g: 0.20784315, b: 0.38431376, a: 1}
+  color: {r: 0.81960785, g: 0.2509804, b: 0.49411765, a: 1}
   scoreValue: 110
   resistence: 1

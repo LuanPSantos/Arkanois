@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43dbac27d958e664b8f3fbf5573dd5fb, type: 3}
   m_Name: DarkBlueBrick
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0.30980393, b: 0.46274513, a: 1}
+  color: {r: 0.10196079, g: 0.5137255, b: 0.8000001, a: 1}
   scoreValue: 100
   resistence: 1
