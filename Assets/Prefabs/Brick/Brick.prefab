@@ -290,7 +290,9 @@ MonoBehaviour:
   onBrickBroke: {fileID: 11400000, guid: b9d821dc55983b242b34f9a344571465, type: 2}
   brick: {fileID: 0}
   graphics: {fileID: 7956508384785316548}
-  powerUp: {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
+  powerUps:
+  - {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
+  - {fileID: 4184716715260491479, guid: bd3fcf94cb21a2d47a33943e754bc9c1, type: 3}
   dropPowerUpProbability: 10
 --- !u!1 &7956508384785316548
 GameObject:

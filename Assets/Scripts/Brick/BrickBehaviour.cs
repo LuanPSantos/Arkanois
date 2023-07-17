@@ -11,7 +11,7 @@ public class BrickBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject graphics;
     [SerializeField]
-    private GameObject powerUp;
+    private List<GameObject> powerUps;
     [SerializeField]
     private int dropPowerUpProbability;
 
@@ -42,7 +42,7 @@ public class BrickBehaviour : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ball"))
+        if (collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("Bullet"))
         {
             hitCount++;
             if (hitCount >= brick.resistence)
@@ -61,9 +61,9 @@ public class BrickBehaviour : MonoBehaviour
     {
         var random = Random.Range(0, 100);
        
-        if(random <= dropPowerUpProbability)
+        if(random % 5 == 0)
         {
-            Instantiate(powerUp, transform.position, Quaternion.identity, null);
+            Instantiate(powerUps[Random.Range(0, powerUps.Count)], transform.position, Quaternion.identity, null);
         }
     }
 }

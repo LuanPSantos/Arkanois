@@ -3,6 +3,12 @@ using UnityEngine.InputSystem;
 
 public class LaserBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject bullet;
+    [SerializeField]
+    private Transform rightWeapon;
+    [SerializeField]
+    private Transform leftWeapon;
     private InputAction actionInput;
     private PaddleControls controls;
 
@@ -11,24 +17,21 @@ public class LaserBehaviour : MonoBehaviour
         controls = new PaddleControls();
         actionInput = controls.Gameplay.Action;
     }
-
-    void OnEnable()
+    public void OnLaserEnabled()
     {
         actionInput.performed += OnInputAction;
+        actionInput.Enable();
     }
 
-    void OnDisable()
+    public void OnLaserDisabled()
     {
         actionInput.performed -= OnInputAction;
-    }
-
-    public void OnEnableLaser()
-    {
-        actionInput.Enable();
+        actionInput.Disable();
     }
 
     public void OnInputAction(InputAction.CallbackContext context)
     {
-        Debug.Log("------------------");
+        Instantiate(bullet, rightWeapon.position, Quaternion.identity);
+        Instantiate(bullet, leftWeapon.position, Quaternion.identity);
     }
 }

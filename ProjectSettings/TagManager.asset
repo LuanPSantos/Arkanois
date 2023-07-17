@@ -13,6 +13,7 @@ TagManager:
   - Wall
   - WallBottom
   - PowerUp
+  - Bullet
   layers:
   - Default
   - TransparentFX

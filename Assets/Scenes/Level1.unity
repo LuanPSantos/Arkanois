@@ -5506,6 +5506,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
   m_PrefabInstance: {fileID: 1751946179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1828683703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828683704}
+  m_Layer: 0
+  m_Name: RighWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828683704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828683703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5360007435407230223}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1837483275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5813,6 +5844,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
   m_PrefabInstance: {fileID: 1910391003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1921793403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921793404}
+  m_Layer: 0
+  m_Name: LeftWeapn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921793404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921793403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5360007435407230223}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1967663134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6290,11 +6352,13 @@ GameObject:
   - component: {fileID: 5360007435407230224}
   - component: {fileID: 2059116333769521218}
   - component: {fileID: 695265484335135074}
+  - component: {fileID: 5360007435407230228}
   - component: {fileID: 3367680900204985398}
   - component: {fileID: 5191454849489551451}
   - component: {fileID: 3319882104852242173}
   - component: {fileID: 4803439732962493487}
   - component: {fileID: 5360007435407230226}
+  - component: {fileID: 5360007435407230227}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Paddle
@@ -6459,6 +6523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67ed14e6da2020419a23fa04c24f7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 408347788228535000, guid: d14da8eb212e69043a6c277170e24226, type: 3}
+  rightWeapon: {fileID: 1828683704}
+  leftWeapon: {fileID: 1921793404}
 --- !u!114 &3387184311695763863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6918,6 +6985,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4214101493993433560}
+  - {fileID: 1828683704}
+  - {fileID: 1921793404}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7011,7 +7080,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3367680900204985398}
         m_TargetAssemblyTypeName: LaserBehaviour, Assembly-CSharp
-        m_MethodName: OnEnableLaser
+        m_MethodName: OnLaserEnabled
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7021,6 +7090,70 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5360007435407230228}
+        m_TargetAssemblyTypeName: EnlargeBehaviour, Assembly-CSharp
+        m_MethodName: OnElargeDisabled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5360007435407230227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456552910907055714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: e0542a89ad081e14bbb3498bc9b102a8, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5360007435407230228}
+        m_TargetAssemblyTypeName: EnlargeBehaviour, Assembly-CSharp
+        m_MethodName: OnElargeEnabled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3367680900204985398}
+        m_TargetAssemblyTypeName: LaserBehaviour, Assembly-CSharp
+        m_MethodName: OnLaserDisabled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5360007435407230228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456552910907055714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf36b3f922550d468265090899b3520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5974780082261337829
 PrefabInstance:
   m_ObjectHideFlags: 0
