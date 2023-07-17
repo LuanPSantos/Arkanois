@@ -7,4 +7,14 @@ public class PaddleBehaviour : MonoBehaviour
     {
         transform.position = startPosition;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            var powerUp = collision.gameObject.GetComponent<PowerUpBehaviuor>();
+
+            powerUp.Colect();
+        }
+    }
 }

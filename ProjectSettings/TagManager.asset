@@ -12,6 +12,7 @@ TagManager:
   - Brick
   - Wall
   - WallBottom
+  - PowerUp
   layers:
   - Default
   - TransparentFX

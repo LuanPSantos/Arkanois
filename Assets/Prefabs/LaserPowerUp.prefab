@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 3812356607801839643}
   - component: {fileID: 4629929996514880477}
   - component: {fileID: 6397991288720502951}
+  - component: {fileID: 8147852576198401221}
   m_Layer: 0
-  m_Name: PowerUp
-  m_TagString: Untagged
+  m_Name: LaserPowerUp
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +65,7 @@ Transform:
   m_Children:
   - {fileID: 5043482346963921869}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4629929996514880477
 Rigidbody2D:
@@ -106,6 +107,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+--- !u!114 &8147852576198401221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184716715260491479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627bf6d45fa517345937b3d98c1ce3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpColected: {fileID: 11400000, guid: 0627ce866e4ac9247af1e1248c176464, type: 2}
 --- !u!1 &6029268137053385543
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +195,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.6466763, g: 0.8584906, b: 0.17412782, a: 1}
+  m_Color: {r: 0.85882354, g: 0.24408236, b: 0.17254902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

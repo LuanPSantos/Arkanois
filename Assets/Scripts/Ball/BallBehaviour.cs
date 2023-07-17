@@ -9,7 +9,6 @@ public class BallBehaviour : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
-    private bool hasCollided;
 
     void Awake()
     {
@@ -25,27 +24,21 @@ public class BallBehaviour : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-        hasCollided = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionEnter2D");
-        if(!hasCollided)
+        if (collision.gameObject.CompareTag("Paddle"))
         {
-            hasCollided = true;
-            if (collision.gameObject.CompareTag("Paddle"))
-            {
-                OnHitPaddle(collision);
-            }
-            if (collision.gameObject.CompareTag("WallBottom"))
-            {
-                BallOutOfMap.Raise();
-            }
+            OnHitPaddle(collision);
+        }
+        if (collision.gameObject.CompareTag("WallBottom"))
+        {
+            BallOutOfMap.Raise();
+        }
 
-            ReflectFor("Wall", collision, collision.contacts[0].normal.normalized);
-            ReflectFor("Brick", collision, collision.contacts[0].normal.normalized);
-        }        
+        ReflectFor("Wall", collision, collision.contacts[0].normal);
+        ReflectFor("Brick", collision, collision.contacts[0].normal);
     }
 
     public void OnGameStarted()
