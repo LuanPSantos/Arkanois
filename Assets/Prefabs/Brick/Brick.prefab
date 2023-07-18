@@ -293,6 +293,7 @@ MonoBehaviour:
   powerUps:
   - {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
   - {fileID: 4184716715260491479, guid: bd3fcf94cb21a2d47a33943e754bc9c1, type: 3}
+  - {fileID: 4184716715260491479, guid: dcd609f0e2e366a49b9f7a28e2c9fc7c, type: 3}
   dropPowerUpProbability: 10
 --- !u!1 &7956508384785316548
 GameObject:

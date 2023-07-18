@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6397991288720502951}
   - component: {fileID: 8147852576198401221}
   m_Layer: 0
-  m_Name: EnlargePowerUp
+  m_Name: CatchPowerUp
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627bf6d45fa517345937b3d98c1ce3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpColected: {fileID: 11400000, guid: e0542a89ad081e14bbb3498bc9b102a8, type: 2}
+  powerUpColected: {fileID: 11400000, guid: fb23d01b603f8704a905300c811dce12, type: 2}
 --- !u!1 &6029268137053385543
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 6029268137053385543}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5043482346963921869}
@@ -195,7 +195,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.17254902, g: 0.33259025, b: 0.85882354, a: 1}
+  m_Color: {r: 0.11098258, g: 0.8113208, b: 0.16002508, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

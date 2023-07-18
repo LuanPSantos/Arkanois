@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +10,7 @@ public class BallBehaviour : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    private bool canMove;
 
     void Awake()
     {
@@ -17,13 +19,17 @@ public class BallBehaviour : MonoBehaviour
 
     void Start()
     {
+        canMove = false;
         movement = Vector2.zero;
         transform.position = startPosition;
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        if (canMove)
+        {
+            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -43,7 +49,8 @@ public class BallBehaviour : MonoBehaviour
 
     public void OnGameStarted()
     {
-        movement = new Vector2(1, 1).normalized;
+        RandomMovement();
+        Move();
     }
 
     public void OnGameEnded()
@@ -56,10 +63,21 @@ public class BallBehaviour : MonoBehaviour
         movement = Vector2.zero;
     }
 
+    public void Move()
+    {
+        canMove = true;
+    }
+
+    public void Stop()
+    {
+        canMove = false;
+    }
+
     private void OnHitPaddle(Collision2D collision)
     {
-        float x = HitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
-        movement = new Vector2(x, 1).normalized;
+        var x = HitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
+        var up = 1;
+        movement = new Vector2(x, up).normalized;
     }
 
     private float HitFactor(Vector2 ballPos, Vector2 paddlePos, float paddleWidth)
@@ -73,5 +91,12 @@ public class BallBehaviour : MonoBehaviour
         {
             movement = Vector2.Reflect(movement, normal).normalized;
         }
+    }
+
+    private void RandomMovement()
+    {
+        var x = Random.Range(-0.8f, 0.8f);
+        var up = 1;
+        movement = new Vector2(x, up).normalized;
     }
 }

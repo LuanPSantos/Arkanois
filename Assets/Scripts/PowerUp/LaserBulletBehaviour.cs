@@ -14,6 +14,11 @@ public class LaserBulletBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        Destroy(gameObject, 1);
+    }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + Vector2.up * Time.fixedDeltaTime * speed);
@@ -23,7 +28,7 @@ public class LaserBulletBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Brick"))
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }
