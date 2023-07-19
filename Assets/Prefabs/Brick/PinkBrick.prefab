@@ -156,9 +156,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8207547, g: 0.58249795, b: 0.07355818, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -179,8 +179,12 @@ GameObject:
   - component: {fileID: 7956508384284696629}
   - component: {fileID: 7956508384284696628}
   - component: {fileID: 7956508384284696627}
+  - component: {fileID: 1900024038}
+  - component: {fileID: 10788442179122922}
+  - component: {fileID: 7417252015490632441}
+  - component: {fileID: 1785380036163855217}
   m_Layer: 0
-  m_Name: UnbreakableBrick
+  m_Name: PinkBrick
   m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +214,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7956508384284696626}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -274,6 +278,98 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &1900024038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85428c8733f7c64c9b6287848aaf637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onBrickBroke: {fileID: 11400000, guid: b9d821dc55983b242b34f9a344571465, type: 2}
+  brick: {fileID: 11400000, guid: c14935415141cb94ba03c2dd9c3d5876, type: 2}
+  graphics: {fileID: 7956508384785316548}
+--- !u!114 &10788442179122922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae58362161503264f9a97924e42fdd75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 4184716715260491479, guid: 37156ee1b75fcbd4a870d5805b2e1302, type: 3}
+  - {fileID: 4184716715260491479, guid: dcd609f0e2e366a49b9f7a28e2c9fc7c, type: 3}
+  - {fileID: 4184716715260491479, guid: 82c49a5d2c6e4264d966840e78fcd72c, type: 3}
+  - {fileID: 4184716715260491479, guid: bd3fcf94cb21a2d47a33943e754bc9c1, type: 3}
+  - {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
+  - {fileID: 4184716715260491479, guid: 17e7f4e1a218bff4f9241a8ac1bbff12, type: 3}
+  - {fileID: 4184716715260491479, guid: 5643a839a08750c47807704e08dce96f, type: 3}
+  dropPowerUpProbability: 5
+--- !u!114 &7417252015490632441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 3a05d6ffa88e6df4a80cf23539690cac, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 10788442179122922}
+        m_TargetAssemblyTypeName: PowerUpDropperBehaviour, Assembly-CSharp
+        m_MethodName: OnDisabelDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1785380036163855217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cc1a85d72c4f40949906bca7877b4df3, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 10788442179122922}
+        m_TargetAssemblyTypeName: PowerUpDropperBehaviour, Assembly-CSharp
+        m_MethodName: OnEnableDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7956508384785316548
 GameObject:
   m_ObjectHideFlags: 0

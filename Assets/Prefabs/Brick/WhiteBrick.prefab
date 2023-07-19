@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 7956508384001365713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7956508384785316549}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 7417252015490632441}
   - component: {fileID: 1785380036163855217}
   m_Layer: 0
-  m_Name: Brick
+  m_Name: WhiteBrick
   m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +276,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.4}
+  m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
 --- !u!114 &1900024038
 MonoBehaviour:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onBrickBroke: {fileID: 11400000, guid: b9d821dc55983b242b34f9a344571465, type: 2}
-  brick: {fileID: 0}
+  brick: {fileID: 11400000, guid: 7edb20dd067d36141a21bc858c66f255, type: 2}
   graphics: {fileID: 7956508384785316548}
 --- !u!114 &10788442179122922
 MonoBehaviour:
@@ -306,9 +306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUps:
-  - {fileID: 4184716715260491479, guid: 17e7f4e1a218bff4f9241a8ac1bbff12, type: 3}
   - {fileID: 4184716715260491479, guid: 37156ee1b75fcbd4a870d5805b2e1302, type: 3}
-  dropPowerUpProbability: 10
+  - {fileID: 4184716715260491479, guid: dcd609f0e2e366a49b9f7a28e2c9fc7c, type: 3}
+  - {fileID: 4184716715260491479, guid: 82c49a5d2c6e4264d966840e78fcd72c, type: 3}
+  - {fileID: 4184716715260491479, guid: bd3fcf94cb21a2d47a33943e754bc9c1, type: 3}
+  - {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
+  - {fileID: 4184716715260491479, guid: 17e7f4e1a218bff4f9241a8ac1bbff12, type: 3}
+  - {fileID: 4184716715260491479, guid: 5643a839a08750c47807704e08dce96f, type: 3}
+  dropPowerUpProbability: 5
 --- !u!114 &7417252015490632441
 MonoBehaviour:
   m_ObjectHideFlags: 0
