@@ -12,12 +12,14 @@ public class GameManagerScriptableObject : ScriptableObject
     private GameEvent gameLost;
     [SerializeField]
     private GameEvent gameEnded;
+    [SerializeField] 
+    private GameEvent gameRestarted;
     [SerializeField]
     private GameEvent disruptivePowerUpEnded;
     [SerializeField]
     private int ballsInGame;
     [SerializeField]
-    private int playerLives;
+    private int playerLifes;
 
     private PaddleControls controls;
 
@@ -34,6 +36,7 @@ public class GameManagerScriptableObject : ScriptableObject
 
     public void OnLevelLoaded()
     {
+        ballsInGame = 1;
         controls.GameStart.Start.Enable();
     }
 
@@ -45,10 +48,20 @@ public class GameManagerScriptableObject : ScriptableObject
     public void OnBallOutOffBaudaries()
     {
         ballsInGame--;
+
         if(ballsInGame == 0)
         {
-            gameLost.Raise();
-        } 
+            playerLifes--;
+            if (playerLifes > 0)
+            {
+                gameRestarted.Raise();
+            }
+            else
+            {
+                gameLost.Raise();
+            }
+        }
+        
         if(ballsInGame == 1)
         {
             disruptivePowerUpEnded.Raise();
@@ -58,6 +71,13 @@ public class GameManagerScriptableObject : ScriptableObject
     public void OnDisruption()
     {
         ballsInGame = 3;
+    }
+
+    public void IncreasePlayerLife()
+    {
+        playerLifes++;
+
+        Debug.Log("playerLifes " + playerLifes);
     }
 
     public void StartGame(InputAction.CallbackContext context)

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,26 +6,25 @@ public class BricksManager : MonoBehaviour
 {
     public GameEvent onAllBricksBroke;
 
-    private int amoutActivedBricks = 0;
-    private BrickBehaviour[] bricks;
+    private Queue<int> activeBricks = new Queue<int>();
 
     void Awake()
     {
-        bricks = GetComponentsInChildren<BrickBehaviour>();
+        var bricks = GetComponentsInChildren<BrickBehaviour>();
 
         for (int i = 0; i < bricks.Length; i++)
         {
             if (bricks[i].enabled)
             {
-                amoutActivedBricks++;
+                activeBricks.Enqueue(i);
             }
         }
     }
     public void OnBrickBroke()
     {
-        amoutActivedBricks--;
+        activeBricks.Dequeue();
 
-        if (amoutActivedBricks == 0)
+        if (activeBricks.Count == 0)
         {
             onAllBricksBroke.Raise();
         }
