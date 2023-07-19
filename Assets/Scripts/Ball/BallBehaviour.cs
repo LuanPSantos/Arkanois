@@ -4,9 +4,12 @@ using UnityEngine.Events;
 
 public class BallBehaviour : MonoBehaviour
 {
-    public float speed;
-    public GameEvent BallOutOfMap;
-    public Vector2 startPosition; //TODO Move to another class
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private GameEvent BallOutOfMap;
+    [SerializeField]
+    private Vector2 startPosition; //TODO Move to another class
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -15,13 +18,6 @@ public class BallBehaviour : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Start()
-    {
-        canMove = false;
-        movement = Vector2.zero;
-        transform.position = startPosition;
     }
 
     void FixedUpdate()
@@ -49,6 +45,9 @@ public class BallBehaviour : MonoBehaviour
 
     public void OnGameStarted()
     {
+        transform.position = startPosition;
+        canMove = false;
+        movement = Vector2.zero;
         RandomMovement();
         Move();
     }
@@ -68,9 +67,30 @@ public class BallBehaviour : MonoBehaviour
         canMove = true;
     }
 
+    public Vector2 GetMovement()
+    {
+        return movement;
+    }
+
+    public void Move(Vector3 movement)
+    {
+        canMove = true;
+        this.movement = movement;
+    }
+
     public void Stop()
     {
         canMove = false;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        this.speed = speed;
+    }
+
+    public float GetSpeed()
+    {
+        return speed;
     }
 
     private void OnHitPaddle(Collision2D collision)

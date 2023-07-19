@@ -10,11 +10,8 @@ public class BrickBehaviour : MonoBehaviour
     private BrickScriptableObject brick;
     [SerializeField]
     private GameObject graphics;
-    [SerializeField]
-    private List<GameObject> powerUps;
-    [SerializeField]
-    private int dropPowerUpProbability;
-
+    
+    private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
 
@@ -22,6 +19,7 @@ public class BrickBehaviour : MonoBehaviour
 
     void Awake()
     {
+        powerUp = GetComponent<PowerUpDropperBehaviour>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         boxCollider = GetComponentInChildren<BoxCollider2D>();
     }
@@ -48,22 +46,10 @@ public class BrickBehaviour : MonoBehaviour
             if (hitCount >= brick.resistence)
             {
                 onBrickBroke.Raise();
-
+                powerUp.DropPowerUp();
                 boxCollider.enabled = false;
                 graphics.SetActive(false);
-
-                DropPowerUp();
             }
-        }
-    }
-
-    private void DropPowerUp()
-    {
-        var random = Random.Range(0, 100);
-       
-        if(random % 5 == 0)
-        {
-            Instantiate(powerUps[Random.Range(0, powerUps.Count)], transform.position, Quaternion.identity, null);
         }
     }
 }

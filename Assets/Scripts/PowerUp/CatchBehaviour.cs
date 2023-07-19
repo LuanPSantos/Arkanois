@@ -50,6 +50,7 @@ public class CatchBehaviour : MonoBehaviour
     public void OnCatchDisabled()
     {
         isActive = false;
+        ball.transform.parent = null;
         actionInput.performed -= OnInputAction;
         actionInput.Disable();
         ball.Move();
