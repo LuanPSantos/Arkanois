@@ -24,7 +24,7 @@ public class PowerUpMovement : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Paddle") || collision.gameObject.CompareTag("WallBottom"))
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

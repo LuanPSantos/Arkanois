@@ -9,6 +9,7 @@ public class LaserBehaviour : MonoBehaviour
     private Transform rightWeapon;
     [SerializeField]
     private Transform leftWeapon;
+
     private InputAction actionInput;
     private PaddleControls controls;
 
@@ -17,15 +18,24 @@ public class LaserBehaviour : MonoBehaviour
         controls = new PaddleControls();
         actionInput = controls.Gameplay.Action;
     }
-    public void OnLaserEnabled()
+
+    void OnEnable()
     {
         actionInput.performed += OnInputAction;
+    }
+
+    void OnDisable()
+    {
+        actionInput.performed -= OnInputAction;
+    }
+
+    public void OnLaserEnabled()
+    {
         actionInput.Enable();
     }
 
     public void OnLaserDisabled()
     {
-        actionInput.performed -= OnInputAction;
         actionInput.Disable();
     }
 

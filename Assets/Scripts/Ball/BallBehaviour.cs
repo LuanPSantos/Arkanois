@@ -4,20 +4,29 @@ using UnityEngine.Events;
 
 public class BallBehaviour : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private GameEvent BallOutOfMap;
-    [SerializeField]
-    private Vector2 startPosition; //TODO Move to another class
+    public float speed;
+    public Vector2 movement
+    {
+        private set;
+        get;
+    }
+    public Vector2 startPosition
+    {
+        private set;
+        get;
+    }
 
+    [SerializeField]
+    private GameEvent BallOutOfBounderies;
+    
     private Rigidbody2D rb;
-    private Vector2 movement;
     private bool canMove;
+    
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        startPosition = transform.position;
     }
 
     void FixedUpdate()
@@ -36,20 +45,18 @@ public class BallBehaviour : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("WallBottom"))
         {
-            BallOutOfMap.Raise();
+            BallOutOfBounderies.Raise();
         }
-
-        ReflectFor("Wall", collision, collision.contacts[0].normal);
-        ReflectFor("Brick", collision, collision.contacts[0].normal);
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Brick"))
+        {
+            Reflect(collision.contacts[0].normal);
+        }
     }
 
     public void OnGameStarted()
     {
-        transform.position = startPosition;
-        canMove = false;
-        movement = Vector2.zero;
+        ResetPosition();
         RandomMovement();
-        Move();
     }
 
     public void OnGameEnded()
@@ -62,20 +69,20 @@ public class BallBehaviour : MonoBehaviour
         movement = Vector2.zero;
     }
 
-    public void Move()
+    private void ResetPosition()
     {
-        canMove = true;
-    }
-
-    public Vector2 GetMovement()
-    {
-        return movement;
+        transform.position = startPosition;
     }
 
     public void Move(Vector3 movement)
     {
-        canMove = true;
         this.movement = movement;
+        Move();
+    }
+
+    public void Move()
+    {
+        canMove = true;
     }
 
     public void Stop()
@@ -83,34 +90,21 @@ public class BallBehaviour : MonoBehaviour
         canMove = false;
     }
 
-    public void SetSpeed(float speed)
-    {
-        this.speed = speed;
-    }
-
-    public float GetSpeed()
-    {
-        return speed;
-    }
-
     private void OnHitPaddle(Collision2D collision)
     {
-        var x = HitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.x);
+        movement = ReflectOnPaddle(transform.position, collision.transform.position, collision.collider.bounds.size.x);
+    }
+
+    private Vector2 ReflectOnPaddle(Vector2 ballPosition, Vector2 paddlePosition, float paddleWidth)
+    {
+        var x = (ballPosition.x - paddlePosition.x) / paddleWidth;
         var up = 1;
-        movement = new Vector2(x, up).normalized;
+        return new Vector2(x, up).normalized;
     }
 
-    private float HitFactor(Vector2 ballPos, Vector2 paddlePos, float paddleWidth)
+    private void Reflect(Vector2 normal)
     {
-        return (ballPos.x - paddlePos.x) / paddleWidth;
-    }
-
-    private void ReflectFor(string tag, Collision2D collision, Vector2 normal)
-    {
-        if (collision.gameObject.CompareTag(tag))
-        {
-            movement = Vector2.Reflect(movement, normal).normalized;
-        }
+        movement = Vector2.Reflect(movement, normal).normalized;
     }
 
     private void RandomMovement()
@@ -118,5 +112,7 @@ public class BallBehaviour : MonoBehaviour
         var x = Random.Range(-0.8f, 0.8f);
         var up = 1;
         movement = new Vector2(x, up).normalized;
+
+        Move();
     }
 }

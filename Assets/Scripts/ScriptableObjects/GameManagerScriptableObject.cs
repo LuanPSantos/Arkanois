@@ -15,29 +15,31 @@ public class GameManagerScriptableObject : ScriptableObject
     [SerializeField] 
     private GameEvent gameRestarted;
     [SerializeField]
-    private GameEvent disruptivePowerUpEnded;
-    [SerializeField]
-    private int ballsInGame;
+    private GameEvent disruptionPowerUpEnded;
     [SerializeField]
     private int playerLifes;
 
     private PaddleControls controls;
+    private InputAction actionInput;
+    private int ballsInGame;
 
     void OnEnable()
     {
         controls = new PaddleControls();
-        controls.GameStart.Start.performed += StartGame;
+        actionInput = controls.GameStart.Start;
+
+        actionInput.performed += StartGame;
     }
 
     void OnDisable()
     {
-        controls.GameStart.Start.performed -= StartGame;
+        actionInput.performed -= StartGame;
     }
 
     public void OnLevelLoaded()
     {
         ballsInGame = 1;
-        controls.GameStart.Start.Enable();
+        actionInput.Enable();
     }
 
     public void OnAllBricksBroke()
@@ -49,7 +51,29 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         ballsInGame--;
 
-        if(ballsInGame == 0)
+        CheckGameOver();
+        CheckDisruptionOver();
+    }
+
+    public void OnDisruption()
+    {
+        ballsInGame = 3;
+    }
+
+    public void IncreasePlayerLife()
+    {
+        playerLifes++;
+    }
+
+    public void StartGame(InputAction.CallbackContext context)
+    {
+        actionInput.Disable();
+        gameStarted.Raise();
+    }
+
+    private void CheckGameOver()
+    {
+        if (ballsInGame == 0)
         {
             playerLifes--;
             if (playerLifes > 0)
@@ -61,28 +85,13 @@ public class GameManagerScriptableObject : ScriptableObject
                 gameLost.Raise();
             }
         }
-        
-        if(ballsInGame == 1)
+    }
+
+    private void CheckDisruptionOver()
+    {
+        if (ballsInGame == 1)
         {
-            disruptivePowerUpEnded.Raise();
+            disruptionPowerUpEnded.Raise();
         }
-    }
-
-    public void OnDisruption()
-    {
-        ballsInGame = 3;
-    }
-
-    public void IncreasePlayerLife()
-    {
-        playerLifes++;
-
-        Debug.Log("playerLifes " + playerLifes);
-    }
-
-    public void StartGame(InputAction.CallbackContext context)
-    {
-        controls.GameStart.Start.Disable();
-        gameStarted.Raise();
     }
 }

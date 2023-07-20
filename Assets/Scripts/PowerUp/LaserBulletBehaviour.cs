@@ -7,7 +7,9 @@ public class LaserBulletBehaviour : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+
     private Rigidbody2D rb;
+    private int timeToLive = 1;
 
     void Awake()
     {
@@ -16,7 +18,7 @@ public class LaserBulletBehaviour : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 1);
+        Destroy(gameObject, timeToLive);
     }
 
     void FixedUpdate()

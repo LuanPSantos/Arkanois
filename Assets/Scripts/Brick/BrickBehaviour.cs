@@ -13,7 +13,6 @@ public class BrickBehaviour : MonoBehaviour
     
     private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
-    private BoxCollider2D boxCollider;
 
     private int hitCount = 0;
 
@@ -21,21 +20,12 @@ public class BrickBehaviour : MonoBehaviour
     {
         powerUp = GetComponent<PowerUpDropperBehaviour>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        boxCollider = GetComponentInChildren<BoxCollider2D>();
+        spriteRenderer.color = brick.color;
     }
 
     void Start()
     {
-        spriteRenderer.color = brick.color;
-
         ResetBrick();
-    }
-
-    private void ResetBrick()
-    {
-        boxCollider.enabled = true;
-        graphics.SetActive(true);
-        hitCount = 0;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -47,9 +37,13 @@ public class BrickBehaviour : MonoBehaviour
             {
                 onBrickBroke.Raise();
                 powerUp.DropPowerUp();
-                boxCollider.enabled = false;
                 graphics.SetActive(false);
             }
         }
+    }
+    private void ResetBrick()
+    {
+        graphics.SetActive(true);
+        hitCount = 0;
     }
 }

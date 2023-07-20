@@ -8,19 +8,15 @@ public class BreakBehaviour : MonoBehaviour
     private GameEvent levelBreaked;
     [SerializeField]
     private GameObject graphics;
-    private BoxCollider2D boxCollider;
     
 
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
-        boxCollider.enabled = false;
         graphics.SetActive(false);
     }
 
     public void OnBreakEnabled()
     {
-        boxCollider.enabled = true;
         graphics.SetActive(true);
     }
 

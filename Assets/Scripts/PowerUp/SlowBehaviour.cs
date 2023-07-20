@@ -7,25 +7,25 @@ public class SlowBehaviour : MonoBehaviour
     [SerializeField]
     private float slowFactor;
 
-    private BallBehaviour ballBehaviour;
+    private BallBehaviour ball;
     private float originalSpeed;
     private float currentSpeed;
 
     void Awake()
     {
-        ballBehaviour = GetComponent<BallBehaviour>();
-        originalSpeed = ballBehaviour.GetSpeed();
-        currentSpeed = ballBehaviour.GetSpeed();
+        ball = GetComponent<BallBehaviour>();
+        originalSpeed = ball.speed;
+        currentSpeed = ball.speed;
     }
 
     public void OnSlowEnabled()
     {
-        ballBehaviour.SetSpeed(slowFactor * currentSpeed);
-        currentSpeed = ballBehaviour.GetSpeed();
+        currentSpeed = slowFactor * currentSpeed;
+        ball.speed = currentSpeed;
     }
 
     public void OnSlowDisabled()
     {
-        ballBehaviour.SetSpeed(originalSpeed);
+        ball.speed = originalSpeed;
     }
 }

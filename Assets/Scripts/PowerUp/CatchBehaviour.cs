@@ -13,7 +13,6 @@ public class CatchBehaviour : MonoBehaviour
     private PaddleControls controls;
     private bool isActive;
     private bool isHoldingBall;
-    private float yPaddle = -3.75f;
     private float timer = 0;
 
 
@@ -40,38 +39,60 @@ public class CatchBehaviour : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        actionInput.performed += OnInputAction;
+    }
+
+    void OnDisable()
+    {
+        actionInput.performed -= OnInputAction;
+    }
+
     public void OnCatchEnabled()
     {
-        isActive = true;
-        actionInput.performed += OnInputAction;
         actionInput.Enable();
+
+        isActive = true;
     }
 
     public void OnCatchDisabled()
     {
-        isActive = false;
-        ball.transform.parent = null;
-        actionInput.performed -= OnInputAction;
         actionInput.Disable();
-        ball.Move();
+        
+        isActive = false;
+
+        ReleaseBall();
     }
 
     public void OnInputAction(InputAction.CallbackContext context)
     {
-        ball.Move();
-        ball.transform.parent = null;
-        isHoldingBall = false;
-        timer = 0;
+        ReleaseBall();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Paddle") && isActive)
         {
-            isHoldingBall = true;
-            ball.Stop();
-            ball.transform.parent = collision.gameObject.transform;
-            ball.transform.position = new Vector2(ball.transform.position.x, yPaddle);
+            CatchBall(collision.gameObject.transform);
         }
+    }
+
+    private void ReleaseBall()
+    {
+        ball.transform.parent = null;
+        ball.Move();
+
+        isHoldingBall = false;
+        timer = 0;
+    }
+
+    private void CatchBall(Transform parent)
+    {
+        ball.transform.parent = parent;
+        ball.transform.position = new Vector2(ball.transform.position.x, ball.startPosition.y);
+        ball.Stop();
+
+        isHoldingBall = true;
     }
 }

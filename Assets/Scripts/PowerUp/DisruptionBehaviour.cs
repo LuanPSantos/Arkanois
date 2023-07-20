@@ -6,6 +6,8 @@ public class DisruptionBehaviour : MonoBehaviour
 {
     [SerializeField]
     private GameObject ballPrefab;
+    [SerializeField]
+    private float angleInDegree = 15;
 
     private BallBehaviour ball;
 
@@ -16,13 +18,17 @@ public class DisruptionBehaviour : MonoBehaviour
 
     public void OnDisruptionEnabled()
     {
-        Debug.Log("rb.velocity " + ball.GetMovement());
-        var secondBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
-        var movement = Quaternion.Euler(new Vector3(0, 0, 15)) * ball.GetMovement();
-        secondBall.GetComponent<BallBehaviour>().Move(movement.normalized);
+        InstantiateBallMovingByAngle(angleInDegree);
 
-        var thirdBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
-        movement = Quaternion.Euler(new Vector3(0, 0, -15)) * ball.GetMovement();
-        thirdBall.GetComponent<BallBehaviour>().Move(movement.normalized);
+        InstantiateBallMovingByAngle(-angleInDegree);
+    }
+
+    private void InstantiateBallMovingByAngle(float angle)
+    {
+        var newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        
+        var movement = (Quaternion.Euler(new Vector3(0, 0, angle)) * ball.movement).normalized;
+        
+        newBall.GetComponent<BallBehaviour>().Move(movement);
     }
 }
