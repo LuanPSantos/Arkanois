@@ -30,20 +30,26 @@ public class BrickBehaviour : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
-            hitCount++;
-            if (hitCount >= brick.resistence)
-            {
-                onBrickBroke.Raise();
-                powerUp.DropPowerUp();
-                graphics.SetActive(false);
-            }
+            HitBrick();
         }
     }
+
+    public void HitBrick()
+    {
+        hitCount++;
+        if (hitCount >= brick.resistence)
+        {
+            onBrickBroke.Raise();
+            powerUp.DropPowerUp();
+            graphics.SetActive(false);
+        }
+    }
+
     private void ResetBrick()
     {
         graphics.SetActive(true);
         hitCount = 0;
-    }
+    }    
 }

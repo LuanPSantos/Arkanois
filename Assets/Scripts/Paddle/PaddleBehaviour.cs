@@ -5,7 +5,8 @@ public class PaddleBehaviour : MonoBehaviour
     public Vector2 startPosition;
     void Start()
     {
-        transform.position = startPosition;
+        //TODO test
+        //transform.position = startPosition;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -47,9 +47,19 @@ public class BallBehaviour : MonoBehaviour
         {
             BallOutOfBounderies.Raise();
         }
-        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Brick"))
+        if (collision.gameObject.CompareTag("Brick"))
+        {
+            collision.gameObject.GetComponent<BrickBehaviour>().HitBrick();
+            Reflect(collision.contacts[0].normal);
+        }
+        if (collision.gameObject.CompareTag("Wall"))
         {
             Reflect(collision.contacts[0].normal);
+        }
+
+        if (canMove)
+        {
+            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
         }
     }
 
@@ -112,6 +122,8 @@ public class BallBehaviour : MonoBehaviour
         var x = Random.Range(-0.8f, 0.8f);
         var up = 1;
         movement = new Vector2(x, up).normalized;
+        // TODO test
+        movement = new Vector2(1, -1).normalized;
 
         Move();
     }
