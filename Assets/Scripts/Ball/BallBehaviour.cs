@@ -18,23 +18,52 @@ public class BallBehaviour : MonoBehaviour
 
     [SerializeField]
     private GameEvent BallOutOfBounderies;
-    
-    private Rigidbody2D rb;
+    [SerializeField]
+    private float fieldMinimumX = -6.3f;
+    [SerializeField]
+    private float fieldMaximumX = 3.3f;
+    [SerializeField]
+    private float fieldMaximumY = 4.4f;
+    [SerializeField]
+    private float fieldMinimumY = -5.4f;
+
+
+    public CircleCollider2D circleCollider
+    {
+        private set;
+        get;
+    }
     private bool canMove;
     
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        circleCollider = GetComponent<CircleCollider2D>();
         startPosition = transform.position;
     }
 
-    void FixedUpdate()
+    void Update()
     {
+        if ((movement.x > 0f && transform.position.x > fieldMaximumX) ||
+            (movement.x < 0f && transform.position.x < fieldMinimumX))
+        {
+            movement = new Vector2(-movement.x, movement.y) ;
+        }
+
+        if (movement.y > 0f && transform.position.y > fieldMaximumY + 0.1f)
+        {
+            movement = new Vector2(movement.x, -movement.y);
+        }
+
+        if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
+        {
+            BallOutOfBounderies.Raise();
+        }
+
         if (canMove)
         {
-            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-        }
+            transform.Translate(movement * speed * Time.deltaTime);
+        } 
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -42,24 +71,6 @@ public class BallBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Paddle"))
         {
             OnHitPaddle(collision);
-        }
-        if (collision.gameObject.CompareTag("WallBottom"))
-        {
-            BallOutOfBounderies.Raise();
-        }
-        if (collision.gameObject.CompareTag("Brick"))
-        {
-            collision.gameObject.GetComponent<BrickBehaviour>().HitBrick();
-            Reflect(collision.contacts[0].normal);
-        }
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            Reflect(collision.contacts[0].normal);
-        }
-
-        if (canMove)
-        {
-            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
         }
     }
 
@@ -112,18 +123,11 @@ public class BallBehaviour : MonoBehaviour
         return new Vector2(x, up).normalized;
     }
 
-    private void Reflect(Vector2 normal)
-    {
-        movement = Vector2.Reflect(movement, normal).normalized;
-    }
-
     private void RandomMovement()
     {
         var x = Random.Range(-0.8f, 0.8f);
         var up = 1;
         movement = new Vector2(x, up).normalized;
-        // TODO test
-        movement = new Vector2(1, -1).normalized;
 
         Move();
     }

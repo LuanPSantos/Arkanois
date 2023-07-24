@@ -27,5 +27,6 @@ public class SlowBehaviour : MonoBehaviour
     public void OnSlowDisabled()
     {
         ball.speed = originalSpeed;
+        currentSpeed = originalSpeed;
     }
 }

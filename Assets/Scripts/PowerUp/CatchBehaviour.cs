@@ -11,9 +11,11 @@ public class CatchBehaviour : MonoBehaviour
     private BallBehaviour ball;
     private InputAction actionInput; // TODO reapoveitar codigo
     private PaddleControls controls;
+    private GameObject paddle;
     private bool isActive;
     private bool isHoldingBall;
     private float timer = 0;
+    private float xOffset = 0;
 
 
     void Awake()
@@ -36,6 +38,8 @@ public class CatchBehaviour : MonoBehaviour
 
                 ball.Move();
             }
+
+            ball.transform.position = new Vector2(paddle.transform.position.x + xOffset, ball.startPosition.y);
         }
     }
 
@@ -74,23 +78,26 @@ public class CatchBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Paddle") && isActive)
         {
-            CatchBall(collision.gameObject.transform);
+            paddle = collision.gameObject;
+            CatchBall(paddle);
         }
     }
 
     private void ReleaseBall()
     {
-        ball.transform.parent = null;
+
         ball.Move();
 
         isHoldingBall = false;
         timer = 0;
     }
 
-    private void CatchBall(Transform parent)
+    private void CatchBall(GameObject paddle)
     {
-        ball.transform.parent = parent;
+        xOffset = transform.position.x - paddle.transform.position.x;
+
         ball.transform.position = new Vector2(ball.transform.position.x, ball.startPosition.y);
+
         ball.Stop();
 
         isHoldingBall = true;
