@@ -25,7 +25,7 @@ public class DisruptionBehaviour : MonoBehaviour
 
     private void InstantiateBallMovingByAngle(float angle)
     {
-        var newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        var newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity, ball.transform.parent);
         
         var movement = (Quaternion.Euler(new Vector3(0, 0, angle)) * ball.movement).normalized;
         

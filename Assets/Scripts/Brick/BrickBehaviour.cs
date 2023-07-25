@@ -12,8 +12,9 @@ public class BrickBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject graphics;
     [SerializeField]
-    private BallBehaviour ball;
-    
+    private GameObject ballConext;
+
+    private BallBehaviour[] balls;
     private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
@@ -28,6 +29,8 @@ public class BrickBehaviour : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer.color = brick.color;
+
+        balls = ballConext.GetComponentsInChildren<BallBehaviour>();
     }
 
     void Start()
@@ -39,15 +42,33 @@ public class BrickBehaviour : MonoBehaviour
     {
         if(!isBroken)
         {
-            if(CheckCollision())
+            foreach(BallBehaviour ball in balls)
             {
-                HitBall();
+                if (CheckCollision(ball))
+                {
+                    HitBall(ball);
+                }
             }
+            
         }
     }
 
-    private bool CheckCollision()
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            HitBrick();
+        }
+    }
+
+    public void OnDisruption()
+    {
+        balls = ballConext.GetComponentsInChildren<BallBehaviour>();
+    }
+
+    private bool CheckCollision(BallBehaviour ball)
+    {
+        Debug.Log("CheckCollision " + ball.name);
         var distance = new Vector2(
             Mathf.Abs(ball.transform.position.x - transform.position.x),
             Mathf.Abs(ball.transform.position.y - transform.position.y)
@@ -64,22 +85,22 @@ public class BrickBehaviour : MonoBehaviour
         {
             return false;
         }
-        if (distance.x <= halfWidth) 
+        if (distance.x <= halfWidth)
         {
             return true;
         }
-        if (distance.y <= halfHight) 
+        if (distance.y <= halfHight)
         {
             return true;
         }
 
         var cornerDistanceSquared = Mathf.Pow(distance.x - halfWidth, 2) + Mathf.Pow(distance.y - halfHight, 2);
 
-        return cornerDistanceSquared <= Mathf.Pow(ball.circleCollider.radius, 2); ;
+        return cornerDistanceSquared <= Mathf.Pow(ball.circleCollider.radius, 2);
+
     }
 
-
-    void HitBall()
+    private void HitBall(BallBehaviour ball)
     {
         var delta = (ball.transform.position - transform.position);
         // apply aspect ratio via the scaleFactor vector
@@ -108,15 +129,7 @@ public class BrickBehaviour : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            HitBrick();
-        }
-    }
-
-    public void HitBrick()
+    private void HitBrick()
     {
         hitCount++;
         if (hitCount >= brick.resistence)

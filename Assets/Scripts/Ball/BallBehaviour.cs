@@ -38,6 +38,7 @@ public class BallBehaviour : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Awake");
         circleCollider = GetComponent<CircleCollider2D>();
         startPosition = transform.position;
     }
