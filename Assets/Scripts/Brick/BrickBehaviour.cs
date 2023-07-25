@@ -68,7 +68,6 @@ public class BrickBehaviour : MonoBehaviour
 
     private bool CheckCollision(BallBehaviour ball)
     {
-        Debug.Log("CheckCollision " + ball.name);
         var distance = new Vector2(
             Mathf.Abs(ball.transform.position.x - transform.position.x),
             Mathf.Abs(ball.transform.position.y - transform.position.y)

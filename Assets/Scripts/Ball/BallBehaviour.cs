@@ -38,31 +38,31 @@ public class BallBehaviour : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Awake");
         circleCollider = GetComponent<CircleCollider2D>();
         startPosition = transform.position;
     }
 
     void Update()
     {
-        if ((movement.x > 0f && transform.position.x > fieldMaximumX) ||
-            (movement.x < 0f && transform.position.x < fieldMinimumX))
-        {
-            movement = new Vector2(-movement.x, movement.y) ;
-        }
-
-        if (movement.y > 0f && transform.position.y > fieldMaximumY + 0.1f)
-        {
-            movement = new Vector2(movement.x, -movement.y);
-        }
-
-        if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
-        {
-            BallOutOfBounderies.Raise();
-        }
-
         if (canMove)
         {
+            if ((movement.x > 0f && transform.position.x > fieldMaximumX) ||
+                (movement.x < 0f && transform.position.x < fieldMinimumX))
+            {
+                movement = new Vector2(-movement.x, movement.y) ;
+            }
+
+            if (movement.y > 0f && transform.position.y > fieldMaximumY + 0.1f)
+            {
+                movement = new Vector2(movement.x, -movement.y);
+            }
+
+            if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
+            {
+                BallOutOfBounderies.Raise();
+            }
+
+        
             transform.Translate(movement * speed * Time.deltaTime);
         } 
     }

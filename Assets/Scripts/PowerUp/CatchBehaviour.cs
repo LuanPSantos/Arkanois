@@ -30,16 +30,16 @@ public class CatchBehaviour : MonoBehaviour
     {
         if(isActive && isHoldingBall)
         {
+            ball.transform.position = new Vector2(paddle.transform.position.x + xOffset, ball.startPosition.y);
+
             timer += Time.deltaTime;
 
             if(timer > timeToReleaseBall)
             {
                 timer = 0;
 
-                ball.Move();
+                ReleaseBall();
             }
-
-            ball.transform.position = new Vector2(paddle.transform.position.x + xOffset, ball.startPosition.y);
         }
     }
 
@@ -90,6 +90,8 @@ public class CatchBehaviour : MonoBehaviour
 
         isHoldingBall = false;
         timer = 0;
+
+        Debug.Log("ReleaseBall isActive = " + isActive + " isHoldingBall " + isHoldingBall);
     }
 
     private void CatchBall(GameObject paddle)
@@ -99,7 +101,9 @@ public class CatchBehaviour : MonoBehaviour
         ball.transform.position = new Vector2(ball.transform.position.x, ball.startPosition.y);
 
         ball.Stop();
-
+        
         isHoldingBall = true;
+
+        Debug.Log("CatchBall isActive = " + isActive + " isHoldingBall " + isHoldingBall);
     }
 }
