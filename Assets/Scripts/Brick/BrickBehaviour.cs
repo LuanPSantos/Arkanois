@@ -66,6 +66,11 @@ public class BrickBehaviour : MonoBehaviour
         GetBall();
     }
 
+    public void OnBallAllOfBoundaries()
+    {
+        GetBall();
+    }
+
     private void GetBall()
     {
         balls = ballConext.GetComponentsInChildren<BallBehaviour>();

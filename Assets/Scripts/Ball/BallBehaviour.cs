@@ -60,6 +60,7 @@ public class BallBehaviour : MonoBehaviour
             if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
             {
                 canMove = false;
+                transform.parent = null;
                 BallOutOfBounderies.Raise();
                 Destroy(gameObject);
             }

@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 7417252015490632441}
   - component: {fileID: 1785380036163855217}
   - component: {fileID: 7996640839363405831}
+  - component: {fileID: -7182988831902404453}
   m_Layer: 0
   m_Name: RedBrick
   m_TagString: Brick
@@ -403,6 +404,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1900024038}
         m_TargetAssemblyTypeName: BrickBehaviour, Assembly-CSharp
         m_MethodName: OnDisruption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-7182988831902404453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0740e93692425f346abd4ca1d4e8e64a, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1900024038}
+        m_TargetAssemblyTypeName: BrickBehaviour, Assembly-CSharp
+        m_MethodName: OnBallAllOfBoundaries
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
