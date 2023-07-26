@@ -17,4 +17,5 @@ MonoBehaviour:
   gameEnded: {fileID: 11400000, guid: 9710c08332bed4c4daf7e8949b2e0588, type: 2}
   gameRestarted: {fileID: 11400000, guid: 9fe162c80637c474393c2d79b69aae89, type: 2}
   disruptionPowerUpEnded: {fileID: 11400000, guid: cc1a85d72c4f40949906bca7877b4df3, type: 2}
-  playerLifes: 5
+  playerLifes: -5
+  ballsInGame: 1

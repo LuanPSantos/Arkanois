@@ -21,7 +21,7 @@ public class GameManagerScriptableObject : ScriptableObject
 
     private PaddleControls controls;
     private InputAction actionInput;
-    private int ballsInGame;
+    public int ballsInGame;
 
     void OnEnable()
     {
@@ -51,13 +51,14 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         ballsInGame--;
 
-        //CheckGameOver();
+        CheckGameOver();
         CheckDisruptionOver();
     }
 
     public void OnDisruption()
     {
         ballsInGame = 3;
+        Debug.Log("ballsInGame " + ballsInGame);
     }
 
     public void IncreasePlayerLife()

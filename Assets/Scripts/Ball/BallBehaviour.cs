@@ -49,7 +49,7 @@ public class BallBehaviour : MonoBehaviour
             if ((movement.x > 0f && transform.position.x > fieldMaximumX) ||
                 (movement.x < 0f && transform.position.x < fieldMinimumX))
             {
-                movement = new Vector2(-movement.x, movement.y) ;
+                movement = new Vector2(-movement.x, movement.y);
             }
 
             if (movement.y > 0f && transform.position.y > fieldMaximumY + 0.1f)
@@ -59,9 +59,10 @@ public class BallBehaviour : MonoBehaviour
 
             if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
             {
+                canMove = false;
                 BallOutOfBounderies.Raise();
+                Destroy(gameObject);
             }
-
         
             transform.Translate(movement * speed * Time.deltaTime);
         } 

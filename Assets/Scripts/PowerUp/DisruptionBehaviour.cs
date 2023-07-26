@@ -8,6 +8,8 @@ public class DisruptionBehaviour : MonoBehaviour
     private GameObject ballPrefab;
     [SerializeField]
     private float angleInDegree = 15;
+    [SerializeField]
+    private GameEvent disruptionCompleted;
 
     private BallBehaviour ball;
 
@@ -21,6 +23,8 @@ public class DisruptionBehaviour : MonoBehaviour
         InstantiateBallMovingByAngle(angleInDegree);
 
         InstantiateBallMovingByAngle(-angleInDegree);
+
+        disruptionCompleted.Raise();
     }
 
     private void InstantiateBallMovingByAngle(float angle)
