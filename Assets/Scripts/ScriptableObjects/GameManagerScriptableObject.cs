@@ -51,7 +51,7 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         ballsInGame--;
 
-        CheckGameOver();
+        //CheckGameOver();
         CheckDisruptionOver();
     }
 

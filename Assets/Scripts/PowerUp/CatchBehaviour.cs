@@ -90,8 +90,6 @@ public class CatchBehaviour : MonoBehaviour
 
         isHoldingBall = false;
         timer = 0;
-
-        Debug.Log("ReleaseBall isActive = " + isActive + " isHoldingBall " + isHoldingBall);
     }
 
     private void CatchBall(GameObject paddle)

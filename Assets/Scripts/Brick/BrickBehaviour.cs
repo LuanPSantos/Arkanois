@@ -11,8 +11,8 @@ public class BrickBehaviour : MonoBehaviour
     private BrickScriptableObject brick;
     [SerializeField]
     private GameObject graphics;
-    [SerializeField]
-    private GameObject ballConext;
+    
+    public GameObject ballConext;
 
     private BallBehaviour[] balls;
     private PowerUpDropperBehaviour powerUp;
@@ -42,7 +42,7 @@ public class BrickBehaviour : MonoBehaviour
     {
         if(!isBroken)
         {
-            foreach(BallBehaviour ball in balls)
+            foreach (BallBehaviour ball in balls)
             {
                 if (CheckCollision(ball))
                 {
@@ -62,6 +62,11 @@ public class BrickBehaviour : MonoBehaviour
     }
 
     public void OnDisruption()
+    {
+        GetBall();
+    }
+
+    private void GetBall()
     {
         balls = ballConext.GetComponentsInChildren<BallBehaviour>();
     }
