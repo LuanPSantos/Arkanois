@@ -5,19 +5,26 @@ using UnityEngine.InputSystem;
 public class PaddleMovement : MonoBehaviour
 {
 
-    public float speed;
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private float fieldMinimumX;
+    [SerializeField] 
+    private float fieldMaximumX;
 
-    private Rigidbody2D rb;
     private InputAction movementInput;
 
     private PaddleControls controls;
     private Vector2 movement;
+    private BoxCollider2D boxCollider;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
         controls = new PaddleControls();
         movementInput = controls.Gameplay.Movement;
+        boxCollider = GetComponent<BoxCollider2D>();
+
+        
     }
 
     void Start()
@@ -27,20 +34,16 @@ public class PaddleMovement : MonoBehaviour
 
     private void Update()
     {
-        movement = movementInput.ReadValue<Vector2>();
-        if(movement == Vector2.zero)
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        }
-        else
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-        }
-    }
 
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        movement = movementInput.ReadValue<Vector2>();
+        var halfPaddleSize = boxCollider.bounds.size.x / 2;
+        if (movement.x > 0f && transform.position.x > fieldMaximumX - halfPaddleSize ||
+            movement.x < 0f && transform.position.x < fieldMinimumX + halfPaddleSize) 
+        {
+            movement = Vector2.zero;
+        }
+
+        transform.Translate(movement * speed * Time.deltaTime);
     }
         
     void OnCollisionEnter2D(Collision2D collision)

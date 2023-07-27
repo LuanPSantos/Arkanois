@@ -10,12 +10,9 @@ public class BallBehaviour : MonoBehaviour
         private set;
         get;
     }
-    public Vector2 startPosition
-    {
-        private set;
-        get;
-    }
 
+    [SerializeField]
+    public Vector2 startPosition;
     [SerializeField]
     private GameEvent BallOutOfBounderies;
     [SerializeField]
@@ -39,7 +36,6 @@ public class BallBehaviour : MonoBehaviour
     void Awake()
     {
         circleCollider = GetComponent<CircleCollider2D>();
-        startPosition = transform.position;
     }
 
     void Update()

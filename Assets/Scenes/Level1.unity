@@ -151,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -554,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -748,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -957,7 +957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1069,7 +1069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1176,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1417,7 +1417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1514,7 +1514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1616,7 +1616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1713,7 +1713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1810,7 +1810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -1907,7 +1907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2014,7 +2014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2111,7 +2111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2213,7 +2213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2310,7 +2310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2407,7 +2407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2504,7 +2504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2601,7 +2601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2698,7 +2698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2810,7 +2810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -2912,7 +2912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3029,7 +3029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3131,7 +3131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3238,7 +3238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3340,7 +3340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3447,7 +3447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3544,7 +3544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3641,7 +3641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3743,7 +3743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3840,7 +3840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -3942,7 +3942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4044,7 +4044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4146,7 +4146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4243,7 +4243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4340,7 +4340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4452,7 +4452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4549,7 +4549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4646,7 +4646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4748,7 +4748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4845,7 +4845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -4947,7 +4947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5049,7 +5049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5151,7 +5151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5248,7 +5248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5350,7 +5350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5447,7 +5447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5549,7 +5549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5651,7 +5651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5748,7 +5748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5850,7 +5850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -5972,7 +5972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6069,7 +6069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6166,7 +6166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6313,7 +6313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6410,7 +6410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6507,7 +6507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6604,7 +6604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6706,7 +6706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6803,7 +6803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6900,7 +6900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -6997,7 +6997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7104,7 +7104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7206,7 +7206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7308,7 +7308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7405,7 +7405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7517,7 +7517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7614,7 +7614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7721,7 +7721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7818,7 +7818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -7915,7 +7915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -8027,7 +8027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -8124,7 +8124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: powerUps.Array.data[0]
@@ -8585,6 +8585,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1358321308000159049, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541912419092012461, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1653188153733325074, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
       propertyPath: m_Name
       value: Paddle
@@ -8632,6 +8640,14 @@ PrefabInstance:
     - target: {fileID: 6051992738569848662, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013447296984085285, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
+      propertyPath: fieldMaximumX
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013447296984085285, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
+      propertyPath: fieldMinimumX
+      value: -6.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8689,6 +8705,14 @@ PrefabInstance:
     - target: {fileID: 671174305920667721, guid: 0ebe14bbdfd1c2047b6d79f4cb8b2930, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2752711493621843641, guid: 0ebe14bbdfd1c2047b6d79f4cb8b2930, type: 3}
+      propertyPath: startPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2752711493621843641, guid: 0ebe14bbdfd1c2047b6d79f4cb8b2930, type: 3}
+      propertyPath: startPosition.y
+      value: -3.75
       objectReference: {fileID: 0}
     - target: {fileID: 3459102506690064959, guid: 0ebe14bbdfd1c2047b6d79f4cb8b2930, type: 3}
       propertyPath: m_Name
