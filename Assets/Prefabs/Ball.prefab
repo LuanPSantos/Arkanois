@@ -44,7 +44,7 @@ Transform:
   m_Children:
   - {fileID: 8718462875939324848}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &999069473735608381
 CircleCollider2D:
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  startPosition: {x: -1.5, y: -3.75}
   BallOutOfBounderies: {fileID: 11400000, guid: 0740e93692425f346abd4ca1d4e8e64a, type: 2}
   fieldMinimumX: -6.3
   fieldMaximumX: 3.3
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 3459102506690064959}
   angleInDegree: 15
+  disruptionCompleted: {fileID: 11400000, guid: 8f119166366c40242a741daa277e629a, type: 2}
 --- !u!114 &8469027286020259408
 MonoBehaviour:
   m_ObjectHideFlags: 0
