@@ -32,7 +32,7 @@ public class PaddleMovement : MonoBehaviour
         Stop();
     }
 
-    private void Update()
+    void Update()
     {
 
         movement = movementInput.ReadValue<Vector2>();
@@ -43,15 +43,16 @@ public class PaddleMovement : MonoBehaviour
             movement = Vector2.zero;
         }
 
-        transform.Translate(movement * speed * Time.deltaTime);
-    }
-        
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.CompareTag("Wall"))
+        if (transform.position.x > fieldMaximumX - halfPaddleSize)
         {
-            movement = Vector2.zero;
+            transform.position = new Vector3(fieldMaximumX - halfPaddleSize, transform.position.y, transform.position.z);
         }
+        if(transform.position.x < fieldMinimumX + halfPaddleSize)
+        {
+            transform.position = new Vector3(fieldMinimumX + halfPaddleSize, transform.position.y, transform.position.z);
+        }
+
+        transform.Translate(movement * speed * Time.deltaTime);
     }
 
     public void OnGameStarded()
