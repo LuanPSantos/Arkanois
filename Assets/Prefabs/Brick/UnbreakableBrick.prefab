@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 7956508384284696629}
   - component: {fileID: 7956508384284696628}
   - component: {fileID: 9054893050464487643}
+  - component: {fileID: -7473031752902035397}
   m_Layer: 0
   m_Name: UnbreakableBrick
   m_TagString: Brick
@@ -210,7 +211,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7956508384284696626}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -274,6 +275,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &-7473031752902035397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85428c8733f7c64c9b6287848aaf637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onBrickBroke: {fileID: 11400000, guid: b9d821dc55983b242b34f9a344571465, type: 2}
+  brick: {fileID: 11400000, guid: 76f3f4fec6156954bba6b56c0acb4b4b, type: 2}
+  graphics: {fileID: 7956508384785316548}
+  ballConext: {fileID: 0}
 --- !u!1 &7956508384785316548
 GameObject:
   m_ObjectHideFlags: 0
