@@ -17,7 +17,7 @@ public class GameManagerScriptableObject : ScriptableObject
     [SerializeField]
     private GameEvent disruptionPowerUpEnded;
     [SerializeField]
-    private int playerLifes;
+    private int playerExtraLifes;
 
     private PaddleControls controls;
     private InputAction actionInput;
@@ -34,6 +34,11 @@ public class GameManagerScriptableObject : ScriptableObject
     void OnDisable()
     {
         actionInput.performed -= StartGame;
+    }
+
+    public void BeforeFirstLevel()
+    {
+        playerExtraLifes = 0;
     }
 
     public void OnLevelLoaded()
@@ -63,7 +68,7 @@ public class GameManagerScriptableObject : ScriptableObject
 
     public void IncreasePlayerLife()
     {
-        playerLifes++;
+        playerExtraLifes++;
     }
 
     public void StartGame(InputAction.CallbackContext context)
@@ -76,8 +81,8 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         if (ballsInGame == 0)
         {
-            playerLifes--;
-            if (playerLifes > 0)
+            playerExtraLifes--;
+            if (playerExtraLifes > 0)
             {
                 gameRestarted.Raise();
             }

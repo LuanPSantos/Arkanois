@@ -31,11 +31,13 @@ public class BallBehaviour : MonoBehaviour
         get;
     }
     private bool canMove;
-    
+    private float currentSpeed;
+
 
     void Awake()
     {
         circleCollider = GetComponent<CircleCollider2D>();
+        currentSpeed = speed;
     }
 
     void Update()
@@ -55,13 +57,10 @@ public class BallBehaviour : MonoBehaviour
 
             if (movement.y < 0f && transform.position.y < fieldMinimumY + 0.1f)
             {
-                canMove = false;
-                transform.parent = null;
-                BallOutOfBounderies.Raise();
-                Destroy(gameObject);
+                BallGotOutOfBoundaries();
             }
         
-            transform.Translate(movement * speed * Time.deltaTime);
+            transform.Translate(movement * currentSpeed * Time.deltaTime);
         } 
     }
 
@@ -88,6 +87,16 @@ public class BallBehaviour : MonoBehaviour
     {
         movement = Vector2.zero;
     }
+    
+    public void SlowByFactor(float factor)
+    {
+        currentSpeed = factor * currentSpeed;
+    }
+
+    public void ResetSpeed()
+    {
+        currentSpeed = speed;
+    }
 
     private void ResetPosition()
     {
@@ -108,6 +117,14 @@ public class BallBehaviour : MonoBehaviour
     public void Stop()
     {
         canMove = false;
+    }
+
+    private void BallGotOutOfBoundaries()
+    {
+        canMove = false;
+        transform.parent = null;
+        BallOutOfBounderies.Raise();
+        Destroy(gameObject);
     }
 
     private void OnHitPaddle(Collision2D collision)

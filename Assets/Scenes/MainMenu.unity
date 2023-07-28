@@ -832,6 +832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManger: {fileID: 11400000, guid: f47c23bad30e63d48bc29bfa7d629bc2, type: 2}
+  gameManager: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
 --- !u!4 &1962826251
 Transform:
   m_ObjectHideFlags: 0

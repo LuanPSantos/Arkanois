@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (9)
@@ -213,6 +217,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (7)
@@ -292,6 +300,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (10)
@@ -371,6 +383,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (8)
@@ -445,6 +461,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (5)
@@ -514,6 +534,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (8)
@@ -588,6 +612,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (4)
@@ -662,6 +690,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (3)
@@ -731,6 +763,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (9)
@@ -810,6 +846,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (3)
@@ -879,6 +919,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (1)
@@ -948,6 +992,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick
@@ -1022,6 +1070,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (1)
@@ -1091,6 +1143,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (2)
@@ -1165,6 +1221,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick
@@ -1234,6 +1294,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (1)
@@ -1313,6 +1377,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (8)
@@ -1382,6 +1450,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (3)
@@ -1451,6 +1523,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick
@@ -1520,6 +1596,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (1)
@@ -1594,6 +1674,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (3)
@@ -1668,6 +1752,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (4)
@@ -1752,6 +1840,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (9)
@@ -1826,6 +1918,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (5)
@@ -1895,6 +1991,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (6)
@@ -1969,6 +2069,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (4)
@@ -2043,6 +2147,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (11)
@@ -2127,6 +2235,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (1)
@@ -2206,6 +2318,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (9)
@@ -2275,6 +2391,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (2)
@@ -2349,6 +2469,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (7)
@@ -2423,6 +2547,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick
@@ -2497,6 +2625,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (12)
@@ -2571,6 +2703,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (11)
@@ -2655,6 +2791,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (4)
@@ -2724,6 +2864,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (5)
@@ -2793,6 +2937,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick
@@ -2862,6 +3010,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (6)
@@ -2936,6 +3088,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (4)
@@ -3010,6 +3166,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (6)
@@ -3079,6 +3239,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (2)
@@ -3148,6 +3312,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (1)
@@ -3222,6 +3390,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (3)
@@ -3296,6 +3468,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (10)
@@ -3370,6 +3546,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (10)
@@ -3439,6 +3619,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (4)
@@ -3508,6 +3692,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (1)
@@ -3587,6 +3775,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (3)
@@ -3656,6 +3848,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick
@@ -3745,6 +3941,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (3)
@@ -3814,6 +4014,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (10)
@@ -3888,6 +4092,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick
@@ -3962,6 +4170,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (12)
@@ -4046,6 +4258,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (6)
@@ -4125,6 +4341,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (2)
@@ -4194,6 +4414,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (11)
@@ -4268,6 +4492,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (3)
@@ -4347,6 +4575,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (2)
@@ -4416,6 +4648,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (2)
@@ -4500,6 +4736,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (13)
@@ -4574,6 +4814,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (4)
@@ -4643,6 +4887,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (7)
@@ -4712,6 +4960,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (6)
@@ -4786,6 +5038,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (6)
@@ -4860,6 +5116,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (7)
@@ -4939,6 +5199,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (9)
@@ -5008,6 +5272,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (8)
@@ -5077,6 +5345,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (1)
@@ -5146,6 +5418,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (5)
@@ -5220,6 +5496,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (7)
@@ -5319,6 +5599,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (4)
@@ -5393,6 +5677,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (5)
@@ -5462,6 +5750,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (5)
@@ -5531,6 +5823,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (6)
@@ -5610,6 +5906,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick
@@ -5679,6 +5979,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (13)
@@ -5758,6 +6062,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (8)
@@ -5827,6 +6135,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (4)
@@ -5901,6 +6213,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (14)
@@ -6041,6 +6357,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (3)
@@ -6110,6 +6430,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (2)
@@ -6184,6 +6508,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
       value: LightBlueBrick (11)
@@ -6273,6 +6601,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (2)
@@ -6342,6 +6674,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick
@@ -6416,6 +6752,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (5)
@@ -6490,6 +6830,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (9)
@@ -6579,6 +6923,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (1)
@@ -6653,6 +7001,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (5)
@@ -6727,6 +7079,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
       value: OrangeBrick (7)
@@ -6796,6 +7152,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
       value: WhiteBrick (15)
@@ -6870,6 +7230,10 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 415871141}
+    - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: dropPowerUpProbability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (2)
