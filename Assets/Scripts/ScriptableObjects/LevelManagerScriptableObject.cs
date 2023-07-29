@@ -37,6 +37,12 @@ public class LevelManagerScriptableObject : ScriptableObject
         }
     }
 
+    public async void OnGameLost()
+    {
+        await Task.Delay(500);
+        LoadFistLevel();
+    }
+
     private void LoadScene(string name)
     {
         SceneManager.LoadScene(name, LoadSceneMode.Single);

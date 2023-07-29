@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 7956508384001365713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7956508384785316549}
@@ -251,7 +251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.3}
+  m_Size: {x: 0.65, y: 0.25}
   m_EdgeRadius: 0
 --- !u!114 &1900024038
 MonoBehaviour:
@@ -268,6 +268,7 @@ MonoBehaviour:
   onBrickBroke: {fileID: 11400000, guid: b9d821dc55983b242b34f9a344571465, type: 2}
   brick: {fileID: 11400000, guid: f49849177569e074b875f8a0882e5103, type: 2}
   graphics: {fileID: 7956508384785316548}
+  isBreakable: 1
 --- !u!114 &-8167195001090276340
 MonoBehaviour:
   m_ObjectHideFlags: 0

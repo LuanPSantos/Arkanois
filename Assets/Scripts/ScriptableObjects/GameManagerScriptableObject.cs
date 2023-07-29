@@ -81,13 +81,14 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         if (ballsInGame == 0)
         {
-            playerExtraLifes--;
             if (playerExtraLifes > 0)
             {
+                playerExtraLifes--;
                 gameRestarted.Raise();
             }
             else
             {
+                BeforeFirstLevel();
                 gameLost.Raise();
             }
         }

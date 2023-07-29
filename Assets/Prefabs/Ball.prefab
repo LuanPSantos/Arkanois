@@ -44,7 +44,7 @@ Transform:
   m_Children:
   - {fileID: 8718462875939324848}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &999069473735608381
 CircleCollider2D:
@@ -80,7 +80,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.075
 --- !u!50 &5195439126279386158
 Rigidbody2D:
   serializedVersion: 4
@@ -120,13 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5a2114e62eb9b4486f1adbf651c15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  startPosition: {x: -1.5, y: -4}
+  speed: 5
+  startPosition: {x: -1.85, y: -4.345}
   BallOutOfBounderies: {fileID: 11400000, guid: 0740e93692425f346abd4ca1d4e8e64a, type: 2}
-  fieldMinimumX: -6.3
-  fieldMaximumX: 3.3
-  fieldMaximumY: 4.4
-  fieldMinimumY: -5.4
+  fieldMinimumX: -6.35
+  fieldMaximumX: 2.645
+  fieldMaximumY: 4.745
+  fieldMinimumY: -5
 --- !u!114 &4955607679019782180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 5020734096046346426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8718462875939324848}
