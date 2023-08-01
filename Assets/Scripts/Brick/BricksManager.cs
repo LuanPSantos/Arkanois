@@ -22,6 +22,8 @@ public class BricksManager : MonoBehaviour
     }
     public void OnBrickBroke()
     {
+        if (activeBricks.Count <= 0) return;
+        
         activeBricks.Dequeue();
 
         if (activeBricks.Count == 0)

@@ -2,11 +2,27 @@ using UnityEngine;
 
 public class PaddleBehaviour : MonoBehaviour
 {
-    public Vector2 startPosition;
+    [SerializeField]
+    private Vector2 startPosition;
+    [SerializeField]
+    private Transform rightStartReflection;
+    [SerializeField]
+    private Transform rightEndReflection;
+    [SerializeField] 
+    private Transform leftStartReflection;
+    [SerializeField]
+    private Transform leftEndReflection;
+
+    private BoxCollider2D boxCollider;
+
+    void Awake()
+    {
+        boxCollider = GetComponent<BoxCollider2D>();
+    }
+
     void Start()
     {
-        //TODO test
-        //transform.position = startPosition;
+        transform.position = startPosition;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -17,5 +33,34 @@ public class PaddleBehaviour : MonoBehaviour
 
             powerUp.Colect();
         }
+
+        if(collision.gameObject.CompareTag("Ball"))
+        {
+            var ball = collision.gameObject.GetComponent<BallBehaviour>();
+
+            var movement = ReflectOnPaddle(ball.transform.position);
+
+            ball.Move(movement);
+        }
+    }
+
+    private Vector2 ReflectOnPaddle(Vector2 ballPosition)
+    {
+        var deltaX = Mathf.Abs(ballPosition.x - transform.position.x);
+        var halfPaddleWidth = boxCollider.bounds.size.x / 2;
+        var interpolant = deltaX / halfPaddleWidth;
+        var directionTarget = Vector2.zero;
+
+        var isOnLeft = ballPosition.x - transform.position.x < 0;
+        if (isOnLeft)
+        {
+            directionTarget = Vector3.Lerp(leftStartReflection.position, leftEndReflection.position, interpolant);
+        }
+        else
+        {
+            directionTarget = Vector3.Lerp(rightStartReflection.position, rightEndReflection.position, interpolant);
+        }
+
+        return (directionTarget - ballPosition).normalized;
     }
 }

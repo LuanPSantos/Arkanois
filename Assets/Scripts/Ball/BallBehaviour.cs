@@ -64,14 +64,6 @@ public class BallBehaviour : MonoBehaviour
         } 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Paddle"))
-        {
-            OnHitPaddle(collision);
-        }
-    }
-
     public void OnGameStarted()
     {
         ResetPosition();
@@ -125,18 +117,6 @@ public class BallBehaviour : MonoBehaviour
         transform.parent = null;
         BallOutOfBounderies.Raise();
         Destroy(gameObject);
-    }
-
-    private void OnHitPaddle(Collision2D collision)
-    {
-        movement = ReflectOnPaddle(transform.position, collision.transform.position, collision.collider.bounds.size.x);
-    }
-
-    private Vector2 ReflectOnPaddle(Vector2 ballPosition, Vector2 paddlePosition, float paddleWidth)
-    {
-        var x = (ballPosition.x - paddlePosition.x) / paddleWidth;
-        var up = 1;
-        return new Vector2(x, up).normalized;
     }
 
     private void RandomMovement()

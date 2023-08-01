@@ -23,8 +23,6 @@ public class PaddleMovement : MonoBehaviour
         controls = new PaddleControls();
         movementInput = controls.Gameplay.Movement;
         boxCollider = GetComponent<BoxCollider2D>();
-
-        
     }
 
     void Start()

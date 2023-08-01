@@ -104,7 +104,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             // scaled delta x was larger than delta y. This is a horizontal hit.
             if (Mathf.Sign(-ball.movement.x) == Mathf.Sign(delta.x))
             {
-                ball.Move(new Vector2(-ball.movement.x, ball.movement.y));
+                ball.Move(ClampReflect(ball.movement, new Vector2(-ball.movement.x, ball.movement.y), true));
             }
         }
         else
@@ -112,8 +112,83 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             // scaled delta y was larger than delta x. This is a vertical hit.
             if (Mathf.Sign(-ball.movement.y) == Mathf.Sign(delta.y))
             {
-                ball.Move(new Vector2(ball.movement.x, -ball.movement.y));
+                ball.Move(ClampReflect(ball.movement, new Vector2(ball.movement.x, -ball.movement.y), false));
             }
         }
+    }
+
+    private Vector2 ClampReflect(Vector2 currentDirection, Vector2 newDirection, bool isHorizontal)
+    {
+     
+        var offset = 0.05f;
+
+        var dot = Vector2.Dot(currentDirection, newDirection);
+
+        if(dot > -1 + offset && dot < 1 - offset)
+        {
+            return newDirection;
+        }
+
+        var angle = Vector2.Angle(currentDirection, newDirection);
+        Debug.Log("angle " + angle);
+        angle = ClampBallAngle(angle);
+        Debug.Log("angle " + angle);
+        Debug.Log("isHorizontal " + isHorizontal);
+        var campledDirection = newDirection;
+        if (isHorizontal)
+        {
+            
+            if(currentDirection.x > 0 && currentDirection.y > 0 || currentDirection.x < 0 && currentDirection.y < 0)
+            {
+                Debug.Log("rotation +");
+                campledDirection = Quaternion.AngleAxis(angle, Vector3.forward) * currentDirection;
+            }
+            if (currentDirection.x < 0 && currentDirection.y > 0 || currentDirection.x > 0 && currentDirection.y < 0)
+            {
+                Debug.Log("rotation -");
+                campledDirection = Quaternion.AngleAxis(-angle, Vector3.forward) * currentDirection; 
+            }   
+        }
+        else
+        {
+            if (currentDirection.x > 0 && currentDirection.y > 0 || currentDirection.x < 0 && currentDirection.y < 0)
+            {
+                Debug.Log("rotation -");
+                campledDirection = Quaternion.AngleAxis(-angle, Vector3.forward) * currentDirection;
+            }
+            if (currentDirection.x < 0 && currentDirection.y > 0 || currentDirection.x > 0 && currentDirection.y < 0)
+            {
+                
+                Debug.Log("rotation +");
+                campledDirection = Quaternion.AngleAxis(angle, Vector3.forward) * currentDirection;
+            }
+        }
+
+        Debug.DrawRay(transform.position, currentDirection, Color.red, 1);
+        Debug.DrawRay(transform.position, newDirection, Color.blue, 1);
+        Debug.DrawRay(transform.position, campledDirection, Color.green, 1);
+
+        return campledDirection;
+    }
+
+    private float ClampBallAngle(float angle)
+    {
+        if (angle > 150f)
+        {
+            return 150f;
+        }
+        if (angle < 30f)
+        {
+            return 30f;
+        }
+        if (angle <= 90f && angle > 75f)
+        {
+            return 75f;
+        }
+        if (angle >= 90f && angle < 105f)
+        {
+            return 105f;
+        }
+        return angle;
     }
 }
