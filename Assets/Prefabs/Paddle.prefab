@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  enlargeFactor: 1.5
 --- !u!114 &1598617110061080512
 MonoBehaviour:
   m_ObjectHideFlags: 0

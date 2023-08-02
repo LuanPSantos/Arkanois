@@ -32,20 +32,20 @@ public class PaddleMovement : MonoBehaviour
 
     void Update()
     {
-
         movement = movementInput.ReadValue<Vector2>();
         var halfPaddleSize = boxCollider.bounds.size.x / 2;
-        if (movement.x > 0f && transform.position.x > fieldMaximumX - halfPaddleSize ||
-            movement.x < 0f && transform.position.x < fieldMinimumX + halfPaddleSize) 
+
+        if (movement.x > 0f && transform.position.x >= fieldMaximumX - halfPaddleSize ||
+            movement.x < 0f && transform.position.x <= fieldMinimumX + halfPaddleSize) 
         {
             movement = Vector2.zero;
         }
 
-        if (transform.position.x > fieldMaximumX - halfPaddleSize)
+        if (transform.position.x >= fieldMaximumX - halfPaddleSize)
         {
             transform.position = new Vector3(fieldMaximumX - halfPaddleSize, transform.position.y, transform.position.z);
         }
-        if(transform.position.x < fieldMinimumX + halfPaddleSize)
+        if(transform.position.x <= fieldMinimumX + halfPaddleSize)
         {
             transform.position = new Vector3(fieldMinimumX + halfPaddleSize, transform.position.y, transform.position.z);
         }

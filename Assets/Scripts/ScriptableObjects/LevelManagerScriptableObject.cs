@@ -28,7 +28,7 @@ public class LevelManagerScriptableObject : ScriptableObject
         currentLevelIndex++;
         if(currentLevelIndex < levelSceneNames.Count)
         {
-            var fireAndForget = WaitAndLoadScene();
+            WaitAndLoadScene();
         }
         else
         {
@@ -37,9 +37,9 @@ public class LevelManagerScriptableObject : ScriptableObject
         }
     }
 
-    public async void OnGameLost()
+    public void OnGameLost()
     {
-        await Task.Delay(500);
+        //await Task.Delay(500);
         LoadFistLevel();
     }
 
@@ -48,9 +48,9 @@ public class LevelManagerScriptableObject : ScriptableObject
         SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 
-    private async Task WaitAndLoadScene()
+    private void WaitAndLoadScene()
     {
-        await Task.Delay(500);
+        //await Task.Delay(500);
         LoadScene(levelSceneNames[currentLevelIndex]);
     }
 }

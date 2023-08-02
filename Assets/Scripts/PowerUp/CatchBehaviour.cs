@@ -101,7 +101,5 @@ public class CatchBehaviour : MonoBehaviour
         ball.Stop();
         
         isHoldingBall = true;
-
-        Debug.Log("CatchBall isActive = " + isActive + " isHoldingBall " + isHoldingBall);
     }
 }

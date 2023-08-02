@@ -16,13 +16,13 @@ public class BallBehaviour : MonoBehaviour
     [SerializeField]
     private GameEvent BallOutOfBounderies;
     [SerializeField]
-    private float fieldMinimumX = -6.3f;
+    private float fieldMinimumX;
     [SerializeField]
-    private float fieldMaximumX = 3.3f;
+    private float fieldMaximumX;
     [SerializeField]
-    private float fieldMaximumY = 4.4f;
+    private float fieldMaximumY;
     [SerializeField]
-    private float fieldMinimumY = -5.4f;
+    private float fieldMinimumY;
 
 
     public CircleCollider2D circleCollider

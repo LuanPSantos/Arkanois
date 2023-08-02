@@ -7,13 +7,15 @@ public class EnlargeBehaviour : MonoBehaviour
 {
     [SerializeField]
     private float speed = 15f;
+    [SerializeField]
+    private float enlargeFactor = 1.4f;
     private Vector3 originalSize;
     private Vector3 enlargedSize;
     private bool isGrowing = false;
     void Start()
     {
         originalSize = transform.localScale;
-        enlargedSize = new Vector3(originalSize.x * 2, originalSize.y, originalSize.z);
+        enlargedSize = new Vector3(originalSize.x * enlargeFactor, originalSize.y, originalSize.z);
     }
 
     private void Update()

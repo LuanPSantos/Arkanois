@@ -120,7 +120,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
     private Vector2 ClampReflect(Vector2 currentDirection, Vector2 newDirection, bool isHorizontal)
     {
      
-        var offset = 0.05f;
+        var offset = 0.866; // Dot of 30 degrees
 
         var dot = Vector2.Dot(currentDirection, newDirection);
 
@@ -130,43 +130,31 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
         }
 
         var angle = Vector2.Angle(currentDirection, newDirection);
-        Debug.Log("angle " + angle);
         angle = ClampBallAngle(angle);
-        Debug.Log("angle " + angle);
-        Debug.Log("isHorizontal " + isHorizontal);
         var campledDirection = newDirection;
+
         if (isHorizontal)
         {
-            
             if(currentDirection.x > 0 && currentDirection.y > 0 || currentDirection.x < 0 && currentDirection.y < 0)
             {
-                Debug.Log("rotation +");
-                campledDirection = Quaternion.AngleAxis(angle, Vector3.forward) * currentDirection;
+                campledDirection = Rotate(currentDirection, angle);
             }
             if (currentDirection.x < 0 && currentDirection.y > 0 || currentDirection.x > 0 && currentDirection.y < 0)
             {
-                Debug.Log("rotation -");
-                campledDirection = Quaternion.AngleAxis(-angle, Vector3.forward) * currentDirection; 
+                campledDirection = Rotate(currentDirection, -angle); 
             }   
         }
         else
         {
             if (currentDirection.x > 0 && currentDirection.y > 0 || currentDirection.x < 0 && currentDirection.y < 0)
             {
-                Debug.Log("rotation -");
-                campledDirection = Quaternion.AngleAxis(-angle, Vector3.forward) * currentDirection;
+                campledDirection = Rotate(currentDirection, -angle);
             }
             if (currentDirection.x < 0 && currentDirection.y > 0 || currentDirection.x > 0 && currentDirection.y < 0)
             {
-                
-                Debug.Log("rotation +");
-                campledDirection = Quaternion.AngleAxis(angle, Vector3.forward) * currentDirection;
+                campledDirection = Rotate(currentDirection, angle);
             }
         }
-
-        Debug.DrawRay(transform.position, currentDirection, Color.red, 1);
-        Debug.DrawRay(transform.position, newDirection, Color.blue, 1);
-        Debug.DrawRay(transform.position, campledDirection, Color.green, 1);
 
         return campledDirection;
     }
@@ -181,14 +169,12 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
         {
             return 30f;
         }
-        if (angle <= 90f && angle > 75f)
-        {
-            return 75f;
-        }
-        if (angle >= 90f && angle < 105f)
-        {
-            return 105f;
-        }
+        
         return angle;
+    }
+
+    private Vector3 Rotate(Vector3 direction, float angle)
+    {
+        return Quaternion.AngleAxis(angle, Vector3.forward) * direction;
     }
 }

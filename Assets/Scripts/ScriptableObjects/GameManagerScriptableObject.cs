@@ -63,7 +63,6 @@ public class GameManagerScriptableObject : ScriptableObject
     public void OnDisruption()
     {
         ballsInGame = 3;
-        Debug.Log("ballsInGame " + ballsInGame);
     }
 
     public void IncreasePlayerLife()
