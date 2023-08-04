@@ -49,18 +49,18 @@ public class PaddleBehaviour : MonoBehaviour
         var deltaX = Mathf.Abs(ballPosition.x - transform.position.x);
         var halfPaddleWidth = boxCollider.bounds.size.x / 2;
         var interpolant = deltaX / halfPaddleWidth;
-        var directionTarget = Vector2.zero;
+        var targetDirection = Vector2.zero;
 
         var isOnLeft = ballPosition.x - transform.position.x < 0;
         if (isOnLeft)
         {
-            directionTarget = Vector3.Lerp(leftStartReflection.position, leftEndReflection.position, interpolant);
+            targetDirection = Vector3.Lerp(leftStartReflection.position, leftEndReflection.position, interpolant);
         }
         else
         {
-            directionTarget = Vector3.Lerp(rightStartReflection.position, rightEndReflection.position, interpolant);
+            targetDirection = Vector3.Lerp(rightStartReflection.position, rightEndReflection.position, interpolant);
         }
 
-        return (directionTarget - ballPosition).normalized;
+        return (targetDirection - ballPosition).normalized;
     }
 }
