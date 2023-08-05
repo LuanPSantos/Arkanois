@@ -75,11 +75,11 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
         {
             return false;
         }
-        if (distance.x <= halfWidth + ball.circleCollider.radius)
+        if (distance.x <= halfWidth)
         {
             return true;
         }
-        if (distance.y <= halfHight + ball.circleCollider.radius)
+        if (distance.y <= halfHight)
         {
             return true;
         }
