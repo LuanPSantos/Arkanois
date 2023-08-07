@@ -30,7 +30,6 @@ public class PaddleBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("PowerUp"))
         {
             var powerUp = collision.gameObject.GetComponent<PowerUpBehaviuor>();
-            Debug.Log("aaaaaa");
             powerUp.Colect();
         }
 
