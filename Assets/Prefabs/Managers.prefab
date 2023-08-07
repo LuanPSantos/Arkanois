@@ -117,12 +117,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2243227086116861076}
-  - component: {fileID: 194518913648371536}
   - component: {fileID: 4442904572102318782}
   - component: {fileID: 408057292576157667}
   - component: {fileID: 3544095500533989826}
   - component: {fileID: 2627251974629354702}
-  - component: {fileID: 6311914347319221430}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -145,19 +143,6 @@ Transform:
   m_Father: {fileID: 7132398999508000420}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &194518913648371536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5849322537656941434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c269b1b42ae59489e50bdaa6c16141, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManger: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
 --- !u!114 &4442904572102318782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,34 +246,6 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
         m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
         m_MethodName: OnDisruption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6311914347319221430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5849322537656941434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 4890f1ce4a3028c4e83710ced886fd9d, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 194518913648371536}
-        m_TargetAssemblyTypeName: PlayerPowerUpBehaviour, Assembly-CSharp
-        m_MethodName: OnPlayerPowerUpColected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
