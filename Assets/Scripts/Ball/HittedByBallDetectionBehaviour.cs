@@ -75,10 +75,14 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
         {
             return false;
         }
+
+        //horizontal hit?
         if (distance.x <= halfWidth)
         {
             return true;
         }
+
+        //vertical hit?
         if (distance.y <= halfHight)
         {
             return true;
@@ -104,6 +108,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             // scaled delta x was larger than delta y. This is a horizontal hit.
             if (Mathf.Sign(-ball.movement.x) == Mathf.Sign(delta.x))
             {
+                //Reflect if ball in going to de brick, and not going away
                 ball.Move(ClampReflect(ball.movement, new Vector2(-ball.movement.x, ball.movement.y), true));
             }
         }
@@ -124,6 +129,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
 
         var dot = Vector2.Dot(currentDirection, newDirection);
 
+        //angle not too open not too close
         if(dot > -1 + offset && dot < 1 - offset)
         {
             return newDirection;
