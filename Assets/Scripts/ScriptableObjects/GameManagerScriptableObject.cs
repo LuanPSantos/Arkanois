@@ -12,8 +12,6 @@ public class GameManagerScriptableObject : ScriptableObject
     private GameEvent gameLost;
     [SerializeField]
     private GameEvent gameEnded;
-    [SerializeField] 
-    private GameEvent gameRestarted;
     [SerializeField]
     private GameEvent disruptionPowerUpEnded;
 
@@ -68,7 +66,7 @@ public class GameManagerScriptableObject : ScriptableObject
     {
         if (ballsInGame == 0)
         {
-            gameRestarted.Raise();
+            gameLost.Raise();
         }
     }
 

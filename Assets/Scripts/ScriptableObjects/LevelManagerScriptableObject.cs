@@ -18,11 +18,6 @@ public class LevelManagerScriptableObject : ScriptableObject
         LoadScene(levelSceneNames[currentLevelIndex]);
     }
 
-    public void OnGameRestarted()
-    {
-        LoadScene(levelSceneNames[currentLevelIndex]);
-    }
-
     public void OnLevelFinished()
     {
         currentLevelIndex++;
@@ -39,8 +34,23 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     public void OnGameLost()
     {
-        //await Task.Delay(500);
-        LoadFistLevel();
+        WaitAndLoadScene();
+    }
+
+    public void LoadLevelByName(object name)
+    {
+        var newIndex = levelSceneNames.IndexOf(name.ToString());
+        if (newIndex != -1)
+        {
+            currentLevelIndex = levelSceneNames.IndexOf(name.ToString());
+            WaitAndLoadScene();
+        }
+        
+    }
+
+    public void LoadLevelSelection()
+    {
+        SceneManager.LoadScene("LevelSelection");
     }
 
     private void LoadScene(string name)
