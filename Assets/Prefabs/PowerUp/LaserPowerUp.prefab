@@ -129,6 +129,8 @@ GameObject:
   - component: {fileID: 4629929996514880477}
   - component: {fileID: 6397991288720502951}
   - component: {fileID: 8147852576198401221}
+  - component: {fileID: 3207133334082048905}
+  - component: {fileID: 4151847199800932436}
   m_Layer: 0
   m_Name: LaserPowerUp
   m_TagString: PowerUp
@@ -205,6 +207,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpColected: {fileID: 11400000, guid: 0627ce866e4ac9247af1e1248c176464, type: 2}
+--- !u!114 &3207133334082048905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184716715260491479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0416f84d6c8a5104cab2e369aae1dab3, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6397991288720502951}
+        m_TargetAssemblyTypeName: PowerUpMovement, Assembly-CSharp
+        m_MethodName: OnGamePaused
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4151847199800932436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184716715260491479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: bf0496414fc873244b2c82d31f8d3e32, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6397991288720502951}
+        m_TargetAssemblyTypeName: PowerUpMovement, Assembly-CSharp
+        m_MethodName: OnGameResumed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6029268137053385543
 GameObject:
   m_ObjectHideFlags: 0

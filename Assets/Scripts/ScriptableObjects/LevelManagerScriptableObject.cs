@@ -23,7 +23,7 @@ public class LevelManagerScriptableObject : ScriptableObject
         currentLevelIndex++;
         if(currentLevelIndex < levelSceneNames.Count)
         {
-            WaitAndLoadScene();
+            LoadCurrentLevel();
         }
         else
         {
@@ -34,7 +34,7 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     public void OnGameLost()
     {
-        WaitAndLoadScene();
+        LoadCurrentLevel();
     }
 
     public void LoadLevelByName(object name)
@@ -43,7 +43,7 @@ public class LevelManagerScriptableObject : ScriptableObject
         if (newIndex != -1)
         {
             currentLevelIndex = levelSceneNames.IndexOf(name.ToString());
-            WaitAndLoadScene();
+            LoadCurrentLevel();
         }
         
     }
@@ -53,14 +53,13 @@ public class LevelManagerScriptableObject : ScriptableObject
         SceneManager.LoadScene("LevelSelection");
     }
 
+    public void LoadCurrentLevel()
+    {
+        LoadScene(levelSceneNames[currentLevelIndex]);
+    }
+
     private void LoadScene(string name)
     {
         SceneManager.LoadScene(name, LoadSceneMode.Single);
-    }
-
-    private void WaitAndLoadScene()
-    {
-        //await Task.Delay(500);
-        LoadScene(levelSceneNames[currentLevelIndex]);
     }
 }

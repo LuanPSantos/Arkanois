@@ -664,6 +664,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ec48e0597fc2b419f6179359cfcfbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelManager: {fileID: 11400000, guid: f47c23bad30e63d48bc29bfa7d629bc2, type: 2}
+  pauseMenu: {fileID: 0}
+  gamePaused: {fileID: 0}
+  gameResumed: {fileID: 0}
 --- !u!4 &1962826251
 Transform:
   m_ObjectHideFlags: 0

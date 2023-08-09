@@ -10,10 +10,12 @@ public class LaserBulletBehaviour : MonoBehaviour
 
     private Rigidbody2D rb;
     private int timeToLive = 1;
+    private bool canMove;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        canMove = true;
     }
 
     private void Start()
@@ -32,5 +34,15 @@ public class LaserBulletBehaviour : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void OnGamePaused()
+    {
+        canMove = false;
+    }
+
+    public void OnGameResumed()
+    {
+        canMove = true;
     }
 }
