@@ -8,20 +8,18 @@ public class PowerUpMovement : MonoBehaviour
     [SerializeField]
     private float speed;
 
-    private Rigidbody2D rb;
     private bool canMove;
     
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         canMove = true;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if(canMove)
         {
-            rb.MovePosition(rb.position + Vector2.down * speed * Time.fixedDeltaTime);
+            transform.Translate(Vector2.down * speed * Time.deltaTime);
         }        
     }
 

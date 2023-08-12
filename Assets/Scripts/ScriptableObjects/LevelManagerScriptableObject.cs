@@ -8,21 +8,20 @@ using UnityEngine.SceneManagement;
 public class LevelManagerScriptableObject : ScriptableObject
 {
     [SerializeField]
-    private List<string> levelSceneNames;
+    private List<string> levelSceneNumbers;
 
     private int currentLevelIndex;
 
-    public void LoadFistLevel()
-    {
-        currentLevelIndex = 0;
-        LoadScene(levelSceneNames[currentLevelIndex]);
-    }
-
     public void OnLevelFinished()
     {
+        
         currentLevelIndex++;
-        if(currentLevelIndex < levelSceneNames.Count)
+
+        
+
+        if (currentLevelIndex < levelSceneNumbers.Count)
         {
+            PlayerPrefs.SetInt(levelSceneNumbers[currentLevelIndex].ToString(), 1);
             LoadCurrentLevel();
         }
         else
@@ -39,10 +38,10 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     public void LoadLevelByName(object name)
     {
-        var newIndex = levelSceneNames.IndexOf(name.ToString());
+        var newIndex = levelSceneNumbers.IndexOf(name.ToString());
         if (newIndex != -1)
         {
-            currentLevelIndex = levelSceneNames.IndexOf(name.ToString());
+            currentLevelIndex = newIndex;
             LoadCurrentLevel();
         }
         
@@ -55,7 +54,7 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     public void LoadCurrentLevel()
     {
-        LoadScene(levelSceneNames[currentLevelIndex]);
+        LoadScene("Level" + levelSceneNumbers[currentLevelIndex]);
     }
 
     private void LoadScene(string name)

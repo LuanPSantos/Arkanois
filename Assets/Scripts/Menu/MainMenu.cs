@@ -13,13 +13,16 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        // Remover
+        PlayerPrefs.SetInt("2", 0);
+        PlayerPrefs.SetInt("3", 0);
+
         levelManager.LoadLevelSelection();
     }
 
     public void RestartGame()
     {
         levelManager.LoadCurrentLevel();
-        //Time.timeScale = 1f;
     }
 
     public void ExitLevel()
@@ -30,14 +33,12 @@ public class MainMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        //Time.timeScale = 1f;
         gameResumed.Raise();
     }
 
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        //Time.timeScale = 0f;
         gamePaused.Raise();
     }
 }

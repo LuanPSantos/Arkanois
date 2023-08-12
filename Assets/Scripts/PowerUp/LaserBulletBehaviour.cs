@@ -8,13 +8,11 @@ public class LaserBulletBehaviour : MonoBehaviour
     [SerializeField]
     private float speed;
 
-    private Rigidbody2D rb;
     private int timeToLive = 1;
     private bool canMove;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
         canMove = true;
     }
 
@@ -23,9 +21,12 @@ public class LaserBulletBehaviour : MonoBehaviour
         Destroy(gameObject, timeToLive);
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        rb.MovePosition(rb.position + Vector2.up * Time.fixedDeltaTime * speed);
+        if (canMove)
+        {
+            transform.Translate(Vector2.up * Time.deltaTime * speed);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
