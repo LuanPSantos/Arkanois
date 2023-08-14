@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour
 {
     public GameEvent gameEvent;
-    public UnityEvent response;
+    public UnityEvent<object> response;
 
     private void OnEnable()
     {
@@ -16,9 +16,9 @@ public class GameEventListener : MonoBehaviour
         gameEvent.UnregisterListener(this); 
     }
 
-    public void OnEventRaised(long traceId)
+    public void OnEventRaised(object eventData)
     {
         //Debug.Log("=> Listener: " + name + ", traceId=" + traceId);
-        response.Invoke(); 
+        response.Invoke(eventData); 
     }
 }

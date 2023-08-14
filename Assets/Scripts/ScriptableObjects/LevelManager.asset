@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef4afff705945d4dbf8cf1afe930dbe, type: 3}
   m_Name: LevelManager
   m_EditorClassIdentifier: 
-  levelSceneNames:
-  - Level1
-  - Level2
-  - Level3
+  levelSceneNumbers:
+  - 1
+  - 2
+  - 3
