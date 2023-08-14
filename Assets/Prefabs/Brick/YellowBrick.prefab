@@ -300,7 +300,6 @@ MonoBehaviour:
   - {fileID: 4184716715260491479, guid: 82c49a5d2c6e4264d966840e78fcd72c, type: 3}
   - {fileID: 4184716715260491479, guid: bd3fcf94cb21a2d47a33943e754bc9c1, type: 3}
   - {fileID: 4184716715260491479, guid: 3a6096fc50d26a842ae66ae6fef72875, type: 3}
-  - {fileID: 4184716715260491479, guid: 17e7f4e1a218bff4f9241a8ac1bbff12, type: 3}
   - {fileID: 4184716715260491479, guid: 5643a839a08750c47807704e08dce96f, type: 3}
   dropPowerUpProbability: 5
 --- !u!114 &7417252015490632441

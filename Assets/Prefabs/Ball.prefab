@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5a2114e62eb9b4486f1adbf651c15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6.5
+  speed: 8
   startPosition: {x: -1.85, y: -4.345}
   BallOutOfBounderies: {fileID: 11400000, guid: 0740e93692425f346abd4ca1d4e8e64a, type: 2}
   fieldMinimumX: -6.35

@@ -68,6 +68,16 @@ public class PaddleMovement : MonoBehaviour
         Stop();
     }
 
+    public void OnGamePaused()
+    {
+        Stop();
+    }
+
+    public void OnGameResumed()
+    {
+        Move();
+    }
+
     private void Move()
     {
         movementInput.Enable();
