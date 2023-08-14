@@ -792,6 +792,8 @@ GameObject:
   - component: {fileID: 408057292576157667}
   - component: {fileID: 3544095500533989826}
   - component: {fileID: 2627251974629354702}
+  - component: {fileID: 8411586184541444659}
+  - component: {fileID: 9118922853807813440}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -917,6 +919,62 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
         m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
         m_MethodName: OnDisruption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8411586184541444659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849322537656941434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0416f84d6c8a5104cab2e369aae1dab3, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
+        m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
+        m_MethodName: OnGamePaused
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9118922853807813440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849322537656941434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: bf0496414fc873244b2c82d31f8d3e32, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
+        m_TargetAssemblyTypeName: GameManagerScriptableObject, Assembly-CSharp
+        m_MethodName: OnGameResumed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

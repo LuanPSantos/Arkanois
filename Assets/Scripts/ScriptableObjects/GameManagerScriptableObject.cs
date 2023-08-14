@@ -56,6 +56,16 @@ public class GameManagerScriptableObject : ScriptableObject
         ballsInGame = 3;
     }
 
+    public void OnGamePaused()
+    {
+        actionInput.Disable();
+    }
+
+    public void OnGameResumed()
+    {
+        actionInput.Enable();
+    }
+
     public void StartGame(InputAction.CallbackContext context)
     {
         actionInput.Disable();
