@@ -12,30 +12,41 @@ public class GameManagerScriptableObject : ScriptableObject
     private GameEvent gameLost;
     [SerializeField]
     private GameEvent gameEnded;
+    [SerializeField] 
+    private GameEvent gamePaused;
+    [SerializeField]
+    private GameEvent gameResumed;
     [SerializeField]
     private GameEvent disruptionPowerUpEnded;
 
     private PaddleControls controls;
-    private InputAction actionInput;
-    public int ballsInGame;
+    private InputAction startInputAction;
+    private InputAction pauseInputAction;
+    private int ballsInGame;
+    private State state;
 
     void OnEnable()
     {
         controls = new PaddleControls();
-        actionInput = controls.GameStart.Start;
+        startInputAction = controls.GameStart.Start;
+        pauseInputAction = controls.Gameplay.Pause;
 
-        actionInput.performed += StartGame;
+        startInputAction.performed += StartGame;
+        pauseInputAction.performed += PauseGame;
     }
 
     void OnDisable()
     {
-        actionInput.performed -= StartGame;
+        startInputAction.performed -= StartGame;
+        pauseInputAction.performed -= PauseGame;
     }
 
     public void OnLevelLoaded()
     {
+        state = State.READY;
         ballsInGame = 1;
-        actionInput.Enable();
+        startInputAction.Enable();
+        pauseInputAction.Enable();
     }
 
     public void OnAllBricksBroke()
@@ -56,20 +67,33 @@ public class GameManagerScriptableObject : ScriptableObject
         ballsInGame = 3;
     }
 
-    public void OnGamePaused()
+    public void ResumeGame()
     {
-        actionInput.Disable();
+        if (state == State.READY)
+        {
+            startInputAction.Enable();
+        }
+
+        gameResumed.Raise(state);
     }
 
-    public void OnGameResumed()
+    private void StartGame(InputAction.CallbackContext context)
     {
-        actionInput.Enable();
-    }
+        startInputAction.Disable();
 
-    public void StartGame(InputAction.CallbackContext context)
-    {
-        actionInput.Disable();
+        state = State.IN_GAME;
+
         gameStarted.Raise();
+    }
+
+    private void PauseGame(InputAction.CallbackContext context)
+    {
+        if(state == State.READY)
+        {
+            startInputAction.Disable();
+        }
+
+        gamePaused.Raise();
     }
 
     private void CheckGameOver()
@@ -86,5 +110,10 @@ public class GameManagerScriptableObject : ScriptableObject
         {
             disruptionPowerUpEnded.Raise();
         }
+    }
+
+    public enum State
+    {
+        READY, IN_GAME
     }
 }

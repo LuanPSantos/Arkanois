@@ -5,11 +5,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private LevelManagerScriptableObject levelManager;
     [SerializeField]
+    private GameManagerScriptableObject gameManager;
+    [SerializeField]
     private GameObject pauseMenu;
-    [SerializeField]
-    private GameEvent gamePaused;
-    [SerializeField]
-    private GameEvent gameResumed;
+    
 
     public void StartGame()
     {
@@ -22,6 +21,7 @@ public class MainMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        pauseMenu.SetActive(false);
         levelManager.LoadCurrentLevel();
     }
 
@@ -32,13 +32,16 @@ public class MainMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-        pauseMenu.SetActive(false);
-        gameResumed.Raise();
+        gameManager.ResumeGame();
     }
 
-    public void PauseGame()
+    public void OnGamePaused()
     {
         pauseMenu.SetActive(true);
-        gamePaused.Raise();
+    }
+
+    public void OnGameResumed()
+    {
+        pauseMenu.SetActive(false);
     }
 }
