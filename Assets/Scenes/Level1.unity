@@ -3170,10 +3170,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3365873051135535337}
     m_Modifications:
-    - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
-      propertyPath: dropPowerUpProbability
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
       value: 

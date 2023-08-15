@@ -1,38 +1,83 @@
 using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PowerUpDropperBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> powerUps;
+    private GameObject breakPowerUp;
+    [SerializeField]
+    private GameObject laserPowerUp;
+    [SerializeField]
+    private GameObject disruptionPowerUp;
+    [SerializeField]
+    private GameObject enlargePowerUp;
+    [SerializeField]
+    private GameObject catchPowerUp;
+    [SerializeField]
+    private GameObject slowPowerUp;
     [SerializeField]
     private int dropPowerUpProbability;
+    [SerializeField]
+    private GameEvent powerUpDropped;
 
     private bool canDrop;
+    private System.Random random;
 
     void Start()
     {
+        random = new System.Random();
         canDrop = true;
     }
 
     public void OnDisabelDrop()
     {
+        Debug.LogWarning("OnDisabelDrop " + canDrop);
         canDrop = false;
     }
 
     public void OnEnableDrop()
     {
+        Debug.LogWarning("OnEnableDrop " + canDrop);
         canDrop = true;
     }
 
     public void DropPowerUp()
     {
-        var random = Random.Range(0, 100);
+        Debug.LogWarning("DropPowerUp " + canDrop);
+        if (!canDrop) return;
 
-        if (random % (100 / dropPowerUpProbability) == 0 && canDrop)
+        
+
+        var picked = random.Next(0, 100);
+
+        Debug.LogWarning("picked " + picked);
+
+        if (picked % 19 == 0)
         {
-            Instantiate(powerUps[Random.Range(0, powerUps.Count)], transform.position, Quaternion.identity, null);
+            Instantiate(breakPowerUp, transform.position, Quaternion.identity, null);
         }
+        else if(picked % 20 == 0)
+        {
+            Instantiate(laserPowerUp, transform.position, Quaternion.identity, null);
+        }
+        else if (picked % 6 == 0)
+        {
+            Instantiate(disruptionPowerUp, transform.position, Quaternion.identity, null);
+        }
+        else if (picked % 5 == 0)
+        {
+            Instantiate(enlargePowerUp, transform.position, Quaternion.identity, null);
+        }
+        else if (picked % 4 == 0)
+        {
+            Instantiate(catchPowerUp, transform.position, Quaternion.identity, null);
+        }
+        else if (picked % 3 == 0)
+        {
+            Instantiate(slowPowerUp, transform.position, Quaternion.identity, null);
+        }
+
+        powerUpDropped.Raise();      
     }
 }

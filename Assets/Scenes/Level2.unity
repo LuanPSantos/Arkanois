@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -223,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -314,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -479,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -556,7 +556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -724,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -888,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -965,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -1038,7 +1038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -1120,7 +1120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -1201,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -1283,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
@@ -1360,7 +1360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -1443,7 +1443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -1524,7 +1524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -1601,7 +1601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -1674,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -1760,7 +1760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -1842,7 +1842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -1925,7 +1925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -2084,7 +2084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -2170,7 +2170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -2252,7 +2252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -2466,7 +2466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -2549,7 +2549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -2630,7 +2630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -2708,7 +2708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -2790,7 +2790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -2876,7 +2876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -2954,7 +2954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -3046,7 +3046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -3127,7 +3127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -3204,7 +3204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -3281,7 +3281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -3363,7 +3363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
@@ -3441,7 +3441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -3518,7 +3518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -3595,7 +3595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -3677,7 +3677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -3759,7 +3759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -3841,7 +3841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -3918,7 +3918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -3999,7 +3999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -4086,7 +4086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
@@ -4163,7 +4163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -4256,7 +4256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -4337,7 +4337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -4415,7 +4415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -4497,7 +4497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -4589,7 +4589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -4676,7 +4676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -4753,7 +4753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -4839,7 +4839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -4926,7 +4926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -4999,7 +4999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -5095,7 +5095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -5173,7 +5173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -5254,7 +5254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -5331,7 +5331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -5413,7 +5413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -5495,7 +5495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -5578,7 +5578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -5655,7 +5655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -5736,7 +5736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -5809,7 +5809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -5895,7 +5895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -6002,7 +6002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -6080,7 +6080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5942100798391092711, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: ballConext
@@ -6161,7 +6161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -6238,7 +6238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -6325,7 +6325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -6398,7 +6398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -6489,7 +6489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -6566,7 +6566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -6653,7 +6653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -6736,7 +6736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7074843323282951300, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: ballConext
@@ -6817,7 +6817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
@@ -6899,7 +6899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: c4005bcbc118bbf4ebd5cc901ef292dc, type: 3}
       propertyPath: m_Name
@@ -6996,7 +6996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -7073,7 +7073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -7155,7 +7155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
@@ -7237,7 +7237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
@@ -7334,7 +7334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
@@ -7416,7 +7416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
@@ -7494,7 +7494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: e625f690773c74e4ab0bf9e96536c008, type: 3}
       propertyPath: m_Name
@@ -7575,7 +7575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: a65cbf3e55cd815459341388cba0c25d, type: 3}
       propertyPath: m_Name
@@ -7657,7 +7657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10788442179122922, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: dropPowerUpProbability
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
