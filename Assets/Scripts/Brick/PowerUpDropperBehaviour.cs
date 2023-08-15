@@ -32,52 +32,49 @@ public class PowerUpDropperBehaviour : MonoBehaviour
 
     public void OnDisabelDrop()
     {
-        Debug.LogWarning("OnDisabelDrop " + canDrop);
         canDrop = false;
     }
 
     public void OnEnableDrop()
     {
-        Debug.LogWarning("OnEnableDrop " + canDrop);
         canDrop = true;
     }
 
     public void DropPowerUp()
     {
-        Debug.LogWarning("DropPowerUp " + canDrop);
         if (!canDrop) return;
-
-        
 
         var picked = random.Next(0, 100);
 
-        Debug.LogWarning("picked " + picked);
-
-        if (picked % 19 == 0)
+        if (picked % 61 == 0)
         {
-            Instantiate(breakPowerUp, transform.position, Quaternion.identity, null);
+            Drop(breakPowerUp);
         }
         else if(picked % 20 == 0)
         {
-            Instantiate(laserPowerUp, transform.position, Quaternion.identity, null);
+            Drop(laserPowerUp);
         }
         else if (picked % 6 == 0)
         {
-            Instantiate(disruptionPowerUp, transform.position, Quaternion.identity, null);
+            Drop(disruptionPowerUp);
         }
         else if (picked % 5 == 0)
         {
-            Instantiate(enlargePowerUp, transform.position, Quaternion.identity, null);
+            Drop(enlargePowerUp);
         }
         else if (picked % 4 == 0)
         {
-            Instantiate(catchPowerUp, transform.position, Quaternion.identity, null);
+            Drop(catchPowerUp);
         }
         else if (picked % 3 == 0)
         {
-            Instantiate(slowPowerUp, transform.position, Quaternion.identity, null);
-        }
+            Drop(slowPowerUp);
+        }  
+    }
 
-        powerUpDropped.Raise();      
+    private void Drop(GameObject powerUp)
+    {
+        Instantiate(powerUp, transform.position, Quaternion.identity, null);
+        powerUpDropped.Raise();
     }
 }

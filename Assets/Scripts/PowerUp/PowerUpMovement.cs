@@ -9,6 +9,8 @@ public class PowerUpMovement : MonoBehaviour
     private float speed;
     [SerializeField]
     private GameEvent powerUpDestroyed;
+    [SerializeField]
+    private float fieldMinimumY = -5.5f;
 
     private bool canMove;
     
@@ -24,7 +26,7 @@ public class PowerUpMovement : MonoBehaviour
             transform.Translate(Vector2.down * speed * Time.deltaTime);
         } 
         
-        if(transform.position.y < -5)
+        if(transform.position.y < fieldMinimumY)
         {
             powerUpDestroyed.Raise();
             Destroy(gameObject);
