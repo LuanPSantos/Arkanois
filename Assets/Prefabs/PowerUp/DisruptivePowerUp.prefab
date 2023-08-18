@@ -109,7 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41528b674feb4b47ac4a2155408b77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 3
+  powerUpDestroyed: {fileID: 11400000, guid: 9506dccbf8142f0469d175c5b99999cf, type: 2}
+  fieldMinimumY: -6.5
 --- !u!114 &8147852576198401221
 MonoBehaviour:
   m_ObjectHideFlags: 0

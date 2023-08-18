@@ -1,18 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PowerUpDropperBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> powerUps;
+    private GameObject breakPowerUp;
+    [SerializeField]
+    private GameObject laserPowerUp;
+    [SerializeField]
+    private GameObject disruptionPowerUp;
+    [SerializeField]
+    private GameObject enlargePowerUp;
+    [SerializeField]
+    private GameObject catchPowerUp;
+    [SerializeField]
+    private GameObject slowPowerUp;
     [SerializeField]
     private int dropPowerUpProbability;
+    [SerializeField]
+    private GameEvent powerUpDropped;
 
     private bool canDrop;
+    private System.Random random;
 
     void Start()
     {
+        random = new System.Random();
         canDrop = true;
     }
 
@@ -28,11 +42,39 @@ public class PowerUpDropperBehaviour : MonoBehaviour
 
     public void DropPowerUp()
     {
-        var random = Random.Range(0, 100);
+        if (!canDrop) return;
 
-        if (random % (100 / dropPowerUpProbability) == 0 && canDrop)
+        var picked = random.Next(0, 100);
+
+        if (picked % 61 == 0)
         {
-            Instantiate(powerUps[Random.Range(0, powerUps.Count)], transform.position, Quaternion.identity, null);
+            Drop(breakPowerUp);
         }
+        else if(picked % 20 == 0)
+        {
+            Drop(laserPowerUp);
+        }
+        else if (picked % 6 == 0)
+        {
+            Drop(disruptionPowerUp);
+        }
+        else if (picked % 5 == 0)
+        {
+            Drop(enlargePowerUp);
+        }
+        else if (picked % 4 == 0)
+        {
+            Drop(catchPowerUp);
+        }
+        else if (picked % 3 == 0)
+        {
+            Drop(slowPowerUp);
+        }  
+    }
+
+    private void Drop(GameObject powerUp)
+    {
+        Instantiate(powerUp, transform.position, Quaternion.identity, null);
+        powerUpDropped.Raise();
     }
 }

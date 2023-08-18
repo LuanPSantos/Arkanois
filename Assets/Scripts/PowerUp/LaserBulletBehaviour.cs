@@ -7,8 +7,8 @@ public class LaserBulletBehaviour : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-
-    private int timeToLive = 1;
+    [SerializeField]
+    private float maxDistanceY;
     private bool canMove;
 
     void Awake()
@@ -16,16 +16,16 @@ public class LaserBulletBehaviour : MonoBehaviour
         canMove = true;
     }
 
-    private void Start()
-    {
-        Destroy(gameObject, timeToLive);
-    }
-
     void Update()
     {
         if (canMove)
         {
             transform.Translate(Vector2.up * Time.deltaTime * speed);
+        }
+
+        if(transform.position.y > maxDistanceY)
+        {
+            Destroy(gameObject);
         }
     }
 

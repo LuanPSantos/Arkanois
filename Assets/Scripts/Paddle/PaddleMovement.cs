@@ -73,9 +73,13 @@ public class PaddleMovement : MonoBehaviour
         Stop();
     }
 
-    public void OnGameResumed()
+    public void OnGameResumed(object state)
     {
-        Move();
+        if((GameManagerScriptableObject.State)state == GameManagerScriptableObject.State.IN_GAME)
+        {
+            Move();
+        }
+        
     }
 
     private void Move()
