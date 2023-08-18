@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4955607679019782180}
   - component: {fileID: 2345951735184589138}
   - component: {fileID: 5843404945497051388}
+  - component: {fileID: 7225921925993460297}
+  - component: {fileID: 6930574504319055111}
   - component: {fileID: 8469027286020259408}
   - component: {fileID: 8822352584526379521}
   - component: {fileID: 4128286380780693508}
@@ -38,7 +40,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3459102506690064959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -5.325, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -121,12 +123,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  startPosition: {x: -1.85, y: -4.345}
+  startPosition: {x: 0, y: -5.325}
   BallOutOfBounderies: {fileID: 11400000, guid: 0740e93692425f346abd4ca1d4e8e64a, type: 2}
-  fieldMinimumX: -6.35
-  fieldMaximumX: 2.645
-  fieldMaximumY: 4.675
-  fieldMinimumY: -5
+  fieldMinimumX: -4.52
+  fieldMaximumX: 4.52
+  fieldMaximumY: 4.2
+  fieldMinimumY: -6.25
 --- !u!114 &4955607679019782180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +170,62 @@ MonoBehaviour:
   ballPrefab: {fileID: 3459102506690064959}
   angleInDegree: 15
   disruptionCompleted: {fileID: 11400000, guid: 8f119166366c40242a741daa277e629a, type: 2}
+--- !u!114 &7225921925993460297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459102506690064959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0416f84d6c8a5104cab2e369aae1dab3, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2752711493621843641}
+        m_TargetAssemblyTypeName: BallBehaviour, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6930574504319055111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459102506690064959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: bf0496414fc873244b2c82d31f8d3e32, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2752711493621843641}
+        m_TargetAssemblyTypeName: BallBehaviour, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8469027286020259408
 MonoBehaviour:
   m_ObjectHideFlags: 0
