@@ -14,6 +14,7 @@ TagManager:
   - WallBottom
   - PowerUp
   - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

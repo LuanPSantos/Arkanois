@@ -41,6 +41,11 @@ public class PaddleBehaviour : MonoBehaviour
 
             ball.Move(movement);
         }
+
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private Vector2 ReflectOnPaddle(Vector2 ballPosition)

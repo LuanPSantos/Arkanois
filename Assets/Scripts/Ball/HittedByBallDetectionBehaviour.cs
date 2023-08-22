@@ -2,13 +2,14 @@ using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HittedByBallDetectionBehaviour : MonoBehaviour
 {
-
-    private BrickBehaviour brick;
     [SerializeField]
     private GameObject ballConext;
+    [SerializeField]
+    private UnityEvent onHit;
     private BoxCollider2D boxCollider;
     private BallBehaviour[] balls;
 
@@ -16,7 +17,6 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         balls = ballConext.GetComponentsInChildren<BallBehaviour>();
-        brick = GetComponent<BrickBehaviour>();
     }
 
     void Update()
@@ -26,7 +26,8 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             if (CheckCollision(ball))
             {
                 Reflect(ball);
-                brick.OnBrickHitted();
+                onHit?.Invoke();
+                //brick.OnBrickHitted();
             }
         }
     }

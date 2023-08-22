@@ -1,10 +1,11 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 
-public class EnemyNavigation : MonoBehaviour
+public class EnemyBehaviour : MonoBehaviour
 {
 
     [SerializeField]
@@ -24,7 +25,12 @@ public class EnemyNavigation : MonoBehaviour
         PickRandomDestination();
     }
 
-    private void Update()
+    public void OnHittedByBall()
+    {
+        Destroy(this.gameObject);
+    }
+
+    void Update()
     {
         currentTimer += Time.deltaTime;
 
@@ -36,8 +42,8 @@ public class EnemyNavigation : MonoBehaviour
 
     private void PickRandomDestination()
     {
-        singleMomentDurantion = Random.Range(minMovementDurantion, maxMovementDurantion);
         currentTimer = 0;
+        singleMomentDurantion = Random.Range(minMovementDurantion, maxMovementDurantion);
         var grid = AstarPath.active.data.gridGraph;
 
         randomNode = grid.nodes[Random.Range(0, grid.nodes.Length)];
