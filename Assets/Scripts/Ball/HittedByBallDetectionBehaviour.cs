@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,12 +43,24 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
 
     public void EnableDetection()
     {
+        var bounds = boxCollider.bounds;
+        // Expand the bounds along the Z axis
+        bounds.Expand(Vector3.forward * 1000);
+        var guo = new GraphUpdateObject(bounds);
+        // change some settings on the object
+        AstarPath.active.UpdateGraphs(guo);
         boxCollider.enabled = true;
         enabled = true;
     }
 
     public void DisableDetection()
     {
+        var bounds = boxCollider.bounds;
+        // Expand the bounds along the Z axis
+        bounds.Expand(Vector3.forward * 1000);
+        var guo = new GraphUpdateObject(bounds);
+        // change some settings on the object
+        AstarPath.active.UpdateGraphs(guo);
         boxCollider.enabled = false;
         enabled = false;
     }

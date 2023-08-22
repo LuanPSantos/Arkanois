@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5474361174945758133}
   - component: {fileID: 3205649126885710787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7956508384001365714}
   - component: {fileID: 7956508384001365715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 8458890792214648735}
   - component: {fileID: 8912082460857857510}
   - component: {fileID: -9100090047203733653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DarkBlueBrick
   m_TagString: Brick
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7956508384785316549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
