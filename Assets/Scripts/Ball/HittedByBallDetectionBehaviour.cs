@@ -27,7 +27,6 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             {
                 Reflect(ball);
                 onHit?.Invoke();
-                //brick.OnBrickHitted();
             }
         }
     }
@@ -44,26 +43,29 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
 
     public void EnableDetection()
     {
-        var bounds = boxCollider.bounds;
-        // Expand the bounds along the Z axis
-        bounds.Expand(Vector3.forward * 1000);
-        var guo = new GraphUpdateObject(bounds);
-        // change some settings on the object
-        AstarPath.active.UpdateGraphs(guo);
+        UpdateNavigationGrid();
         boxCollider.enabled = true;
         enabled = true;
     }
 
     public void DisableDetection()
     {
-        var bounds = boxCollider.bounds;
-        // Expand the bounds along the Z axis
-        bounds.Expand(Vector3.forward * 1000);
-        var guo = new GraphUpdateObject(bounds);
-        // change some settings on the object
-        AstarPath.active.UpdateGraphs(guo);
+        UpdateNavigationGrid();
         boxCollider.enabled = false;
         enabled = false;
+    }
+
+    public void SetBallContext(GameObject ballContext)
+    {
+        this.ballConext = ballContext;
+    }
+
+    private void UpdateNavigationGrid()
+    {
+        var bounds = boxCollider.bounds;
+        bounds.Expand(Vector3.forward * 1000);
+        var guo = new GraphUpdateObject(bounds);
+        AstarPath.active.UpdateGraphs(guo);
     }
 
     private void GetBall()
