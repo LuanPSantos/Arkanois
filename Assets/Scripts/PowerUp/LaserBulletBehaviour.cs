@@ -35,6 +35,14 @@ public class LaserBulletBehaviour : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            var enemy = collision.gameObject.GetComponent<EnemyBehaviour>();
+
+            enemy.Destroy();
+            Destroy(gameObject);
+        }
     }
 
     public void OnGamePaused()

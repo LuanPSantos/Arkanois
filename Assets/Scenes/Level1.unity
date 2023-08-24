@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedBrick (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -216,6 +220,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
@@ -291,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -364,6 +376,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
@@ -439,6 +455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkBlueBrick (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -512,6 +532,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
@@ -587,6 +611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkBlueBrick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -660,6 +688,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
@@ -809,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -882,6 +918,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
@@ -1031,6 +1071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkBlueBrick (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1104,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -1253,6 +1301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SilverBrick
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1326,6 +1378,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -1401,6 +1457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedBrick (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1474,6 +1534,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
@@ -1549,6 +1613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1622,6 +1690,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
@@ -1697,6 +1769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1770,6 +1846,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
@@ -1845,6 +1925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SilverBrick (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1919,6 +2003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SilverBrick (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1992,6 +2080,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_Name
       value: LightGreenBrick (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
@@ -2141,6 +2233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2288,6 +2384,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -2585,6 +2685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2650,6 +2754,10 @@ PrefabInstance:
     - target: {fileID: 1653188153733325074, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
       propertyPath: m_Name
       value: Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653188153733325074, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6051992738569848662, guid: 76810f6766b359540a357fc2c5fa611a, type: 3}
       propertyPath: m_RootOrder
@@ -2719,6 +2827,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -2868,6 +2980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2941,6 +3057,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
@@ -3016,6 +3136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3090,6 +3214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3163,6 +3291,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
@@ -3313,6 +3445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3386,6 +3522,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
@@ -3461,6 +3601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SilverBrick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3534,6 +3678,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -3757,6 +3905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3905,6 +4057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3978,6 +4134,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
@@ -4107,6 +4267,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
   m_PrefabInstance: {fileID: 1496656753}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1550217713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+  m_PrefabInstance: {fileID: 3365873051135535336}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35d66770972820488ee0504830d52b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1565745543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4201,6 +4372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4274,6 +4449,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -4349,6 +4528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedBrick (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4422,6 +4605,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -4497,6 +4684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4571,6 +4762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedBrick (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4644,6 +4839,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
@@ -4793,6 +4992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4866,6 +5069,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
@@ -4941,6 +5148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5014,6 +5225,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_Name
       value: YellowBrick (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
@@ -5163,6 +5378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedBrick (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5237,6 +5456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5310,6 +5533,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_Name
       value: DarkBlueBrick (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 6e1125caa87b4de42a315f27bc43d97a, type: 3}
       propertyPath: m_RootOrder
@@ -5446,6 +5673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SilverBrick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5519,6 +5750,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_Name
       value: PinkBrick (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
@@ -5594,6 +5829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightGreenBrick (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: b06021d7229b4904ba1bf8ff30b482cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5667,6 +5906,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_Name
       value: RedBrick (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: ea56ddb4329cc3e449d62668a0697cad, type: 3}
       propertyPath: m_RootOrder
@@ -5816,6 +6059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowBrick (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5890,6 +6137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBrick (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: a367412c824d79c4280ddc60ad455284, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: a367412c824d79c4280ddc60ad455284, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5963,6 +6214,10 @@ PrefabInstance:
     - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_Name
       value: SilverBrick (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956508384284696626, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956508384284696629, guid: 51c0ef9b6c7f5b64db0996a9de1ecd38, type: 3}
       propertyPath: m_RootOrder
@@ -6074,6 +6329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallContext
       objectReference: {fileID: 0}
+    - target: {fileID: 2927808307543112240, guid: 1fe89ade5e970b54da82d31eb56d84cb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6087,6 +6346,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 436569569001782702, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1550217713}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnemyDistroied
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemySpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: ballConext
+      value: 
+      objectReference: {fileID: 1066915259}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: maxEnemiesInScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: minimumTimeToSpawn
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5096367307433140768, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -6138,6 +6441,10 @@ PrefabInstance:
     - target: {fileID: 7132398999508000420, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165632356096161768, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8755798459820410847, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: m_LocalPosition.x

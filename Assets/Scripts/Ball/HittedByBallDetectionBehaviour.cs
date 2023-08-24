@@ -1,21 +1,26 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HittedByBallDetectionBehaviour : MonoBehaviour
 {
-
-    private BrickBehaviour brick;
     [SerializeField]
     private GameObject ballConext;
+    [SerializeField]
+    private UnityEvent onHit;
     private BoxCollider2D boxCollider;
-    private BallBehaviour[] balls;
+    private BallBehaviour[] balls = new BallBehaviour[0];
 
     void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        balls = ballConext.GetComponentsInChildren<BallBehaviour>();
-        brick = GetComponent<BrickBehaviour>();
+        if(ballConext != null)
+        {
+            balls = ballConext.GetComponentsInChildren<BallBehaviour>();
+        }
+        
     }
 
     void Update()
@@ -25,7 +30,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
             if (CheckCollision(ball))
             {
                 Reflect(ball);
-                brick.OnBrickHitted();
+                onHit?.Invoke();
             }
         }
     }
@@ -42,14 +47,30 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
 
     public void EnableDetection()
     {
+        UpdateNavigationGrid();
         boxCollider.enabled = true;
         enabled = true;
     }
 
     public void DisableDetection()
     {
+        UpdateNavigationGrid();
         boxCollider.enabled = false;
         enabled = false;
+    }
+
+    public void SetBallContext(GameObject ballContext)
+    {
+        this.ballConext = ballContext;
+        GetBall();
+    }
+
+    private void UpdateNavigationGrid()
+    {
+        var bounds = boxCollider.bounds;
+        bounds.Expand(Vector3.forward * 1000);
+        var guo = new GraphUpdateObject(bounds);
+        AstarPath.active.UpdateGraphs(guo);
     }
 
     private void GetBall()
