@@ -11,12 +11,16 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
     [SerializeField]
     private UnityEvent onHit;
     private BoxCollider2D boxCollider;
-    private BallBehaviour[] balls;
+    private BallBehaviour[] balls = new BallBehaviour[0];
 
     void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        balls = ballConext.GetComponentsInChildren<BallBehaviour>();
+        if(ballConext != null)
+        {
+            balls = ballConext.GetComponentsInChildren<BallBehaviour>();
+        }
+        
     }
 
     void Update()
@@ -58,6 +62,7 @@ public class HittedByBallDetectionBehaviour : MonoBehaviour
     public void SetBallContext(GameObject ballContext)
     {
         this.ballConext = ballContext;
+        GetBall();
     }
 
     private void UpdateNavigationGrid()

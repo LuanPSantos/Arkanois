@@ -4267,6 +4267,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7956508384284696629, guid: d05af4d48e398e6488a69a2618bfb11e, type: 3}
   m_PrefabInstance: {fileID: 1496656753}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1550217713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+  m_PrefabInstance: {fileID: 3365873051135535336}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35d66770972820488ee0504830d52b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1565745543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6339,10 +6350,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1550217713}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnemyDistroied
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemySpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920988309413530251, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 1066915259}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: maxEnemiesInScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: minimumTimeToSpawn
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5096367307433140768, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: m_Name
       value: Managers

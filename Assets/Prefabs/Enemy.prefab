@@ -207,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minMovementDurantion: 1
   maxMovementDurantion: 3
+  destroied: {fileID: 11400000, guid: 6f3f1c2c95c3fa1478c1731f6cf677cb, type: 2}
 --- !u!114 &4031563947467500821
 MonoBehaviour:
   m_ObjectHideFlags: 0

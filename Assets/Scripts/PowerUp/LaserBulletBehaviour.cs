@@ -38,7 +38,9 @@ public class LaserBulletBehaviour : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            var enemy = collision.gameObject.GetComponent<EnemyBehaviour>();
+
+            enemy.Destroy();
             Destroy(gameObject);
         }
     }

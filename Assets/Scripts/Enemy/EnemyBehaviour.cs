@@ -12,6 +12,8 @@ public class EnemyBehaviour : MonoBehaviour
     private float minMovementDurantion;
     [SerializeField]
     private float maxMovementDurantion;
+    [SerializeField]
+    private GameEvent destroied;
     private AIPath path;
     private GraphNode randomNode;
 
@@ -27,7 +29,13 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void OnHittedByBall()
     {
-        Destroy(this.gameObject);
+        Destroy();
+    }
+
+    public void Destroy()
+    {
+        destroied.Raise();
+        Destroy(gameObject);
     }
 
     void Update()

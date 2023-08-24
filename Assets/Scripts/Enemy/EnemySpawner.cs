@@ -13,16 +13,24 @@ public class EnemySpawner : MonoBehaviour
     private Transform rightSpawnPoint;
     [SerializeField]
     private Transform leftSpawnPoint;
+    [SerializeField]
+    private int maxEnemiesInScene;
+    [SerializeField]
+    private float minimumTimeToSpawn;
 
-
-    void Start()
-    {
-        Spawn();
-    }
+    private int totalEnemies;
+    private float spawnTimer = 0;
 
     void Update()
     {
-        
+        spawnTimer += Time.deltaTime;
+
+        if(spawnTimer > minimumTimeToSpawn && totalEnemies < maxEnemiesInScene)
+        {
+            Spawn();
+            spawnTimer = 0;
+            totalEnemies++;
+        }
     }
 
     public void Spawn()
@@ -31,5 +39,10 @@ public class EnemySpawner : MonoBehaviour
         var enemy = Instantiate(enemyPrefab, point.position, Quaternion.identity);
 
         enemy.GetComponent<HittedByBallDetectionBehaviour>().SetBallContext(ballConext);
+    }
+
+    public void OnEnemyDistroied()
+    {
+        totalEnemies--;
     }
 }

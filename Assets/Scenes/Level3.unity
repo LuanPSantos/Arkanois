@@ -8733,6 +8733,14 @@ PrefabInstance:
       propertyPath: ballConext
       value: 
       objectReference: {fileID: 1545068717}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: maxEnemiesInScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: minimumTimeToSpawn
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5096367307433140768, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: m_Name
       value: Managers
