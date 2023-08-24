@@ -2,6 +2,7 @@ using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -27,6 +28,16 @@ public class EnemyBehaviour : MonoBehaviour
         PickRandomDestination();
     }
 
+    void Update()
+    {
+        currentTimer += Time.deltaTime;
+
+        if(currentTimer > singleMomentDurantion)
+        {
+            PickRandomDestination();
+        }
+    }
+
     public void OnHittedByBall()
     {
         Destroy();
@@ -38,14 +49,14 @@ public class EnemyBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Update()
+    public void OnGamePaused()
     {
-        currentTimer += Time.deltaTime;
+        path.canMove = false;
+    }
 
-        if(currentTimer > singleMomentDurantion)
-        {
-            PickRandomDestination();
-        }
+    public void OnGameResumed()
+    {
+        path.canMove = true;
     }
 
     private void PickRandomDestination()
