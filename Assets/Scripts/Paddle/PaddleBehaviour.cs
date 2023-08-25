@@ -12,6 +12,8 @@ public class PaddleBehaviour : MonoBehaviour
     private Transform leftStartReflection;
     [SerializeField]
     private Transform leftEndReflection;
+    [SerializeField]
+    private GameEvent paddleHitted;
 
     private BoxCollider2D boxCollider;
 
@@ -40,6 +42,7 @@ public class PaddleBehaviour : MonoBehaviour
             var movement = ReflectOnPaddle(ball.transform.position);
 
             ball.Move(movement);
+            paddleHitted.Raise();
         }
 
         if(collision.gameObject.CompareTag("Enemy"))

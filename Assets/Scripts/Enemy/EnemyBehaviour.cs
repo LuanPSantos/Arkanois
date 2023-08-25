@@ -15,6 +15,8 @@ public class EnemyBehaviour : MonoBehaviour
     private float maxMovementDurantion;
     [SerializeField]
     private GameEvent destroied;
+    [SerializeField]
+    private int score;
     private AIPath path;
     private GraphNode randomNode;
 
@@ -45,7 +47,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Destroy()
     {
-        destroied.Raise();
+        destroied.Raise(score);
         Destroy(gameObject);
     }
 

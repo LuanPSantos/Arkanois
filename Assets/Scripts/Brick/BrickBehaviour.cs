@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using static Unity.Collections.AllocatorManager;
@@ -13,6 +14,10 @@ public class BrickBehaviour : MonoBehaviour
     private GameObject graphics;
     [SerializeField]
     private bool isBreakable = true;
+    [SerializeField]
+    private int score;
+    [SerializeField]
+    private GameObject scoreText;
         
     private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
@@ -50,7 +55,9 @@ public class BrickBehaviour : MonoBehaviour
         hitCount++;
         if (hitCount >= brick.resistence)
         {
-            onBrickBroke.Raise();
+            onBrickBroke.Raise(score);
+            var text = Instantiate(scoreText, transform.position, Quaternion.identity);
+            text.GetComponent<TextMeshPro>().text = score.ToString();
             powerUp.DropPowerUp();
             graphics.SetActive(false);
             hitDetection.DisableDetection();

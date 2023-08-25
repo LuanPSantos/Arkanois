@@ -272,6 +272,8 @@ MonoBehaviour:
   brick: {fileID: 11400000, guid: 38843972c1bd87c4094f797afac8a2f1, type: 2}
   graphics: {fileID: 7956508384785316548}
   isBreakable: 1
+  score: 200
+  scoreText: {fileID: 6163082377945687610, guid: ed43e20bf2ca1934188e60e8067f076d, type: 3}
 --- !u!114 &7074843323282951300
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -242,6 +242,7 @@ MonoBehaviour:
   rightEndReflection: {fileID: 8482715463119047836}
   leftStartReflection: {fileID: 5388194440897785427}
   leftEndReflection: {fileID: 1195587148389703834}
+  paddleHitted: {fileID: 11400000, guid: 95a9706dfa30da0418aea3b9196ab4ae, type: 2}
 --- !u!114 &1358321308000159049
 MonoBehaviour:
   m_ObjectHideFlags: 0
