@@ -22,10 +22,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     private float currentTimer;
     private float singleMomentDurantion;
+    private ScorePopUpBehaviour scorePopUpBehaviour;
 
     void Start()
     {
         path = GetComponent<AIPath>();
+        scorePopUpBehaviour = GetComponent<ScorePopUpBehaviour>();
 
         PickRandomDestination();
     }
@@ -47,6 +49,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Destroy()
     {
+        scorePopUpBehaviour.OnScore(score);
         destroied.Raise(score);
         Destroy(gameObject);
     }

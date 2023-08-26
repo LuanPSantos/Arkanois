@@ -16,9 +16,8 @@ public class BrickBehaviour : MonoBehaviour
     private bool isBreakable = true;
     [SerializeField]
     private int score;
-    [SerializeField]
-    private GameObject scoreText;
-        
+
+    private ScorePopUpBehaviour scorePopUpBehaviour;   
     private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
     private HittedByBallDetectionBehaviour hitDetection;
@@ -30,7 +29,7 @@ public class BrickBehaviour : MonoBehaviour
         powerUp = GetComponent<PowerUpDropperBehaviour>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         hitDetection = GetComponent<HittedByBallDetectionBehaviour>();
-
+        scorePopUpBehaviour = GetComponent<ScorePopUpBehaviour>();
 
         spriteRenderer.color = brick.color;        
     }
@@ -56,8 +55,7 @@ public class BrickBehaviour : MonoBehaviour
         if (hitCount >= brick.resistence)
         {
             onBrickBroke.Raise(score);
-            var text = Instantiate(scoreText, transform.position, Quaternion.identity);
-            text.GetComponent<TextMeshPro>().text = score.ToString();
+            scorePopUpBehaviour.OnScore(score);
             powerUp.DropPowerUp();
             graphics.SetActive(false);
             hitDetection.DisableDetection();

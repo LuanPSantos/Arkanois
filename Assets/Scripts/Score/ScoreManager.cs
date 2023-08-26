@@ -6,46 +6,66 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField]
     private GameEvent scoreChanged;
+    [SerializeField]
+    private GameEvent comboChanged;
+    [SerializeField]
+    private GameEvent comboScoreChanged;
     private int score;
     private int comboCount;
     private int comboScore;
     void Start()
     {
-        comboCount = 0;
         score = 0;
-        scoreChanged.Raise(0);
+        scoreChanged.Raise(score);
+
+        comboCount = 0;
+        comboChanged.Raise(comboCount);
+
+        comboScore = 0;
+        comboScoreChanged.Raise(comboScore);
     }
 
     public void OnBrickBroked(object brickScore)
     {
         comboCount++;
-        comboScore = (int) brickScore;
-        scoreChanged.Raise(score + comboScore);
+        comboScore += (int)brickScore;
+        comboChanged.Raise(comboCount);
+        comboScoreChanged.Raise(comboScore);
     }
 
     public void OnEnemyDestroied(object enemyScore)
     {
         comboCount++;
-        comboScore = (int) enemyScore;
-        scoreChanged.Raise(score + comboScore);
+        comboScore += (int)enemyScore;
+        comboChanged.Raise(comboCount);
+        comboScoreChanged.Raise(comboScore);
     }
 
     public void OnHitPaddle()
     {
-        comboCount = 0;
-        score += comboScore;
-        scoreChanged.Raise(score);
+        CommitScore();
     }
 
     public void OnGameLost()
     {
-        score += comboScore;
-        scoreChanged.Raise(score);
+        CommitScore();
     }
 
     public void OnGameEnded()
     {
-        score += comboScore;
-        scoreChanged.Raise(score);
+        CommitScore();
     }
+
+    private void CommitScore()
+    {
+        score += comboScore * comboCount;
+        scoreChanged.Raise(score);
+
+        comboCount = 0;
+        comboChanged.Raise(comboCount);
+
+        comboScore = 0;
+        comboScoreChanged.Raise(comboScore);
+    }
+
 }
