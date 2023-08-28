@@ -6339,6 +6339,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 851975824449252529, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: m_margin.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305858862143691941, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3891222215864867843, guid: edc00499b9cfce4419efff7c24f4d3a1, type: 3}
       propertyPath: ballConext
       value: 

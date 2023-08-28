@@ -14,10 +14,7 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     public void OnLevelFinished()
     {
-        
         currentLevelIndex++;
-
-        
 
         if (currentLevelIndex < levelSceneNumbers.Count)
         {

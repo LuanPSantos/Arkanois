@@ -54,16 +54,6 @@ public class EnemyBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void OnGamePaused()
-    {
-        path.canMove = false;
-    }
-
-    public void OnGameResumed()
-    {
-        path.canMove = true;
-    }
-
     private void PickRandomDestination()
     {
         currentTimer = 0;

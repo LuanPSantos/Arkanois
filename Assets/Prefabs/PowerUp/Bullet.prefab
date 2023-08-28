@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 5721285059183484405}
   - component: {fileID: 5592648640328518707}
   - component: {fileID: 3044272074670953949}
+  - component: {fileID: 4098425446108124358}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -244,6 +245,34 @@ MonoBehaviour:
       - m_Target: {fileID: 5721285059183484405}
         m_TargetAssemblyTypeName: LaserBulletBehaviour, Assembly-CSharp
         m_MethodName: OnGameResumed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4098425446108124358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408347788228535000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9428e93bc8cf645b3cf334167e6baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 9710c08332bed4c4daf7e8949b2e0588, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5721285059183484405}
+        m_TargetAssemblyTypeName: LaserBulletBehaviour, Assembly-CSharp
+        m_MethodName: OnGameEnded
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

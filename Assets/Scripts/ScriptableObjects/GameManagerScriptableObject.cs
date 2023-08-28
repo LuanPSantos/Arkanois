@@ -52,6 +52,7 @@ public class GameManagerScriptableObject : ScriptableObject
     public void OnAllBricksBroke()
     {
         gameEnded.Raise();
+        Time.timeScale = 0;
     }
 
     public void OnBallOutOffBaudaries()
@@ -73,8 +74,9 @@ public class GameManagerScriptableObject : ScriptableObject
         {
             startInputAction.Enable();
         }
-
+        
         gameResumed.Raise(state);
+        Time.timeScale = 1;
     }
 
     private void StartGame(InputAction.CallbackContext context)
@@ -84,6 +86,7 @@ public class GameManagerScriptableObject : ScriptableObject
         state = State.IN_GAME;
 
         gameStarted.Raise();
+        Time.timeScale = 1;
     }
 
     private void PauseGame(InputAction.CallbackContext context)
@@ -92,8 +95,9 @@ public class GameManagerScriptableObject : ScriptableObject
         {
             startInputAction.Disable();
         }
-
+        
         gamePaused.Raise();
+        Time.timeScale = 0;
     }
 
     private void CheckGameOver()

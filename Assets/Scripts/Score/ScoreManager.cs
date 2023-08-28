@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -10,9 +11,14 @@ public class ScoreManager : MonoBehaviour
     private GameEvent comboChanged;
     [SerializeField]
     private GameEvent comboScoreChanged;
+    [SerializeField]
+    private GameEvent highScoreLoaded;
+
     private int score;
     private int comboCount;
     private int comboScore;
+    private int highScore;
+    private string sceneName;
     void Start()
     {
         score = 0;
@@ -23,6 +29,10 @@ public class ScoreManager : MonoBehaviour
 
         comboScore = 0;
         comboScoreChanged.Raise(comboScore);
+
+        sceneName = SceneManager.GetActiveScene().name;
+        highScore = PlayerPrefs.GetInt(sceneName, 0);
+        highScoreLoaded.Raise(highScore);
     }
 
     public void OnBrickBroked(object brickScore)
@@ -54,6 +64,7 @@ public class ScoreManager : MonoBehaviour
     public void OnGameEnded()
     {
         CommitScore();
+        SetHighScore();
     }
 
     private void CommitScore()
@@ -66,6 +77,16 @@ public class ScoreManager : MonoBehaviour
 
         comboScore = 0;
         comboScoreChanged.Raise(comboScore);
+    }
+
+    private void SetHighScore()
+    {
+        var highScore = PlayerPrefs.GetInt(sceneName, 0);
+
+        if(score > highScore)
+        {
+            PlayerPrefs.SetInt(sceneName, score);
+        }
     }
 
 }

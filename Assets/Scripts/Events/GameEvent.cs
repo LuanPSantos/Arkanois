@@ -10,7 +10,7 @@ public class GameEvent : ScriptableObject
     public void Raise(object eventData = default)
     {
         traceId++;
-        Debug.Log("=> Raise: " + name + ", traceId="+ traceId);
+        Debug.Log("=> Raise: " + name + ", traceId="+ traceId+ ", eventData="+ eventData);
         for (int i = listeners.Count - 1; i >= 0; i--)
         {
             listeners[i].OnEventRaised(eventData);
