@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class MainMenu : MonoBehaviour
     private GameManagerScriptableObject gameManager;
     [SerializeField]
     private GameObject pauseMenu;
+    [SerializeField]
+    private GameObject endLevelMenu;
+    [SerializeField]
+    private EventSystem eventSystem;
+    [SerializeField]
+    private GameObject nextLevelButton;
     
 
     public void StartGame()
@@ -21,6 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        endLevelMenu.SetActive(false);
         pauseMenu.SetActive(false);
         levelManager.LoadCurrentLevel();
     }
@@ -43,5 +51,17 @@ public class MainMenu : MonoBehaviour
     public void OnGameResumed()
     {
         pauseMenu.SetActive(false);
+    }
+
+    public void OnGameEnded()
+    {
+        endLevelMenu.SetActive(true);
+        eventSystem.SetSelectedGameObject(nextLevelButton);
+    }
+
+    public void LoadNextLevel()
+    {
+        levelManager.LoadNextLevel();
+        
     }
 }

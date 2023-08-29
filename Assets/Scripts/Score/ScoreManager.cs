@@ -13,6 +13,8 @@ public class ScoreManager : MonoBehaviour
     private GameEvent comboScoreChanged;
     [SerializeField]
     private GameEvent highScoreLoaded;
+    [SerializeField]
+    private GameEvent brickBrokeProcessed;
 
     private int score;
     private int comboCount;
@@ -41,6 +43,7 @@ public class ScoreManager : MonoBehaviour
         comboScore += (int)brickScore;
         comboChanged.Raise(comboCount);
         comboScoreChanged.Raise(comboScore);
+        brickBrokeProcessed.Raise();
     }
 
     public void OnEnemyDestroied(object enemyScore)

@@ -12,7 +12,7 @@ public class LevelManagerScriptableObject : ScriptableObject
 
     private int currentLevelIndex;
 
-    public void OnLevelFinished()
+    public void LoadNextLevel()
     {
         currentLevelIndex++;
 
