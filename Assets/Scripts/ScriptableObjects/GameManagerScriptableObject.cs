@@ -51,6 +51,7 @@ public class GameManagerScriptableObject : ScriptableObject
 
     public void OnAllBricksBroke()
     {
+        pauseInputAction.Disable();
         gameEnded.Raise();
         Time.timeScale = 0;
     }
