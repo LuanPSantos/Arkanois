@@ -20,8 +20,8 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         // Remover
-        PlayerPrefs.SetInt("2", 0);
-        PlayerPrefs.SetInt("3", 0);
+        //PlayerPrefs.SetInt("2", 0);
+        //PlayerPrefs.SetInt("3", 0);
 
         levelManager.LoadLevelSelection();
     }

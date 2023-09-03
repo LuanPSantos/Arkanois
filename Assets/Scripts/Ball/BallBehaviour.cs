@@ -82,7 +82,7 @@ public class BallBehaviour : MonoBehaviour
     
     public void SlowByFactor(float factor)
     {
-        currentSpeed = factor * currentSpeed;
+        currentSpeed = factor * speed;
     }
 
     public void ResetSpeed()

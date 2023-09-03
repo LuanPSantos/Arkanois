@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
     private TMP_Text scoreComboText;
     [SerializeField]
     private TMP_Text highScoreText;
+    [SerializeField]
+    private TMP_Text endScoreText;
+    [SerializeField]
+    private TMP_Text endScoreTextLabel;
 
     public void OnHighScoreLoaded(object highScore)
     {
@@ -39,5 +43,17 @@ public class UIManager : MonoBehaviour
     {
         comboText.text = "0";
         scoreComboText.text = "0";
+    }
+
+    public void OnNewHighScore(object newHighScore)
+    {
+        endScoreText.text = newHighScore.ToString();
+        endScoreTextLabel.text = "NEW HIGH SCORE!";
+    }
+
+    public void OnFinalScore(object finalHighScore)
+    {
+        endScoreText.text = finalHighScore.ToString();
+        endScoreTextLabel.text = "YOUR SCORE";
     }
 }

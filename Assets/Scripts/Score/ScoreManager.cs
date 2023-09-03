@@ -13,14 +13,21 @@ public class ScoreManager : MonoBehaviour
     private GameEvent comboScoreChanged;
     [SerializeField]
     private GameEvent highScoreLoaded;
+    [SerializeField] 
+    private GameEvent newHighScore;
+    [SerializeField]
+    private GameEvent finalScore;
     [SerializeField]
     private GameEvent brickBrokeProcessed;
+    [SerializeField]
+    private float comboDuration;
 
     private int score;
     private int comboCount;
     private int comboScore;
     private int highScore;
     private string sceneName;
+    private float comboDurationTimer;
     void Start()
     {
         score = 0;
@@ -35,6 +42,16 @@ public class ScoreManager : MonoBehaviour
         sceneName = SceneManager.GetActiveScene().name;
         highScore = PlayerPrefs.GetInt(sceneName, 0);
         highScoreLoaded.Raise(highScore);
+    }
+
+    void Update()
+    {
+        comboDurationTimer += Time.deltaTime;
+        if(comboDurationTimer > comboDuration)
+        {
+            comboDurationTimer = 0;
+            CommitScore();
+        }
     }
 
     public void OnBrickBroked(object brickScore)
@@ -52,11 +69,6 @@ public class ScoreManager : MonoBehaviour
         comboScore += (int)enemyScore;
         comboChanged.Raise(comboCount);
         comboScoreChanged.Raise(comboScore);
-    }
-
-    public void OnHitPaddle()
-    {
-        CommitScore();
     }
 
     public void OnGameLost()
@@ -89,6 +101,11 @@ public class ScoreManager : MonoBehaviour
         if(score > highScore)
         {
             PlayerPrefs.SetInt(sceneName, score);
+            newHighScore.Raise(score);
+        }
+        else
+        {
+            finalScore.Raise(score);
         }
     }
 

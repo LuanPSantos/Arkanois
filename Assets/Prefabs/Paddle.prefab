@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   enlargeFactor: 1.5
+  powerUpDuration: 30
 --- !u!114 &1598617110061080512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +273,7 @@ MonoBehaviour:
   bullet: {fileID: 408347788228535000, guid: d14da8eb212e69043a6c277170e24226, type: 3}
   rightWeapon: {fileID: 3495181996255323910}
   leftWeapon: {fileID: 8496270319081565591}
+  powerUpDuration: 10
 --- !u!114 &7449716436915959130
 MonoBehaviour:
   m_ObjectHideFlags: 0

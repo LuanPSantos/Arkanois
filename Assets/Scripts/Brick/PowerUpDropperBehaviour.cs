@@ -5,8 +5,6 @@ using UnityEngine;
 public class PowerUpDropperBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private GameObject breakPowerUp;
-    [SerializeField]
     private GameObject laserPowerUp;
     [SerializeField]
     private GameObject disruptionPowerUp;
@@ -46,11 +44,7 @@ public class PowerUpDropperBehaviour : MonoBehaviour
 
         var picked = random.Next(0, 100);
 
-        if (picked % 61 == 0)
-        {
-            Drop(breakPowerUp);
-        }
-        else if(picked % 20 == 0)
+        if (picked % 30 == 0)
         {
             Drop(laserPowerUp);
         }
