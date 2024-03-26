@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour
     private EventSystem eventSystem;
     [SerializeField]
     private GameObject nextLevelButton;
+    [SerializeField]
+    private GameObject resumeButton;
     
 
     public void StartGame()
@@ -46,6 +48,7 @@ public class MainMenu : MonoBehaviour
     public void OnGamePaused()
     {
         pauseMenu.SetActive(true);
+        eventSystem.SetSelectedGameObject(resumeButton);
     }
 
     public void OnGameResumed()
