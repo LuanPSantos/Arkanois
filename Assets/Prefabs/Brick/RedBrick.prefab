@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 7956508384284696629}
   - component: {fileID: 5581606038545080254}
   - component: {fileID: 1900024038}
+  - component: {fileID: -599795850573598625}
   - component: {fileID: -8167195001090276340}
   - component: {fileID: 10788442179122922}
   - component: {fileID: 7417252015490632441}
@@ -272,6 +273,20 @@ MonoBehaviour:
   brick: {fileID: 11400000, guid: f49849177569e074b875f8a0882e5103, type: 2}
   graphics: {fileID: 7956508384785316548}
   isBreakable: 1
+  score: 90
+--- !u!114 &-599795850573598625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956508384284696626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ccb9f5e320fe0459fc7ab05e1472dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePopUpPrefab: {fileID: 6163082377945687610, guid: ed43e20bf2ca1934188e60e8067f076d, type: 3}
 --- !u!114 &-8167195001090276340
 MonoBehaviour:
   m_ObjectHideFlags: 0

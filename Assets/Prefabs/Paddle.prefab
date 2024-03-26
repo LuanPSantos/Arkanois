@@ -242,6 +242,7 @@ MonoBehaviour:
   rightEndReflection: {fileID: 8482715463119047836}
   leftStartReflection: {fileID: 5388194440897785427}
   leftEndReflection: {fileID: 1195587148389703834}
+  paddleHitted: {fileID: 11400000, guid: 95a9706dfa30da0418aea3b9196ab4ae, type: 2}
 --- !u!114 &1358321308000159049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   enlargeFactor: 1.5
+  powerUpDuration: 30
 --- !u!114 &1598617110061080512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +273,7 @@ MonoBehaviour:
   bullet: {fileID: 408347788228535000, guid: d14da8eb212e69043a6c277170e24226, type: 3}
   rightWeapon: {fileID: 3495181996255323910}
   leftWeapon: {fileID: 8496270319081565591}
+  powerUpDuration: 10
 --- !u!114 &7449716436915959130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +377,18 @@ MonoBehaviour:
       - m_Target: {fileID: 9013447296984085285}
         m_TargetAssemblyTypeName: PaddleMovement, Assembly-CSharp
         m_MethodName: OnGameEnded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1598617110061080512}
+        m_TargetAssemblyTypeName: LaserBehaviour, Assembly-CSharp
+        m_MethodName: OnLaserDisabled
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -349,10 +349,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.4039216, g: 0.69803923, b: 0.86274517, a: 1}
-    m_HighlightedColor: {r: 0.30584726, g: 0.6374825, b: 0.8207547, a: 1}
-    m_PressedColor: {r: 0.18770024, g: 0.51725805, b: 0.6981132, a: 1}
-    m_SelectedColor: {r: 0.2731399, g: 0.47124097, b: 0.5849056, a: 1}
+    m_NormalColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+    m_HighlightedColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    m_PressedColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+    m_SelectedColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -567,8 +567,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -665,9 +665,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 11400000, guid: f47c23bad30e63d48bc29bfa7d629bc2, type: 2}
+  gameManager: {fileID: 11400000, guid: 0d5559b1ad5be664093c47bf8202fdd8, type: 2}
   pauseMenu: {fileID: 0}
-  gamePaused: {fileID: 0}
-  gameResumed: {fileID: 0}
+  endLevelMenu: {fileID: 0}
+  eventSystem: {fileID: 0}
+  nextLevelButton: {fileID: 0}
 --- !u!4 &1962826251
 Transform:
   m_ObjectHideFlags: 0
@@ -750,8 +752,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
+    rgba: 4282795590
+  m_fontColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using static Unity.Collections.AllocatorManager;
@@ -13,7 +14,10 @@ public class BrickBehaviour : MonoBehaviour
     private GameObject graphics;
     [SerializeField]
     private bool isBreakable = true;
-        
+    [SerializeField]
+    private int score;
+
+    private ScorePopUpBehaviour scorePopUpBehaviour;   
     private PowerUpDropperBehaviour powerUp;
     private SpriteRenderer spriteRenderer;
     private HittedByBallDetectionBehaviour hitDetection;
@@ -25,7 +29,7 @@ public class BrickBehaviour : MonoBehaviour
         powerUp = GetComponent<PowerUpDropperBehaviour>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         hitDetection = GetComponent<HittedByBallDetectionBehaviour>();
-
+        scorePopUpBehaviour = GetComponent<ScorePopUpBehaviour>();
 
         spriteRenderer.color = brick.color;        
     }
@@ -50,7 +54,8 @@ public class BrickBehaviour : MonoBehaviour
         hitCount++;
         if (hitCount >= brick.resistence)
         {
-            onBrickBroke.Raise();
+            onBrickBroke.Raise(score);
+            scorePopUpBehaviour.OnScore(score);
             powerUp.DropPowerUp();
             graphics.SetActive(false);
             hitDetection.DisableDetection();

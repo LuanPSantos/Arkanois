@@ -1,36 +1,59 @@
 using TMPro;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class UIManager : MonoBehaviour
 {
-    public TMP_Text startText;
-    public GameObject endView;
-    public EventSystem eventSystem;
-    public GameObject nextLevelButtom;
+    [SerializeField]
+    private TMP_Text scoreText;
+    [SerializeField]
+    private TMP_Text comboText;
+    [SerializeField]
+    private TMP_Text scoreComboText;
+    [SerializeField]
+    private TMP_Text highScoreText;
+    [SerializeField]
+    private TMP_Text endScoreText;
+    [SerializeField]
+    private TMP_Text endScoreTextLabel;
 
-    void Start()
+    public void OnHighScoreLoaded(object highScore)
     {
-        startText.gameObject.SetActive(true);
-        endView.SetActive(false);
+        highScoreText.text = highScore.ToString();
     }
 
-    public void OnGameStarted()
+    public void OnScoreChanged(object score)
     {
-        startText.gameObject.SetActive(false);
-        endView.SetActive(false);
+        scoreText.text = score.ToString();
+    }
+
+    public void OnScoreComboChanged(object score)
+    {
+        scoreComboText.text = score.ToString();
+    }
+
+    public void OnComboChanged(object combo)
+    {
+        comboText.text = combo.ToString();
     }
 
     public void OnGameEnded()
     {
-        startText.gameObject.SetActive(false);
-        endView.SetActive(true);
-        eventSystem.firstSelectedGameObject = nextLevelButtom;
+        comboText.text = "0";
+        scoreComboText.text = "0";
     }
 
-    public void OnGameLost()
+    public void OnNewHighScore(object newHighScore)
     {
-        startText.gameObject.SetActive(false);
-        endView.SetActive(true);
+        endScoreText.text = newHighScore.ToString();
+        endScoreTextLabel.text = "NEW HIGH SCORE!";
+    }
+
+    public void OnFinalScore(object finalHighScore)
+    {
+        endScoreText.text = finalHighScore.ToString();
+        endScoreTextLabel.text = "YOUR SCORE";
     }
 }

@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnTimer += Time.deltaTime;
 
-        if(spawnTimer > minimumTimeToSpawn && totalEnemies < maxEnemiesInScene)
+        if (spawnTimer > minimumTimeToSpawn && totalEnemies < maxEnemiesInScene)
         {
             Spawn();
             spawnTimer = 0;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,19 +9,28 @@ public class MainMenu : MonoBehaviour
     private GameManagerScriptableObject gameManager;
     [SerializeField]
     private GameObject pauseMenu;
+    [SerializeField]
+    private GameObject endLevelMenu;
+    [SerializeField]
+    private EventSystem eventSystem;
+    [SerializeField]
+    private GameObject nextLevelButton;
+    [SerializeField]
+    private GameObject resumeButton;
     
 
     public void StartGame()
     {
         // Remover
-        PlayerPrefs.SetInt("2", 0);
-        PlayerPrefs.SetInt("3", 0);
+        // PlayerPrefs.SetInt("2", 0);
+        // PlayerPrefs.SetInt("3", 0);
 
         levelManager.LoadLevelSelection();
     }
 
     public void RestartGame()
     {
+        endLevelMenu.SetActive(false);
         pauseMenu.SetActive(false);
         levelManager.LoadCurrentLevel();
     }
@@ -38,10 +48,23 @@ public class MainMenu : MonoBehaviour
     public void OnGamePaused()
     {
         pauseMenu.SetActive(true);
+        eventSystem.SetSelectedGameObject(resumeButton);
     }
 
     public void OnGameResumed()
     {
         pauseMenu.SetActive(false);
+    }
+
+    public void OnGameEnded()
+    {
+        endLevelMenu.SetActive(true);
+        eventSystem.SetSelectedGameObject(nextLevelButton);
+    }
+
+    public void LoadNextLevel()
+    {
+        levelManager.LoadNextLevel();
+        
     }
 }

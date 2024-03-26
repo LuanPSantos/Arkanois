@@ -2,6 +2,7 @@ using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -14,28 +15,21 @@ public class EnemyBehaviour : MonoBehaviour
     private float maxMovementDurantion;
     [SerializeField]
     private GameEvent destroied;
+    [SerializeField]
+    private int score;
     private AIPath path;
     private GraphNode randomNode;
 
     private float currentTimer;
     private float singleMomentDurantion;
+    private ScorePopUpBehaviour scorePopUpBehaviour;
 
     void Start()
     {
         path = GetComponent<AIPath>();
+        scorePopUpBehaviour = GetComponent<ScorePopUpBehaviour>();
 
         PickRandomDestination();
-    }
-
-    public void OnHittedByBall()
-    {
-        Destroy();
-    }
-
-    public void Destroy()
-    {
-        destroied.Raise();
-        Destroy(gameObject);
     }
 
     void Update()
@@ -46,6 +40,18 @@ public class EnemyBehaviour : MonoBehaviour
         {
             PickRandomDestination();
         }
+    }
+
+    public void OnHittedByBall()
+    {
+        Destroy();
+    }
+
+    public void Destroy()
+    {
+        scorePopUpBehaviour.OnScore(score);
+        destroied.Raise(score);
+        Destroy(gameObject);
     }
 
     private void PickRandomDestination()

@@ -7,6 +7,8 @@ public class CatchBehaviour : MonoBehaviour
 {
     [SerializeField]
     private float timeToReleaseBall;
+    [SerializeField]
+    private float powerUpDuration;
 
     private BallBehaviour ball;
     private InputAction actionInput; // TODO reapoveitar codigo
@@ -16,6 +18,7 @@ public class CatchBehaviour : MonoBehaviour
     private bool isHoldingBall;
     private float timer = 0;
     private float xOffset = 0;
+    private float durationTimer;
 
 
     void Awake()
@@ -28,7 +31,15 @@ public class CatchBehaviour : MonoBehaviour
 
     void Update()
     {
-        if(isActive && isHoldingBall)
+        if (!isActive) return;
+
+        durationTimer += Time.deltaTime;
+        if (durationTimer > powerUpDuration)
+        {
+            OnCatchDisabled();
+        }
+
+        if(isHoldingBall)
         {
             ball.transform.position = new Vector2(paddle.transform.position.x + xOffset, ball.startPosition.y);
 
@@ -58,12 +69,13 @@ public class CatchBehaviour : MonoBehaviour
         actionInput.Enable();
 
         isActive = true;
+        durationTimer = 0;
     }
 
     public void OnCatchDisabled()
     {
         actionInput.Disable();
-        
+        durationTimer = 0;
         isActive = false;
 
         ReleaseBall();

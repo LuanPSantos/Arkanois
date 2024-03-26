@@ -12,21 +12,12 @@ public class PowerUpMovement : MonoBehaviour
     [SerializeField]
     private float fieldMinimumY = -5.5f;
 
-    private bool canMove;
-    
-    void Start()
-    {
-        canMove = true;
-    }
-
     void Update()
     {
-        if(canMove)
-        {
-            transform.Translate(Vector2.down * speed * Time.deltaTime);
-        } 
-        
-        if(transform.position.y < fieldMinimumY)
+
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
+
+        if (transform.position.y < fieldMinimumY)
         {
             powerUpDestroyed.Raise();
             Destroy(gameObject);
@@ -40,15 +31,5 @@ public class PowerUpMovement : MonoBehaviour
             powerUpDestroyed.Raise();
             Destroy(gameObject);
         }
-    }
-
-    public void OnGamePaused()
-    {
-        canMove = false;
-    }
-
-    public void OnGameResumed()
-    {
-        canMove = true;
     }
 }

@@ -9,19 +9,10 @@ public class LaserBulletBehaviour : MonoBehaviour
     private float speed;
     [SerializeField]
     private float maxDistanceY;
-    private bool canMove;
-
-    void Awake()
-    {
-        canMove = true;
-    }
 
     void Update()
     {
-        if (canMove)
-        {
-            transform.Translate(Vector2.up * Time.deltaTime * speed);
-        }
+        transform.Translate(Vector2.up * Time.deltaTime * speed);
 
         if(transform.position.y > maxDistanceY)
         {
@@ -43,15 +34,5 @@ public class LaserBulletBehaviour : MonoBehaviour
             enemy.Destroy();
             Destroy(gameObject);
         }
-    }
-
-    public void OnGamePaused()
-    {
-        canMove = false;
-    }
-
-    public void OnGameResumed()
-    {
-        canMove = true;
     }
 }
